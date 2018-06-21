@@ -692,7 +692,7 @@ ul.kv #svgWrapper .mouse span {
 }
 
 /* line 15, ../sass/page/_pages.scss */
-#modal-01, #modal-02 {
+#modal-01, #modal-02, #modal-03, #modal-04 {
   padding: 20px 100px;
   overflow-y: auto;
 }
@@ -811,13 +811,13 @@ ul.web_list li a:hover div {
 
 @media (max-width: 1024px) {
   /* line 123, ../sass/page/_pages.scss */
-  #modal-01, #modal-02 {
+  #modal-01, #modal-02, #modal-03, #modal-04 {
     padding: 20px 30px;
   }
 }
 @media (max-width: 767px) {
   /* line 137, ../sass/page/_pages.scss */
-  #modal-01, #modal-02 {
+  #modal-01, #modal-02, #modal-03, #modal-04 {
     padding: 20px 30px;
   }
 
