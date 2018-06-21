@@ -375,22 +375,23 @@
   	</script>
   	<script type="text/javascript" src="js/index.js"></script>
     <script src="js/animatedModal.js"></script>
-    <script>
-    	$.get('uid.html',function(data){
-			$('#uid-con').html(data);
-		}); 
-    	$.get('vid.html',function(data){
-			$('#vid-con').html(data);
-		}); 
+    <script type="text/javascript">
+    	$(document).ready(function(){ 
+	    	$.get('uid.html',function(data){
+				$('#uid-con').html(data);
+			}); 
+	    	$.get('vid.html',function(data){
+				$('#vid-con').html(data);
+			}); 
 
-   		$.get('fed.html',function(data){
-			$('#fed-con').html(data);
-		}); 
-		$.get('web.html',function(data){
-			$('#web-con').html(data);
-		}); 
+	   		$.get('fed.html',function(data){
+				$('#fed-con').html(data);
+			}); 
+			$.get('web.html',function(data){
+				$('#web-con').html(data);
+			}); 
 
-		
+		});
 	
 	</script>
 	<!--pop 動態 -->
