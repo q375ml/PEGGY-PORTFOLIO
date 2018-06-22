@@ -40,7 +40,54 @@
 
 </head>
 <body>
-	
+	<!--作品區-->
+	<div id="modal-01">
+        <!--"THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID-->
+        <div id="btn-close-modal" class="close-modal-01"> 
+          <i class="far fa-times-circle"></i>
+			
+        </div>
+       
+        <div class="modal-content">
+            <!--Your modal content goes here-->
+            <div id="web-con"></div>
+        </div>
+    </div>
+	<div id="modal-02">
+        <!--"THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID-->
+        <div id="btn-close-modal" class="close-modal-02"> 
+           <i class="far fa-times-circle"></i>
+        </div>
+        
+        <div class="modal-content">
+            <!--Your modal content goes here-->
+            <div id="fed-con"></div>
+
+        </div>
+    </div>
+    <div id="modal-03">
+        <!--"THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID-->
+        <div id="btn-close-modal" class="close-modal-03"> 
+             <i class="far fa-times-circle"></i>
+        </div>
+        
+        <div class="modal-content">
+            <!--Your modal content goes here-->
+            <div id="vid-con"></div>
+        </div>
+    </div>
+    <div id="modal-04">
+        <!--"THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID-->
+        <div id="btn-close-modal" class="close-modal-04"> 
+            <i class="far fa-times-circle"></i>
+        </div>
+        
+        <div class="modal-content">
+            <!--Your modal content goes here-->
+            <div id="uid-con"></div>
+        </div>
+    </div>
+	<!--作品區 end-->
 	<div id="container">
 		
 		<ul id="scene" class="kv scene" >
@@ -308,7 +355,7 @@
 	<!-- Scripts -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/2.1.3/parallax.min.js"></script>
 	<!-- jQuery -->
-	<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
 
 	<script src='https://cdnjs.cloudflare.com/ajax/libs/skrollr/0.6.30/skrollr.min.js'></script>
 
@@ -326,9 +373,27 @@
 	<script>
     	AOS.init();
   	</script>
-  
-   
-    <script type="text/javascript" src="js/index.js"></script>
+  	<script type="text/javascript" src="js/index.js"></script>
+    <script src="js/animatedModal.js"></script>
+    <script type="text/javascript">
+    	
+    	$.get('uid.html',function(data){
+			$('#uid-con').html(data);
+		}); 
+    	$.get('vid.html',function(data){
+			$('#vid-con').html(data);
+		}); 
+
+   		$.get('fed.html',function(data){
+			$('#fed-con').html(data);
+		}); 
+		$.get('web.html',function(data){
+			$('#web-con').html(data);
+		}); 
+
+		
+	
+	</script>
 	<!--pop 動態 -->
 	<!-- <script src="js/imagesloaded.pkgd.min.js"></script>
 	<script src="js/TweenMax.min.js"></script>
