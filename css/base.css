@@ -220,6 +220,7 @@ main {
 	font-size: 1.75rem;
 	margin: 1.2rem 0;
 	font-family: 'Anton', sans-serif;
+	width: 100%
 }
 
 .box__text i{
@@ -232,7 +233,7 @@ main {
 	/*border: 6px solid var(--color-text);
 	padding: 0.25rem 1.25rem;*/
 	color: #000;
-   
+    width: 90%;
     vertical-align: top;
 }
 
