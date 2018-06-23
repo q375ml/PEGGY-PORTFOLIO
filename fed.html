@@ -1,361 +1,396 @@
 <!DOCTYPE html>
-<html lang="en" class="no-js">
+<html lang="zh-Hant-TW" class="no-js">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" type="text/css" href="css/base.css" />
-		<script>document.documentElement.className="js";var supportsCssVars=function(){var e,t=document.createElement("style");return t.innerHTML="root: { --tmp-var: bold; }",document.head.appendChild(t),e=!!(window.CSS&&window.CSS.supports&&window.CSS.supports("font-weight","var(--tmp-var)")),t.parentNode.removeChild(t),e};supportsCssVars()||alert("Please view this demo in a modern browser that supports CSS Variables.");</script>
-	</head>
-	<body class="loading">
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=1, maximum-scale=2">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		
-		<main>
-			<h2>
-				FrontEnd Development<br>
-				<p>前端設計</p>
-				<span class="h2_line"></span>
-			</h2>
+		<meta name="author" content=""> 
+		<meta name="description" content="">
+		<meta name="keywords" content="" />
+		<meta http-equiv="content-language" content="zh-Hant-TW"> 
 
-			<div class="content">
-				
-				<div class="grid">
-					<ul class="web_list">
-						<li>
-							<a class="grid__item" href="#preview-19">
-								<div>加入遠雄會員APP</div>
-								<img src="images/photo/html/h-01.jpg" alt="遠雄會員網">
-							</a>
-						</li>
-						<li>
-							<a class="grid__item" href="#preview-20">
-								<div>花旗 RWD_line</div>
-								<img src="images/photo/html/h-02.png" alt="花旗 RWD_line">
-							</a>
-						</li>
-						<li>
-							<a class="grid__item" href="#preview-21">
-								<div>遠雄會員大FUN送</div>
-								<img src="images/photo/html/h-03.png" alt="遠雄會員大FUN送">
-							</a>
-						</li>
-						<li>
-							<a class="grid__item" href="#preview-22">
-								<div>凱基ON LINE！樂活理財</div>
-								<img src="images/photo/html/h-04.png" alt="凱基ON LINE！樂活理財">
-							</a>
-						</li>
-						<li>
-							<a class="grid__item" href="#preview-23">
-								<div>新安東京海上產險</div>
-								<img src="images/photo/html/h-05.png" alt="新安東京海上產險">
-							</a>
-						</li>
-						<li>
-							<a class="grid__item" href="#preview-24">
-								<div>遠雄人壽 保戶的店</div>
-								<img src="images/photo/html/h-06.png"alt="遠雄人壽 保戶的店">
-							</a>
-						</li>
-						<li>
-							<a class="grid__item" href="#preview-25">
-								<div>遠雄人壽 特約優惠</div>
-								<img src="images/photo/html/h-07.png" alt="遠雄人壽 特約優惠">
-							</a>
-						</li>
-						<li>
-							<a class="grid__item" href="#preview-26">
-								<div>遠雄人壽 生日好禮</div>
-								<img src="images/photo/html/h-08.jpg" alt="遠雄人壽 生日好禮">
-							</a>
-						</li>
-						<li>
-							<a class="grid__item" href="#preview-27">
-								<div>遠雄人壽 營養諮詢</div>
-								<img src="images/photo/html/h-09.jpg" alt="遠雄人壽 營養諮詢">
-							</a>
-						</li>
-						<li>
-							<a class="grid__item" href="#preview-28">
-								<div>遠雄人壽 藥師到府</div>
-								<img src="images/photo/html/h-10.jpg" alt="遠雄人壽 藥師到府">
-							</a>
-						</li>
-					</ul>
+		<meta property="og:type" content="article">
+		<meta property="og:site_name" content="" />  
+		<meta property="og:title" content="" />
+		<meta property="og:description" content="">
+		<meta property="og:image" content="" />
+		<meta property="og:url" content="">
+
+		<title>Peggy Designer – Web&UI Designer</title>
+		<link rel="shortcut icon" href="logo.ico" title="logo">
+		<script>document.documentElement.className="js";var supportsCssVars=function(){var e,t=document.createElement("style");return t.innerHTML="root: { --tmp-var: bold; }",document.head.appendChild(t),e=!!(window.CSS&&window.CSS.supports&&window.CSS.supports("font-weight","var(--tmp-var)")),t.parentNode.removeChild(t),e};supportsCssVars()||alert("Please view this demo in a modern browser that supports CSS Variables.");</script>
+		<!-- css -->
+		<link rel="stylesheet" href="css/styles.css">
+		<link rel="stylesheet" href="css/frame.css">
+		<link rel="stylesheet" type="text/css" href="css/base.css" />
+		<!-- fontawesome -->
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+	</head>
+	<body>
+		
+		<div id="modal-02">
+	        <!--"THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID-->
+	        <div id="btn-close-modal" class="close-modal-02"> 
+	           <a href="index.html"><i class="far fa-times-circle"></i></a>
+	        </div>
+	        
+	        <div class="modal-content">
+	            <!--Your modal content goes here-->
+	            <h2>
+					FrontEnd Development<br>
+					<p>前端設計</p>
+					<span class="h2_line"></span>
+				</h2>
+				<div class="content">
 					
+					<div class="grid">
+						<ul class="web_list">
+							<li>
+								<a class="grid__item" href="#preview-19">
+									<div>加入遠雄會員APP</div>
+									<img src="images/photo/html/h-01.jpg" alt="遠雄會員網">
+								</a>
+							</li>
+							<li>
+								<a class="grid__item" href="#preview-20">
+									<div>花旗 RWD_line</div>
+									<img src="images/photo/html/h-02.png" alt="花旗 RWD_line">
+								</a>
+							</li>
+							<li>
+								<a class="grid__item" href="#preview-21">
+									<div>遠雄會員大FUN送</div>
+									<img src="images/photo/html/h-03.png" alt="遠雄會員大FUN送">
+								</a>
+							</li>
+							<li>
+								<a class="grid__item" href="#preview-22">
+									<div>凱基ON LINE！樂活理財</div>
+									<img src="images/photo/html/h-04.png" alt="凱基ON LINE！樂活理財">
+								</a>
+							</li>
+							<li>
+								<a class="grid__item" href="#preview-23">
+									<div>新安東京海上產險</div>
+									<img src="images/photo/html/h-05.png" alt="新安東京海上產險">
+								</a>
+							</li>
+							<li>
+								<a class="grid__item" href="#preview-24">
+									<div>遠雄人壽 保戶的店</div>
+									<img src="images/photo/html/h-06.png"alt="遠雄人壽 保戶的店">
+								</a>
+							</li>
+							<li>
+								<a class="grid__item" href="#preview-25">
+									<div>遠雄人壽 特約優惠</div>
+									<img src="images/photo/html/h-07.png" alt="遠雄人壽 特約優惠">
+								</a>
+							</li>
+							<li>
+								<a class="grid__item" href="#preview-26">
+									<div>遠雄人壽 生日好禮</div>
+									<img src="images/photo/html/h-08.jpg" alt="遠雄人壽 生日好禮">
+								</a>
+							</li>
+							<li>
+								<a class="grid__item" href="#preview-27">
+									<div>遠雄人壽 營養諮詢</div>
+									<img src="images/photo/html/h-09.jpg" alt="遠雄人壽 營養諮詢">
+								</a>
+							</li>
+							<li>
+								<a class="grid__item" href="#preview-28">
+									<div>遠雄人壽 藥師到府</div>
+									<img src="images/photo/html/h-10.jpg" alt="遠雄人壽 藥師到府">
+								</a>
+							</li>
+						</ul>
+						
+					</div>
 				</div>
-			</div>
-			<!--內容-->
-			<div class="overlay">
-				<div class="overlay__reveal"></div>
-				<div class="overlay__item" id="preview-19">
-					<div class="box">
+				<!--內容-->
+				<div class="overlay">
+					<div class="overlay__reveal"></div>
+					<div class="overlay__item" id="preview-19">
+						<div class="box">
 
-						<img class="box__img box__img--original" src="images/photo/html/h-01.jpg" alt="加入遠雄會員APP-優惠好禮享不完"/>
+							<img class="box__img box__img--original" src="images/photo/html/h-01.jpg" alt="加入遠雄會員APP-優惠好禮享不完"/>
+							
+							<p>
+								<div>活動網站 / 加入遠雄會員APP-優惠好禮享不完</div>
+								<ul class="dot_list">
+									<li><b>RWD / Html、Scss</b>只負責切版工作</li>
+									<li>網址 / <a href="https://www.easyhome.com.tw/app_download.php" target="_blank">https://www.easyhome.com.tw/app_download.php</a>	
+									</li>
+									<li>網頁SEO - google Search Console 設定、結構化資料</li>	
+								</ul>
+							</p>
+							<img class="box__img box__img--original" src="images/photo/html/h-01-1.jpg" alt="加入遠雄會員APP-優惠好禮享不完"/>
+							
+							<h4 class="box__text">
+								<i class="fas fa-angle-right color-red"></i> 
+								<span class="box__text-inner">
+									加入遠雄會員APP 優惠好禮享不完
+								</span>
+							</h4>
+						</div>
 						
-						<p>
-							<div>活動網站 / 加入遠雄會員APP-優惠好禮享不完</div>
-							<ul class="dot_list">
-								<li><b>RWD / Html、Scss</b>只負責切版工作</li>
-								<li>網址 / <a href="https://www.easyhome.com.tw/app_download.php" target="_blank">https://www.easyhome.com.tw/app_download.php</a>	
-								</li>
-								<li>網頁SEO - google Search Console 設定、結構化資料</li>	
-							</ul>
-						</p>
-						<img class="box__img box__img--original" src="images/photo/html/h-01-1.jpg" alt="加入遠雄會員APP-優惠好禮享不完"/>
-						
-						<h4 class="box__text">
-							<i class="fas fa-angle-right color-red"></i> 
-							<span class="box__text-inner">
-								加入遠雄會員APP 優惠好禮享不完
-							</span>
-						</h4>
+					</div>
+					<div class="overlay__item" id="preview-20">
+						<div class="box">
+
+							<img class="box__img box__img--original" src="images/photo/html/h-02.png" alt="花旗 RWD_line">
+							<img class="box__img box__img--original" src="images/photo/html/h-02-1.png" alt="花旗 RWD_line">
+							<img class="box__img box__img--original" src="images/photo/html/h-02-2.png" alt="花旗 RWD_line">
+							<img class="box__img box__img--original" src="images/photo/html/h-02-3.png" alt="花旗 RWD_line">
+							
+							<img class="box__img box__img--original" src="images/photo/html/h-02-5.png" alt="花旗 RWD_line">
+							<p>
+								<div>官方line / 花旗 RWD_line 畫面</div>
+								<ul class="dot_list">
+									<li><b>RWD / Html、Scss</b>只負責切版工作</li>
+								</ul>
+							</p>
+							
+							<h4 class="box__text">
+								<i class="fas fa-angle-right color-red"></i> 
+								<span class="box__text-inner">
+									花旗 RWD_line 畫面
+								</span>
+							</h4>
+						</div>
+					</div>
+					<div class="overlay__item" id="preview-21">
+						<div class="box">
+
+							<img class="box__img box__img--original" src="images/photo/html/h-03.png" alt="遠雄會員大FUN送">
+							<p>
+								<div>官網活動網站 / 遠雄會員大FUN送</div>
+								<ul class="dot_list">
+									
+									<li><b>RWD / Html、Scss</b>只負責切版工作</li>
+									<li>網址 / <a href="https://www.easyhome.com.tw/member.php?utm_source=fb&utm_medium=link&utm_content=post0825&utm_campaign=showkitch_memberright" target="_blank">https://www.easyhome.com.tw/member.php?utm_source=fb&utm_medium=link&utm_content=post0825&utm_campaign=showkitch_memberright</a>	</li>
+									<li>網頁SEO - google Search Console 設定、結構化資料</li>	
+								</ul>
+							</p>
+							<img class="box__img box__img--original" src="images/photo/html/h-03-1.png" alt="遠雄會員大FUN送">
+
+							<img class="box__img box__img--original" src="images/photo/html/h-03-2.png" alt="遠雄會員大FUN送">
+
+							<h4 class="box__text">
+								<i class="fas fa-angle-right color-red"></i>
+								<span class="box__text-inner">
+									遠雄網路服務 遠雄會員大FUN送
+								</span>
+							</h4>
+						</div>
+					</div>
+					<div class="overlay__item" id="preview-22">
+						<div class="box">
+
+							<img class="box__img box__img--original" src="images/photo/html/h-04.png" alt="凱基ON LINE！樂活理財"/>
+							<p>
+								<div>活動網站 / 凱基ON LINE！樂活理財</div>
+								<ul class="dot_list">
+									
+									
+									<li><b>RWD / Html、Scss</b>只負責切版工作</li>
+									<li>網址 / <a href="http://www.kgieworld.com.tw/news/201701_event/index.html" target="_blank">http://www.kgieworld.com.tw/news/201701_event/index.html</a>	
+									</li>	
+									
+								</ul>
+							</p>
+							<img class="box__img box__img--original" src="images/photo/html/h-04-1.png" alt="凱基ON LINE！樂活理財"/>
+
+							<img class="box__img box__img--original" src="images/photo/html/h-04-2.png" alt="凱基ON LINE！樂活理財"/>
+
+							<img class="box__img box__img--original" src="images/photo/html/h-04-3.png" alt="凱基ON LINE！樂活理財"/>
+
+							
+							<h4 class="box__text">
+								<i class="fas fa-angle-right color-red"></i>
+								<span class="box__text-inner">
+									凱基證券 凱基ON LINE！樂活理財
+								</span>
+							</h4>
+						</div>
+					</div>
+
+					<div class="overlay__item" id="preview-23">
+						<div class="box">
+							<img class="box__img box__img--original" src="images/photo/html/h-05.png" alt="新安東京海上產險"/>
+							<p>
+								<div>官方網站 / 新安東京海上產險</div>
+								<ul class="dot_list">
+									
+									<li>網頁視覺設計 ／ 新安東京海上產險－汽車險、機車險、住宅險、旅行險</li>
+									<li><b>RWD / Html、Scss、Jquery</b></li>
+									<li>網址 / <a href="https://www.tmnewa.com.tw/b2c_v2/insuresinfo.htm" target="_blank">https://www.tmnewa.com.tw/b2c_v2/insuresinfo.htm</a>	
+									</li>
+									<li>網頁SEO - google Search Console 設定、結構化資料</li>
+								</ul>
+							</p>
+							<img class="box__img box__img--original" src="images/photo/html/h-05-5.png" alt="新安東京海上產險"/>
+
+							<img class="box__img box__img--original" src="images/photo/html/h-05-6.png" alt="新安東京海上產險"/>
+							
+							<img class="box__img box__img--original" src="images/photo/html/h-05-7.png" alt="新安東京海上產險"/>
+							
+							<img class="box__img box__img--original" src="images/photo/html/h-05-8.png" alt="新安東京海上產險"/>
+							<p>
+								<div>官方網站 / 新安東京海上產險</div>
+								<ul class="dot_list">
+
+									<li><b>RWD / Html、Scss</b>只負責切版工作</li>
+									<li>網址 / <a href="https://www.tmnewa.com.tw/b2c_v2/contents/excess.html" target="_blank">https://www.tmnewa.com.tw/b2c_v2/contents/excess.html</a>	
+									</li>
+									<li>網址 / <a href="https://www.tmnewa.com.tw/b2c_v2/contents/car.html" target="_blank">https://www.tmnewa.com.tw/b2c_v2/contents/car.html</a>	
+									</li>
+									<li>網址 / <a href="https://www.tmnewa.com.tw/b2c_v2/contents/motor-third.html" target="_blank">https://www.tmnewa.com.tw/b2c_v2/contents/motor-third.html</a>	
+									</li>
+									<li>網址 / <a href="https://www.tmnewa.com.tw/b2c_v2/contents/quota.html" target="_blank">https://www.tmnewa.com.tw/b2c_v2/contents/quota.html</a>	
+									</li>
+									<li>網址 / <a href="https://www.tmnewa.com.tw/b2c_v2/contents/travel.html" target="_blank">https://www.tmnewa.com.tw/b2c_v2/contents/travel.html</a>	
+									</li>
+								</ul>
+							</p>
+							<h4 class="box__text">
+								<i class="fas fa-angle-right color-red"></i>
+								<span class="box__text-inner">
+									 新安東京海上產險
+								</span>
+							</h4>
+						</div>
+					</div>
+					<div class="overlay__item" id="preview-24">
+						<div class="box">
+							<img class="box__img box__img--original" src="images/photo/html/h-06.png" alt="遠雄人壽 保戶的店"/>
+							<p>
+								<div>活動網站 / 遠雄人壽-保戶的店</div>	
+								<ul class="dot_list">
+									<li><b>RWD / Html、Scss、Jquery</b>只負責切版工作</li>
+									<li>網址 / <a href="https://www.tmnewa.com.tw/b2c_v2/insuresinfo.htm" target="_blank">https://www.tmnewa.com.tw/b2c_v2/insuresinfo.htm</a>	
+									</li>
+									<li>網頁SEO - google Search Console 設定、結構化資料</li>
+								</ul>
+							</p>
+							
+							<img class="box__img box__img--original" src="images/photo/html/h-06-1.png" alt="遠雄人壽 保戶的店"/>
+
+							<img class="box__img box__img--original" src="images/photo/html/h-06-2.png" alt="遠雄人壽 保戶的店"/>
+
+							
+
+							<h4 class="box__text">
+								<i class="fas fa-angle-right color-red"></i>
+								<span class="box__text-inner">
+									遠雄人壽 保戶的店
+								</span>
+							</h4>
+						</div>
 					</div>
 					
-				</div>
-				<div class="overlay__item" id="preview-20">
-					<div class="box">
-
-						<img class="box__img box__img--original" src="images/photo/html/h-02.png" alt="花旗 RWD_line">
-						<img class="box__img box__img--original" src="images/photo/html/h-02-1.png" alt="花旗 RWD_line">
-						<img class="box__img box__img--original" src="images/photo/html/h-02-2.png" alt="花旗 RWD_line">
-						<img class="box__img box__img--original" src="images/photo/html/h-02-3.png" alt="花旗 RWD_line">
-						
-						<img class="box__img box__img--original" src="images/photo/html/h-02-5.png" alt="花旗 RWD_line">
-						<p>
-							<div>官方line / 花旗 RWD_line 畫面</div>
-							<ul class="dot_list">
-								<li><b>RWD / Html、Scss</b>只負責切版工作</li>
-							</ul>
-						</p>
-						
-						<h4 class="box__text">
-							<i class="fas fa-angle-right color-red"></i> 
-							<span class="box__text-inner">
-								花旗 RWD_line 畫面
-							</span>
-						</h4>
+					<div class="overlay__item" id="preview-25">
+						<div class="box">
+							<img class="box__img box__img--original" src="images/photo/html/h-07.png" alt="遠雄人壽 特約優惠"/>
+							<p>
+								<div>活動網站 / 遠雄人壽-特約優惠</div>
+								<ul class="dot_list">
+									
+									<li><b>RWD / Html、Scss、Jquery</b>只負責切版工作</li>
+									<li>網址 / <a href="https://member.fglife.com.tw/ecoupon.do?actionType=main" target="_blank">https://member.fglife.com.tw/ecoupon.do?actionType=main</a>	
+									</li>
+									<li>網頁SEO - google Search Console 設定、結構化資料</li>	
+								</ul>
+							</p>
+							
+							<h4 class="box__text">
+								<i class="fas fa-angle-right color-red"></i>
+								<span class="box__text-inner">
+									 遠雄人壽 特約優惠
+								</span>
+							</h4>
+						</div>
 					</div>
-				</div>
-				<div class="overlay__item" id="preview-21">
-					<div class="box">
-
-						<img class="box__img box__img--original" src="images/photo/html/h-03.png" alt="遠雄會員大FUN送">
-						<p>
-							<div>官網活動網站 / 遠雄會員大FUN送</div>
-							<ul class="dot_list">
-								
-								<li><b>RWD / Html、Scss</b>只負責切版工作</li>
-								<li>網址 / <a href="https://www.easyhome.com.tw/member.php?utm_source=fb&utm_medium=link&utm_content=post0825&utm_campaign=showkitch_memberright" target="_blank">https://www.easyhome.com.tw/member.php?utm_source=fb&utm_medium=link&utm_content=post0825&utm_campaign=showkitch_memberright</a>	</li>
-								<li>網頁SEO - google Search Console 設定、結構化資料</li>	
-							</ul>
-						</p>
-						<img class="box__img box__img--original" src="images/photo/html/h-03-1.png" alt="遠雄會員大FUN送">
-
-						<img class="box__img box__img--original" src="images/photo/html/h-03-2.png" alt="遠雄會員大FUN送">
-
-						<h4 class="box__text">
-							<i class="fas fa-angle-right color-red"></i>
-							<span class="box__text-inner">
-								遠雄網路服務 遠雄會員大FUN送
-							</span>
-						</h4>
+					<div class="overlay__item" id="preview-26">
+						<div class="box">
+							<img class="box__img box__img--original" src="images/photo/html/h-08.jpg" alt="遠雄人壽 生日好禮"/>
+							<p>
+								<div>活動網站 / 遠雄人壽-生日好禮</div>
+								<ul class="dot_list">
+									<li><b>RWD / Html、Scss、Jquery</b>只負責切版工作</li>
+									<li>網址 / <a href="https://member.fglife.com.tw/egift.do?actionType=main" target="_blank">https://member.fglife.com.tw/egift.do?actionType=main</a>	
+									</li>
+									<li>網頁SEO - google Search Console 設定、結構化資料</li>	
+								</ul>
+							</p>
+							
+							<h4 class="box__text">
+								<i class="fas fa-angle-right color-red"></i>
+								<span class="box__text-inner">
+									 遠雄人壽 生日好禮
+								</span>
+							</h4>
+						</div>
 					</div>
-				</div>
-				<div class="overlay__item" id="preview-22">
-					<div class="box">
-
-						<img class="box__img box__img--original" src="images/photo/html/h-04.png" alt="凱基ON LINE！樂活理財"/>
-						<p>
-							<div>活動網站 / 凱基ON LINE！樂活理財</div>
-							<ul class="dot_list">
-								
-								
-								<li><b>RWD / Html、Scss</b>只負責切版工作</li>
-								<li>網址 / <a href="http://www.kgieworld.com.tw/news/201701_event/index.html" target="_blank">http://www.kgieworld.com.tw/news/201701_event/index.html</a>	
-								</li>	
-								
-							</ul>
-						</p>
-						<img class="box__img box__img--original" src="images/photo/html/h-04-1.png" alt="凱基ON LINE！樂活理財"/>
-
-						<img class="box__img box__img--original" src="images/photo/html/h-04-2.png" alt="凱基ON LINE！樂活理財"/>
-
-						<img class="box__img box__img--original" src="images/photo/html/h-04-3.png" alt="凱基ON LINE！樂活理財"/>
-
-						
-						<h4 class="box__text">
-							<i class="fas fa-angle-right color-red"></i>
-							<span class="box__text-inner">
-								凱基證券 凱基ON LINE！樂活理財
-							</span>
-						</h4>
+					<div class="overlay__item" id="preview-27">
+						<div class="box">
+							<img class="box__img box__img--original" src="images/photo/html/h-09.jpg" alt="遠雄人壽-健康存摺"/>
+							<p>
+								<div>活動網站 / 遠雄人壽-營養諮詢</div>
+								<ul class="dot_list">
+									<li><b>RWD / Html、Scss、Jquery</b>只負責切版工作</li>
+									<li>網址 / <a href="https://member.fglife.com.tw/nutrition.do?actionType=main" target="_blank">https://member.fglife.com.tw/nutrition.do?actionType=main</a>	
+									</li>
+									<li>網頁SEO - google Search Console 設定、結構化資料</li>			
+								</ul>
+							</p>
+							
+							<h4 class="box__text">
+								<i class="fas fa-angle-right color-red"></i>
+								<span class="box__text-inner">
+									遠雄人壽 營養諮詢
+								</span>
+							</h4>
+						</div>
 					</div>
-				</div>
-
-				<div class="overlay__item" id="preview-23">
-					<div class="box">
-						<img class="box__img box__img--original" src="images/photo/html/h-05.png" alt="新安東京海上產險"/>
-						<p>
-							<div>官方網站 / 新安東京海上產險</div>
-							<ul class="dot_list">
-								
-								<li>網頁視覺設計 ／ 新安東京海上產險－汽車險、機車險、住宅險、旅行險</li>
-								<li><b>RWD / Html、Scss、Jquery</b></li>
-								<li>網址 / <a href="https://www.tmnewa.com.tw/b2c_v2/insuresinfo.htm" target="_blank">https://www.tmnewa.com.tw/b2c_v2/insuresinfo.htm</a>	
-								</li>
-								<li>網頁SEO - google Search Console 設定、結構化資料</li>
-							</ul>
-						</p>
-						<img class="box__img box__img--original" src="images/photo/html/h-05-5.png" alt="新安東京海上產險"/>
-
-						<img class="box__img box__img--original" src="images/photo/html/h-05-6.png" alt="新安東京海上產險"/>
-						
-						<img class="box__img box__img--original" src="images/photo/html/h-05-7.png" alt="新安東京海上產險"/>
-						
-						<img class="box__img box__img--original" src="images/photo/html/h-05-8.png" alt="新安東京海上產險"/>
-						<p>
-							<div>官方網站 / 新安東京海上產險</div>
-							<ul class="dot_list">
-
-								<li><b>RWD / Html、Scss</b>只負責切版工作</li>
-								<li>網址 / <a href="https://www.tmnewa.com.tw/b2c_v2/contents/excess.html" target="_blank">https://www.tmnewa.com.tw/b2c_v2/contents/excess.html</a>	
-								</li>
-								<li>網址 / <a href="https://www.tmnewa.com.tw/b2c_v2/contents/car.html" target="_blank">https://www.tmnewa.com.tw/b2c_v2/contents/car.html</a>	
-								</li>
-								<li>網址 / <a href="https://www.tmnewa.com.tw/b2c_v2/contents/motor-third.html" target="_blank">https://www.tmnewa.com.tw/b2c_v2/contents/motor-third.html</a>	
-								</li>
-								<li>網址 / <a href="https://www.tmnewa.com.tw/b2c_v2/contents/quota.html" target="_blank">https://www.tmnewa.com.tw/b2c_v2/contents/quota.html</a>	
-								</li>
-								<li>網址 / <a href="https://www.tmnewa.com.tw/b2c_v2/contents/travel.html" target="_blank">https://www.tmnewa.com.tw/b2c_v2/contents/travel.html</a>	
-								</li>
-							</ul>
-						</p>
-						<h4 class="box__text">
-							<i class="fas fa-angle-right color-red"></i>
-							<span class="box__text-inner">
-								 新安東京海上產險
-							</span>
-						</h4>
+					<div class="overlay__item" id="preview-28">
+						<div class="box">
+							<img class="box__img box__img--original" src="images/photo/html/h-10.jpg" alt="遠雄人壽 藥師到府"/>
+							<p>
+								<div>活動網站 / 遠雄人壽-藥師到府</div>
+								<ul class="dot_list">
+									<li><b>RWD / Html、Scss、Jquery</b>只負責切版工作</li>
+									<li>網址 / <a href="https://member.fglife.com.tw/nutrition.do?actionType=main" target="_blank">https://member.fglife.com.tw/nutrition.do?actionType=main</a>	
+									</li>
+									<li>網頁SEO - google Search Console 設定、結構化資料</li>				
+								</ul>
+							</p>
+							
+							<h4 class="box__text">
+								<i class="fas fa-angle-right color-red"></i>
+								<span class="box__text-inner">
+									遠雄人壽 藥師到府
+								</span>
+							</h4>
+						</div>
 					</div>
-				</div>
-				<div class="overlay__item" id="preview-24">
-					<div class="box">
-						<img class="box__img box__img--original" src="images/photo/html/h-06.png" alt="遠雄人壽 保戶的店"/>
-						<p>
-							<div>活動網站 / 遠雄人壽-保戶的店</div>	
-							<ul class="dot_list">
-								<li><b>RWD / Html、Scss、Jquery</b>只負責切版工作</li>
-								<li>網址 / <a href="https://www.tmnewa.com.tw/b2c_v2/insuresinfo.htm" target="_blank">https://www.tmnewa.com.tw/b2c_v2/insuresinfo.htm</a>	
-								</li>
-								<li>網頁SEO - google Search Console 設定、結構化資料</li>
-							</ul>
-						</p>
-						
-						<img class="box__img box__img--original" src="images/photo/html/h-06-1.png" alt="遠雄人壽 保戶的店"/>
-
-						<img class="box__img box__img--original" src="images/photo/html/h-06-2.png" alt="遠雄人壽 保戶的店"/>
-
-						
-
-						<h4 class="box__text">
-							<i class="fas fa-angle-right color-red"></i>
-							<span class="box__text-inner">
-								遠雄人壽 保戶的店
-							</span>
-						</h4>
-					</div>
-				</div>
 				
-				<div class="overlay__item" id="preview-25">
-					<div class="box">
-						<img class="box__img box__img--original" src="images/photo/html/h-07.png" alt="遠雄人壽 特約優惠"/>
-						<p>
-							<div>活動網站 / 遠雄人壽-特約優惠</div>
-							<ul class="dot_list">
-								
-								<li><b>RWD / Html、Scss、Jquery</b>只負責切版工作</li>
-								<li>網址 / <a href="https://member.fglife.com.tw/ecoupon.do?actionType=main" target="_blank">https://member.fglife.com.tw/ecoupon.do?actionType=main</a>	
-								</li>
-								<li>網頁SEO - google Search Console 設定、結構化資料</li>	
-							</ul>
-						</p>
-						
-						<h4 class="box__text">
-							<i class="fas fa-angle-right color-red"></i>
-							<span class="box__text-inner">
-								 遠雄人壽 特約優惠
-							</span>
-						</h4>
-					</div>
+					<button class="overlay__close">
+						<i class="fas fa-arrow-left f34"></i>
+					</button>
 				</div>
-				<div class="overlay__item" id="preview-26">
-					<div class="box">
-						<img class="box__img box__img--original" src="images/photo/html/h-08.jpg" alt="遠雄人壽 生日好禮"/>
-						<p>
-							<div>活動網站 / 遠雄人壽-生日好禮</div>
-							<ul class="dot_list">
-								<li><b>RWD / Html、Scss、Jquery</b>只負責切版工作</li>
-								<li>網址 / <a href="https://member.fglife.com.tw/egift.do?actionType=main" target="_blank">https://member.fglife.com.tw/egift.do?actionType=main</a>	
-								</li>
-								<li>網頁SEO - google Search Console 設定、結構化資料</li>	
-							</ul>
-						</p>
-						
-						<h4 class="box__text">
-							<i class="fas fa-angle-right color-red"></i>
-							<span class="box__text-inner">
-								 遠雄人壽 生日好禮
-							</span>
-						</h4>
-					</div>
-				</div>
-				<div class="overlay__item" id="preview-27">
-					<div class="box">
-						<img class="box__img box__img--original" src="images/photo/html/h-09.jpg" alt="遠雄人壽-健康存摺"/>
-						<p>
-							<div>活動網站 / 遠雄人壽-營養諮詢</div>
-							<ul class="dot_list">
-								<li><b>RWD / Html、Scss、Jquery</b>只負責切版工作</li>
-								<li>網址 / <a href="https://member.fglife.com.tw/nutrition.do?actionType=main" target="_blank">https://member.fglife.com.tw/nutrition.do?actionType=main</a>	
-								</li>
-								<li>網頁SEO - google Search Console 設定、結構化資料</li>			
-							</ul>
-						</p>
-						
-						<h4 class="box__text">
-							<i class="fas fa-angle-right color-red"></i>
-							<span class="box__text-inner">
-								遠雄人壽 營養諮詢
-							</span>
-						</h4>
-					</div>
-				</div>
-				<div class="overlay__item" id="preview-28">
-					<div class="box">
-						<img class="box__img box__img--original" src="images/photo/html/h-10.jpg" alt="遠雄人壽 藥師到府"/>
-						<p>
-							<div>活動網站 / 遠雄人壽-藥師到府</div>
-							<ul class="dot_list">
-								<li><b>RWD / Html、Scss、Jquery</b>只負責切版工作</li>
-								<li>網址 / <a href="https://member.fglife.com.tw/nutrition.do?actionType=main" target="_blank">https://member.fglife.com.tw/nutrition.do?actionType=main</a>	
-								</li>
-								<li>網頁SEO - google Search Console 設定、結構化資料</li>				
-							</ul>
-						</p>
-						
-						<h4 class="box__text">
-							<i class="fas fa-angle-right color-red"></i>
-							<span class="box__text-inner">
-								遠雄人壽 藥師到府
-							</span>
-						</h4>
-					</div>
-				</div>
-			
-				<button class="overlay__close">
-					<i class="fas fa-arrow-left f34"></i>
-				</button>
-			</div>
-		</main>
+
+	        </div>
+	    </div>
+
+		<!-- jQuery -->
+		<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+
 		<script src="js/imagesloaded.pkgd.min.js"></script>
 		<script src="js/TweenMax.min.js"></script>
 		<script src="js/demo.js"></script>

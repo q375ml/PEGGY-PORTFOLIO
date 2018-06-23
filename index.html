@@ -20,12 +20,12 @@
 	<meta property="og:url" content="">
 
 	<title>Peggy Designer – Web&UI Designer</title>
-
+	<link rel="shortcut icon" href="logo.ico" title="logo">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
 
 	<link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
 	<link rel="stylesheet" href="css/parallax.css">
-	<!-- <link rel="stylesheet" type="text/css" href="css/base.css" /> -->
+	
 	<link rel="stylesheet" href="css/styles.css">
 	<link rel="stylesheet" href="css/frame.css">
 		
@@ -40,54 +40,7 @@
 
 </head>
 <body>
-	<!--作品區-->
-	<div id="modal-01">
-        <!--"THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID-->
-        <div id="btn-close-modal" class="close-modal-01"> 
-          <i class="far fa-times-circle"></i>
-			
-        </div>
-       
-        <div class="modal-content">
-            <!--Your modal content goes here-->
-            <div id="web-con"></div>
-        </div>
-    </div>
-	<div id="modal-02">
-        <!--"THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID-->
-        <div id="btn-close-modal" class="close-modal-02"> 
-           <i class="far fa-times-circle"></i>
-        </div>
-        
-        <div class="modal-content">
-            <!--Your modal content goes here-->
-            <div id="fed-con"></div>
-
-        </div>
-    </div>
-    <div id="modal-03">
-        <!--"THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID-->
-        <div id="btn-close-modal" class="close-modal-03"> 
-             <i class="far fa-times-circle"></i>
-        </div>
-        
-        <div class="modal-content">
-            <!--Your modal content goes here-->
-            <div id="vid-con"></div>
-        </div>
-    </div>
-    <div id="modal-04">
-        <!--"THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID-->
-        <div id="btn-close-modal" class="close-modal-04"> 
-            <i class="far fa-times-circle"></i>
-        </div>
-        
-        <div class="modal-content">
-            <!--Your modal content goes here-->
-            <div id="uid-con"></div>
-        </div>
-    </div>
-	<!--作品區 end-->
+	
 	<div id="container">
 		
 		<ul id="scene" class="kv scene" >
@@ -153,16 +106,16 @@
 			<section>
 				<ul class="nav">
 					<li>
-						<a id="w-d" href="#modal-01" title="網頁設計">Website Design / 網頁設計</a>
+						<a href="web.html" title="網頁設計">Website Design / 網頁設計</a>
 					</li>
 					<li>
-						<a id="f-d" href="#modal-02" title="前端設計">FrontEnd Development / 前端設計</a>		 
+						<a href="fed.html" title="前端設計">FrontEnd Development / 前端設計</a>		 
 					</li>
 					<li>
-						<a id="v-d" href="#modal-03" title="視覺設計">Visual Design / 視覺設計</a>
+						<a href="vid.html" title="視覺設計">Visual Design / 視覺設計</a>
 					</li>
 					<li>
-						<a id="u-d" href="#modal-04" title="UI UX 設計">UI Design / UI UX 設計 </a>
+						<a href="uid.html" title="UI UX 設計">UI Design / UI UX 設計 </a>
 					</li>
 					<li><a href="#about" title="工作經驗">About / 工作經驗</a></li>
 					<li><a href="#contact" title="聯絡資訊">Contact / 聯絡資訊</a></li>
@@ -174,19 +127,19 @@
 			<div class="bg10"><img src="images/bg11.png"></div>
 			<section class="con pink2">
 				<div class="wrapper">
-					<h2 class="tit" data-bottom-top="opacity: 0;" data-center="opacity: 1;">
+					<h2 class="tit">
 						<img src="images/tit2.svg">
 						<span class="line1"></span>
 						<span class="line2"></span>
 					</h2>
-					<div class="txt" data-bottom-top="opacity: 0;margin-top:200px;" data-center="opacity: 1;margin-top:50px">
+					<div class="txt" data-bottom-top="margin-top:200px;" data-center="margin-top:50px">
 						Since 2008, I have participated in many projects on web/visual design.<br>Being able to make novel web visuals and new technologies will keep me passion!<br>"To do try it everything".
 					</div>	
 					
 					<ul class="skill">
-						<li title="網頁設計">
-							<a id="w-d2" href="#modal-01">
-								<div class="mask" data-aos="mask"></div>
+						<li title="網頁設計" data-aos="fade-down" data-aos-delay="100">
+							<a href="web.html">
+								
 								<img src="images/wb_icon.png" alt="Website Design">
 								<div class="w_list">
 									<h4>Website Design</h4>
@@ -197,8 +150,8 @@
 							</a>
 						</li>
 						<li title="前端設計">
-							<a id="f-d2" href="#modal-02">
-								<div class="mask" data-aos="mask"></div>
+							<a href="fed.html" data-aos="fade-down" data-aos-delay="100">
+								
 								<img src="images/fd_icon.png" alt="FrontEnd Development">
 								<div class="w_list">
 									<h4>FrontEnd Development</h4>
@@ -209,8 +162,8 @@
 							</a>
 						</li>
 						<li title="視覺設計">
-							<a id="v-d2" href="#modal-03">
-								<div class="mask" data-aos="mask"></div>
+							<a href="vid.html" data-aos="fade-down" data-aos-delay="100">
+								
 								<img src="images/vis_icon.png" alt="Visual Design">
 								<div class="w_list">
 									<h4>Visual Design</h4>
@@ -220,9 +173,9 @@
 								</div>
 							</a>
 						</li>
-						<li title="UI / UX 設計">
-							<a id="u-d2" href="#modal-04">
-								<div class="mask" data-aos="mask"></div>
+						<li title="UI / UX 設計" data-aos="fade-down" data-aos-delay="100">
+							<a href="uid.html">
+								
 								<img src="images/wb_icon.png" alt="UI Design">
 								<div class="w_list">
 									<h4>UI Design</h4>
@@ -374,29 +327,6 @@
     	AOS.init();
   	</script>
   	<script type="text/javascript" src="js/index.js"></script>
-    <script src="js/animatedModal.js"></script>
-    <script type="text/javascript">
-    	
-    	$.get('uid.html',function(data){
-			$('#uid-con').html(data);
-		}); 
-    	$.get('vid.html',function(data){
-			$('#vid-con').html(data);
-		}); 
-
-   		$.get('fed.html',function(data){
-			$('#fed-con').html(data);
-		}); 
-		$.get('web.html',function(data){
-			$('#web-con').html(data);
-		}); 
-
-		
-	
-	</script>
-	<!--pop 動態 -->
-	<!-- <script src="js/imagesloaded.pkgd.min.js"></script>
-	<script src="js/TweenMax.min.js"></script>
-	<script src="js/demo.js"></script> -->
+  
 </body>
 </html>
