@@ -7,15 +7,10 @@ article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,su
 }
 
 body {
-	/*--color-text: #000;
-	--color-bg: #ececec;
-	--color-link: #000;
-	--color-link-hover: #000;
-	--color-info: #000;
-	font-family: 'Buenard', serif;*/
+	
 	
 	background-color: #fff;
-	/*background-color: var(--color-bg);*/
+	
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
@@ -242,13 +237,13 @@ main {
 	color: var(--color-bg);
 }
 
-.box__img {
+.box_img {
 	display:inline-block;
 	flex: none;
 	/*margin: 0 auto;*/
 	max-width: 100%;
-	filter: grayscale(1);
-	transition: filter 0.3s;
+	/*filter: grayscale(1);
+	transition: filter 0.3s;*/
 	pointer-events: none;
 	margin-top: 20px;
 	vertical-align: top;
