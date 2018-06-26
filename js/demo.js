@@ -195,8 +195,8 @@
                     // show preview
                     this.revealItem(contentItem);
                     // hide revealer
-                    TweenMax.to(this.DOM.reveal, .5, {
-                        delay: 0.2,
+                    TweenMax.to(this.DOM.reveal, .1, {
+                        delay: 0,
                         ease: 'Power3.easeOut',
                         x: '-100%'
                     });
@@ -354,5 +354,5 @@
     new Grid(document.querySelector('.grid'));
 
     // Preload all the images in the page..
-    imagesLoaded(document.querySelectorAll('.box__img'), () => document.body.classList.remove('loading'));
+    // imagesLoaded(document.querySelectorAll('.box__img'), () => document.body.classList.remove('loading'));
 }
