@@ -212,7 +212,7 @@
             itemElems.push(this.contentItem.querySelector('.box__shadow'));
             itemElems.push(this.contentItem.querySelector('.box__img'));
             itemElems.push(this.contentItem.querySelector('.box__title'));
-            itemElems.push(this.contentItem.querySelector('.box__text'));
+            // itemElems.push(this.contentItem.querySelector('.box__text'));
             itemElems.push(this.contentItem.querySelector('.box__deco'));
             itemElems.push(this.contentItem.querySelector('.overlay__content'));
             
