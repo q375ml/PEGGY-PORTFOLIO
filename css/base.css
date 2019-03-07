@@ -348,9 +348,9 @@ main {
 }
 
 .overlay__close {
-	position:absolute;
+	position:fixed;
 	top: 0;
-	right: 0;
+	right: 50px;
 	background: none;
 	border: 0;
 	margin: 1rem;
