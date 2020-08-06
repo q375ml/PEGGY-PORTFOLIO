@@ -13,25 +13,31 @@
     <meta name="author" content="" />
     <meta
       name="description"
-      content="網路現在已是不可或缺的管道，加上自己對網路產業的喜愛，未來想嘗試更多不一樣的可能，能做出新奇網頁視覺以及新技術，將會讓我保持這份熱忱！！"
+      content="Hi,I’m Peggy Chiang,產品設計師，自2008年以來，我參與了許多有關 Web /視覺設計/UI,介面設計多個項目，近2年專注在 UI/UX,設計邏輯，資料應用，發掘問題本質，協作解決問題，探索精簡設計和有意義的用戶體驗。跨領域，保持好奇心，觀察，探索與冒險持續我的設計熱情"
     />
     <meta name="keywords" content="Web&UI Designer,Visual Design,FrontEnd Development" />
     <meta http-equiv="content-language" content="zh-Hant-TW" />
 
     <meta property="og:type" content="article" />
     <meta property="og:site_name" content="PEGGY PORTFOLIO" />
-    <meta property="og:title" content="Web&UI Designer | Peggy Designer" />
+    <meta property="og:title" content="Good UX Is Good Business | Peggy Portfolio" />
     <meta
       property="og:description"
-      content="網路現在已是不可或缺的管道，加上自己對網路產業的喜愛，未來想嘗試更多不一樣的可能，能做出新奇網頁視覺以及新技術，將會讓我保持這份熱忱！！"
+      content="Hi,I’m Peggy Chiang,產品設計師，自2008年以來，我參與了許多有關 Web /視覺設計/UI,介面設計多個項目，近2年專注在 UI/UX,設計邏輯，資料應用，發掘問題本質，協作解決問題，探索精簡設計和有意義的用戶體驗。跨領域，保持好奇心，觀察，探索與冒險持續我的設計熱情"
     />
     <meta property="og:image" content="https://q375ml.github.io/PEGGY-PORTFOLIO/images/peggy.jpg" />
     <meta property="og:url" content="https://q375ml.github.io/PEGGY-PORTFOLIO/index.html" />
 
-    <title>Web&UI Designer | Peggy Designer</title>
+    <title>Good UX Is Good Business | Peggy Designer</title>
     <link rel="shortcut icon" href="logo.ico" title="logo" />
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet" />
-
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+      integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+      crossorigin="anonymous"
+    />
     <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/parallax.css" />
 
@@ -39,6 +45,7 @@
     <link rel="stylesheet" href="css/frame.css" />
 
     <link rel="stylesheet" href="css/animate.css" />
+
     <!-- fontawesome -->
     <link
       rel="stylesheet"
@@ -50,13 +57,14 @@
     <!--[if lt IE 9]>
       <script type="text/javascript" src="js/html5shiv.js"></script>
     <![endif]-->
+    <script src="js/responsive-nav.js"></script>
     <script type="application/ld+json">
       {
         "@context": "http://schema.org/",
         "@type": "NewsArticle",
-        "headline": "Website Design",
-        "datePublished": "2018-06-23",
-        "description": "Peggy Designer-Web&UI Designer,Visual Design,FrontEnd Development",
+        "headline": "Good UX Is Good Business",
+        "datePublished": "2018-08-03",
+        "description": "產品設計師，自2008年以來，我參與了許多有關 Web /視覺設計/UI,介面設計多個項目，近2年專注在 UI/UX,設計邏輯，資料應用，發掘問題本質，協作解決問題，探索精簡設計和有意義的用戶體驗。跨領域，保持好奇心，觀察，探索與冒險持續我的設計熱情",
         "image": {
           "@type": "ImageObject",
           "height": "",
@@ -72,330 +80,283 @@
           },
           "name": "Peggy Chiang"
         },
-        "articleBody": "Since 2008, I have participated in many projects on web/visual design.Being able to make novel web visuals and new technologies will keep me passion! To do try it everything"
+        "articleBody": "產品設計師，自2008年以來，我參與了許多有關 Web /視覺設計/UI,介面設計多個項目，近2年專注在 UI/UX,設計邏輯，資料應用，發掘問題本質，協作解決問題，探索精簡設計和有意義的用戶體驗。跨領域，保持好奇心，觀察，探索與冒險持續我的設計熱情"
       }
     </script>
   </head>
-  <body>
+  <body style="height: auto;">
     <div id="container">
-      <ul id="scene" class="kv scene">
-        <li class="bg01 wave depth-60" data-depth="0.30"><img src="images/bg01.png" alt="" /></li>
-        <li class="bg02 wave depth-20" data-depth="0.60"><img src="images/bg02.png" alt="" /></li>
-        <li class="bg03" data-depth="0.50">
-          <div class="icon-burger">
+      <header class="fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-light mx-auto">
+          <a class="navbar-brand logo" href="#home"><img src="images/logo.svg" alt="peggy" /></a>
+
+          <div class="navbar-toggler icon-burger">
             <!-- 選單開/關 -->
             <span></span>
             <span></span>
             <span></span>
           </div>
-          <img src="images/bg03.png" alt="" />
-        </li>
-        <div id="svgWrapper">
-          <h1 class="svg">
-            <!-- <img src="images/tit.svg"> -->
-            <svg id="Group" data-name="圖層 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 238 90">
-              <title>PEGGY PORTFOLIO</title>
-              <g id="Group" stroke="rgb(0,0,0)" stroke-width="1" fill="#000">
-                <path
-                  class="path"
-                  d="M63.53,35.35l-.13.6H52.61l.08-.55.49,0a3.08,3.08,0,0,0,2.23-1,5.43,5.43,0,0,0,1.06-2.77L60.05,8.08a4.43,4.43,0,0,0-.22-2.77,2.21,2.21,0,0,0-1.93-1l-.47,0,.08-.55h13.7a11.65,11.65,0,0,1,4,.65,7.8,7.8,0,0,1,2.9,1.8A6.41,6.41,0,0,1,79.77,9a8.47,8.47,0,0,1,.17,3.63,9.22,9.22,0,0,1-1.38,3.65,10.36,10.36,0,0,1-2.74,2.84A12.94,12.94,0,0,1,72,20.93a16.46,16.46,0,0,1-4.7.65H62.43l-1.52,10a4.43,4.43,0,0,0,.22,2.77,2.21,2.21,0,0,0,1.93,1Zm-.89-15.12h4.89a6.92,6.92,0,0,0,5.07-2.1,9.64,9.64,0,0,0,2.63-5.55,8.37,8.37,0,0,0-.65-5.46A3.85,3.85,0,0,0,71,5.07H64.95Z"
-                />
-                <path
-                  class="path"
-                  d="M100.12,23.52h0l-.06-.65a3.72,3.72,0,0,0-1.28-2.68,5.26,5.26,0,0,0-3.24-.83h-5L88.21,34.61h6.65a7.45,7.45,0,0,0,4.28-1.27,13,13,0,0,0,3.58-4l.79-1.25h.32q-.49,1.66-1.1,3.65l-1.09,3.61h0l-.18.65H80.37l.08-.55.49,0a3.08,3.08,0,0,0,2.23-1,5.43,5.43,0,0,0,1.06-2.77L87.82,8.08a4.43,4.43,0,0,0-.22-2.77,2.21,2.21,0,0,0-1.93-1l-.47,0,.08-.55h21.05l-1.2,7.9h-.32l-.17-1.25a6.78,6.78,0,0,0-1.69-4,5.11,5.11,0,0,0-3.71-1.27H92.75l-2,13.08h5a7,7,0,0,0,3.46-.74,5.15,5.15,0,0,0,2.07-2.4l.25-.55h.36l-1.38,9.06Z"
-                />
-                <path
-                  class="path"
-                  d="M135.82,13.63l-.35,0q-.06-.42-.14-.92c-.06-.34-.1-.65-.14-.92a9.45,9.45,0,0,0-2.13-4.65,6,6,0,0,0-3.87-2.15s-.12-.06-.39-.09l-.87-.07-.92,0h-.52a9,9,0,0,0-4.3,1.09,12.43,12.43,0,0,0-3.66,3.05,18.11,18.11,0,0,0-2.78,4.74,26.68,26.68,0,0,0-1.66,6.15,24,24,0,0,0-.22,6.15,13,13,0,0,0,1.34,4.74A7.93,7.93,0,0,0,118,33.71a7.19,7.19,0,0,0,4,1.09,23.31,23.31,0,0,0,3.56-.28,25.1,25.1,0,0,0,3.48-.79l1.31-8.6a4.43,4.43,0,0,0-.22-2.77,2.21,2.21,0,0,0-1.93-1l-.47,0,.08-.56h10.38l-.08.56-.49,0a3.08,3.08,0,0,0-2.23,1,5.42,5.42,0,0,0-1.06,2.77L133,33.27a15.54,15.54,0,0,1-2.4,1.18,21.88,21.88,0,0,1-2.83.9,28.05,28.05,0,0,1-3.06.58,23.13,23.13,0,0,1-3,.21,14.39,14.39,0,0,1-6-1.18,11.08,11.08,0,0,1-4.25-3.3,12.21,12.21,0,0,1-2.27-5.15,19,19,0,0,1-.06-6.67,21.78,21.78,0,0,1,2.1-6.69A18.13,18.13,0,0,1,115,8a16.88,16.88,0,0,1,11.61-4.48,21.35,21.35,0,0,1,2.9.2,23.23,23.23,0,0,1,2.81.56,16.69,16.69,0,0,1,2.52.88,10.55,10.55,0,0,1,2,1.17Z"
-                />
-                <path
-                  class="path"
-                  d="M169,13.63l-.35,0q-.06-.42-.14-.92c-.06-.34-.1-.65-.14-.92a9.45,9.45,0,0,0-2.13-4.65,6,6,0,0,0-3.87-2.15s-.12-.06-.39-.09l-.87-.07-.92,0h-.52a9,9,0,0,0-4.3,1.09,12.43,12.43,0,0,0-3.66,3.05,18.11,18.11,0,0,0-2.78,4.74,26.68,26.68,0,0,0-1.66,6.15,24,24,0,0,0-.22,6.15,13,13,0,0,0,1.34,4.74,7.93,7.93,0,0,0,2.73,3.05,7.19,7.19,0,0,0,4,1.09,23.31,23.31,0,0,0,3.56-.28,25.1,25.1,0,0,0,3.48-.79l1.31-8.6a4.43,4.43,0,0,0-.22-2.77,2.21,2.21,0,0,0-1.93-1l-.47,0,.08-.56h10.38l-.08.56-.49,0a3.08,3.08,0,0,0-2.23,1,5.42,5.42,0,0,0-1.06,2.77l-1.24,8.14a15.54,15.54,0,0,1-2.4,1.18,21.88,21.88,0,0,1-2.83.9,28.05,28.05,0,0,1-3.06.58,23.13,23.13,0,0,1-3,.21,14.39,14.39,0,0,1-6-1.18,11.08,11.08,0,0,1-4.25-3.3,12.21,12.21,0,0,1-2.27-5.15,19,19,0,0,1-.06-6.67,21.78,21.78,0,0,1,2.1-6.69A18.13,18.13,0,0,1,148.2,8a16.88,16.88,0,0,1,11.61-4.48,21.35,21.35,0,0,1,2.9.2,23.23,23.23,0,0,1,2.81.56,16.69,16.69,0,0,1,2.52.88,10.55,10.55,0,0,1,2,1.17Z"
-                />
-                <path
-                  class="path"
-                  d="M181.52,35.91l.22-.65.49,0a3,3,0,0,0,2.07-.86A4.74,4.74,0,0,0,185.35,32l1.46-9.85L181.54,8A8.4,8.4,0,0,0,180,5.21a2.89,2.89,0,0,0-1.89-1l-.31,0,.08-.55h11.22L189,4.2l-.53,0q-1.53.09-1.89,1A4.14,4.14,0,0,0,186.93,8L191.2,19.5l8-11.14q1.4-2.08,1.2-3t-1.94-1l-.63,0,.08-.55h8.43l-.08.55-.45,0a4.76,4.76,0,0,0-2.51,1A13.78,13.78,0,0,0,200.66,8l-9.18,12.53-1.68,11a4.43,4.43,0,0,0,.22,2.77,2.21,2.21,0,0,0,1.93,1l.47,0-.08.55Z"
-                />
-                <path
-                  class="path"
-                  d="M12.6,89.34l-.12.55H2.59l.08-.51.45,0a2.83,2.83,0,0,0,2-.89,5,5,0,0,0,1-2.54L9.41,64.34a4.07,4.07,0,0,0-.2-2.54,2,2,0,0,0-1.77-.89l-.43,0,.08-.51H19.65a10.69,10.69,0,0,1,3.7.59A7.14,7.14,0,0,1,26,62.6a5.88,5.88,0,0,1,1.48,2.56,7.76,7.76,0,0,1,.15,3.33,8.45,8.45,0,0,1-1.26,3.35,9.49,9.49,0,0,1-2.51,2.61,11.87,11.87,0,0,1-3.52,1.67,15.07,15.07,0,0,1-4.31.59H11.59L10.2,85.86a4.05,4.05,0,0,0,.2,2.54,2,2,0,0,0,1.77.89Zm-.82-13.86h4.48a6.35,6.35,0,0,0,4.65-1.92,8.84,8.84,0,0,0,2.41-5.09,7.67,7.67,0,0,0-.6-5,3.53,3.53,0,0,0-3.28-1.88H13.9Z"
-                />
-                <path
-                  class="path"
-                  d="M30.33,75.1A21.28,21.28,0,0,1,32,69.34a17.06,17.06,0,0,1,3.25-4.77A15.12,15.12,0,0,1,40,61.31a14.34,14.34,0,0,1,6-1.21,11.83,11.83,0,0,1,5.58,1.21,9.82,9.82,0,0,1,3.66,3.26A11.81,11.81,0,0,1,57,69.34a18.71,18.71,0,0,1,0,5.76,21.25,21.25,0,0,1-1.72,5.76A17.06,17.06,0,0,1,52,85.63a15.2,15.2,0,0,1-4.65,3.26,14.21,14.21,0,0,1-6,1.21,11.94,11.94,0,0,1-5.6-1.21,9.78,9.78,0,0,1-3.68-3.26,11.79,11.79,0,0,1-1.8-4.77A18.73,18.73,0,0,1,30.33,75.1Zm4.54,0a24.37,24.37,0,0,0-.26,5.3,13.31,13.31,0,0,0,1,4.39,7.15,7.15,0,0,0,2.29,3,5.92,5.92,0,0,0,3.64,1.1,7.42,7.42,0,0,0,4-1.1,11.05,11.05,0,0,0,3.17-3,18.28,18.28,0,0,0,2.3-4.39,26.67,26.67,0,0,0,1.36-5.3,24.31,24.31,0,0,0,.26-5.3,13.67,13.67,0,0,0-1-4.39,7.1,7.1,0,0,0-2.25-3,5.85,5.85,0,0,0-3.62-1.1,7.52,7.52,0,0,0-4,1.1,11.16,11.16,0,0,0-3.2,3,17.89,17.89,0,0,0-2.32,4.39A26.76,26.76,0,0,0,34.87,75.1Z"
-                />
-                <path
-                  class="path"
-                  d="M62.75,60.82l0-.59H75.18a11,11,0,0,1,3.63.55,7.09,7.09,0,0,1,2.62,1.55,5.65,5.65,0,0,1,1.48,2.4,6.86,6.86,0,0,1,.18,3.14,8.1,8.1,0,0,1-2.42,4.73,10.91,10.91,0,0,1-5.08,2.69q.63,1.14,2,3.89T81,85.91l.88,1.65a3.61,3.61,0,0,0,.62.89,1.13,1.13,0,0,0,.66.34,8.83,8.83,0,0,0,1,0l-.14.93H82.58a25.8,25.8,0,0,1-2.66-.11,3.71,3.71,0,0,1-1.66-.55A4.25,4.25,0,0,1,77,87.69q-.58-1-1.42-2.67-1.6-3.18-2.79-5.57t-1.85-3.62H67.46l-1.53,10a4.05,4.05,0,0,0,.2,2.54,2,2,0,0,0,1.77.89l.43,0-.08.51H58.33l.08-.51.45,0a2.83,2.83,0,0,0,2-.89,5,5,0,0,0,1-2.54l3.29-21.57a4.07,4.07,0,0,0-.2-2.54,2,2,0,0,0-1.77-.89Zm9.14,13.77h0a6.21,6.21,0,0,0,4.51-1.83,8.36,8.36,0,0,0,2.34-4.89,7,7,0,0,0-.59-4.68A3.46,3.46,0,0,0,75,61.46H69.57l-2,13.14Z"
-                />
-                <path
-                  class="path"
-                  d="M91.42,68.23l-.43,0q0-.21.3-1.38t.56-2.5l.53-2.38a6.22,6.22,0,0,1,.27-1l.12-.57h23.8l-.05.57q-.14,1.63-.3,3.66t-.3,3.69h-.33L115,65.52a5.59,5.59,0,0,0-1.42-3,4,4,0,0,0-2.88-1h-4.14l-3.71,24.32a4.06,4.06,0,0,0,.2,2.54,2,2,0,0,0,1.77.89l.43,0-.08.51H95.27l.08-.51.45,0a2.83,2.83,0,0,0,2-.89,5,5,0,0,0,1-2.54l3.71-24.32H98.34a5.08,5.08,0,0,0-3.09,1,9,9,0,0,0-2.42,3Z"
-                />
-                <path
-                  class="path"
-                  d="M120.82,60.82v-.47h20.47l-1.1,7.25h-.29l-.16-1.14a6.22,6.22,0,0,0-1.55-3.71,4.68,4.68,0,0,0-3.4-1.17H127.7l-1.86,12.2H130a6.35,6.35,0,0,0,3.16-.68A4.72,4.72,0,0,0,135,70.9l.22-.51h.33l-1.27,8.31H134l-.06-.59a3.4,3.4,0,0,0-1.16-2.46,4.78,4.78,0,0,0-3-.76h-4.14l-1.67,11a3.67,3.67,0,0,0,.27,2.54,2.4,2.4,0,0,0,2,.89l.51,0-.08.51H116.4l.08-.51.45,0a2.82,2.82,0,0,0,2-.89,5,5,0,0,0,1-2.54l3.29-21.57a4.06,4.06,0,0,0-.2-2.54,2,2,0,0,0-1.77-.89Z"
-                />
-                <path
-                  class="path"
-                  d="M142.78,75.1a21.28,21.28,0,0,1,1.72-5.76,17.06,17.06,0,0,1,3.25-4.77,15.12,15.12,0,0,1,4.67-3.26,14.34,14.34,0,0,1,6-1.21A11.83,11.83,0,0,1,164,61.31a9.82,9.82,0,0,1,3.66,3.26,11.81,11.81,0,0,1,1.8,4.77,18.71,18.71,0,0,1,0,5.76,21.25,21.25,0,0,1-1.72,5.76,17.06,17.06,0,0,1-3.25,4.77,15.2,15.2,0,0,1-4.65,3.26,14.21,14.21,0,0,1-6,1.21,11.94,11.94,0,0,1-5.6-1.21,9.78,9.78,0,0,1-3.68-3.26,11.79,11.79,0,0,1-1.8-4.77A18.73,18.73,0,0,1,142.78,75.1Zm4.54,0a24.37,24.37,0,0,0-.26,5.3,13.31,13.31,0,0,0,1,4.39,7.15,7.15,0,0,0,2.29,3,5.92,5.92,0,0,0,3.64,1.1,7.42,7.42,0,0,0,4-1.1,11.05,11.05,0,0,0,3.17-3,18.28,18.28,0,0,0,2.3-4.39,26.67,26.67,0,0,0,1.36-5.3,24.31,24.31,0,0,0,.26-5.3,13.67,13.67,0,0,0-1-4.39,7.1,7.1,0,0,0-2.25-3,5.85,5.85,0,0,0-3.62-1.1,7.52,7.52,0,0,0-4,1.1,11.16,11.16,0,0,0-3.2,3,17.89,17.89,0,0,0-2.32,4.39A26.76,26.76,0,0,0,147.32,75.1Z"
-                />
-                <path
-                  class="path"
-                  d="M191.9,81.92l0,0,.24.08c.15.11.23.2.22.25q-.47,1.61-1,3.5t-1,3.5l-.16.59H170.8l.08-.51.45,0a2.83,2.83,0,0,0,2-.89,5,5,0,0,0,1-2.54l3.29-21.57a4.06,4.06,0,0,0-.2-2.54,2,2,0,0,0-1.77-.89l-.43,0,.08-.51h9.92l-.08.51-.45,0a2.83,2.83,0,0,0-2,.89,5,5,0,0,0-1,2.54L178,88.66h6.48a5.77,5.77,0,0,0,3.48-1.06,10,10,0,0,0,2.73-3.39Z"
-                />
-                <path
-                  class="path"
-                  d="M204.87,89.34l-.08.51h-9.92l.08-.51.45,0a2.82,2.82,0,0,0,2-.89,5,5,0,0,0,1-2.54l3.29-21.57a4.06,4.06,0,0,0-.2-2.54,2,2,0,0,0-1.77-.89l-.43,0,.08-.51h9.92l-.08.51-.45,0a2.83,2.83,0,0,0-2,.89,5,5,0,0,0-1,2.54l-3.29,21.57a4.06,4.06,0,0,0,.2,2.54,2,2,0,0,0,1.77.89Z"
-                />
-                <path
-                  class="path"
-                  d="M210.7,75.1a21.28,21.28,0,0,1,1.72-5.76,17.06,17.06,0,0,1,3.25-4.77,15.12,15.12,0,0,1,4.67-3.26,14.34,14.34,0,0,1,6-1.21,11.83,11.83,0,0,1,5.58,1.21,9.82,9.82,0,0,1,3.66,3.26,11.81,11.81,0,0,1,1.8,4.77,18.71,18.71,0,0,1,0,5.76,21.25,21.25,0,0,1-1.72,5.76,17.06,17.06,0,0,1-3.25,4.77,15.2,15.2,0,0,1-4.65,3.26,14.21,14.21,0,0,1-6,1.21,11.94,11.94,0,0,1-5.6-1.21,9.78,9.78,0,0,1-3.68-3.26,11.79,11.79,0,0,1-1.8-4.77A18.73,18.73,0,0,1,210.7,75.1Zm4.54,0a24.37,24.37,0,0,0-.26,5.3,13.31,13.31,0,0,0,1,4.39,7.15,7.15,0,0,0,2.29,3,5.92,5.92,0,0,0,3.64,1.1,7.42,7.42,0,0,0,4-1.1,11.05,11.05,0,0,0,3.17-3,18.28,18.28,0,0,0,2.3-4.39,26.67,26.67,0,0,0,1.36-5.3,24.31,24.31,0,0,0,.26-5.3,13.67,13.67,0,0,0-1-4.39,7.1,7.1,0,0,0-2.25-3,5.85,5.85,0,0,0-3.62-1.1,7.52,7.52,0,0,0-4,1.1,11.16,11.16,0,0,0-3.2,3,17.89,17.89,0,0,0-2.32,4.39A26.76,26.76,0,0,0,215.24,75.1Z"
-                />
-              </g>
-            </svg>
-          </h1>
-          <div class="pink_circle">
-            <i class="fa fa-angle-down fa-2x" aria-hidden="true"></i>
-          </div>
-          <div class="line"></div>
-
-          <div class="txt">Welcome To My Work<br /><br />Web Design - UI Design - FrontEnd Development</div>
-
-          <div class="mouse">
-            <span></span>
-          </div>
-        </div>
-
-        <li class="bg04 swing-4" data-depth="0.60"><img src="images/bg04.png" alt="" /></li>
-        <li class="bg05 wave depth-40" data-depth="0.60"><img src="images/bg05.png" alt="" /></li>
-        <li class="bg06 wave depth-20" data-depth="0.30"><img src="images/bg06.png" alt="" /></li>
-        <li class="bg07 wave depth-20" data-depth="0.60"><img src="images/bg07.png" alt="" /></li>
-        <li class="bg08 wave depth-20" data-depth="0.50"><img src="images/bg08.png" alt="" /></li>
-        <li class="bg09 wave depth-30" data-depth="0.60"><img src="images/bg09.png" alt="" /></li>
-        <li class="bg10 swing-1 depth-60" data-depth="0.30"><img src="images/bg10.png" alt="" /></li>
-      </ul>
-      <nav style="display: none;">
-        <section>
-          <ul class="nav">
-            <li>
-              <a href="web.html" title="網頁設計">Website Design / 網頁設計</a>
-            </li>
-            <li>
-              <a href="fed.html" title="前端設計">FrontEnd Development / 前端設計</a>
-            </li>
-            <li>
-              <a href="vid.html" title="視覺設計">Visual Design / 視覺設計</a>
-            </li>
-            <li>
-              <a href="uid.html" title="UI UX 設計">UI Design / UI UX 設計 </a>
-            </li>
-            <li><a href="#about" title="工作經驗">About / 工作經驗</a></li>
-            <li><a href="#contact" title="聯絡資訊">Contact / 聯絡資訊</a></li>
-          </ul>
-        </section>
-      </nav>
-      <!--work-->
-      <article class="work">
-        <div class="bg10"><img src="images/bg11.png" /></div>
-        <section class="con pink2">
-          <div class="wrapper">
-            <h2 class="tit">
-              <img src="images/tit2.svg" />
-              <span class="line1"></span>
-              <span class="line2"></span>
-            </h2>
-            <div class="txt" data-bottom-top="margin-top:200px;" data-center="margin-top:50px">
-              Since 2008, I have participated in many projects on web/visual design.<br />Being able to make novel web
-              visuals and new technologies will keep my passion!<br />"Try it everything".
-            </div>
-
-            <ul class="skill">
-              <li title="網頁設計" data-aos="fade-down" data-aos-delay="100">
-                <a href="web.html">
-                  <img src="images/wb_icon.png" alt="Website Design" />
-                  <div class="w_list">
-                    <h4>Website Design</h4>
-                    <h3>網頁設計</h3>
-                    <span>活動網站、官方網站視覺設計</span>
-                    <div class="circle pink"></div>
-                  </div>
-                </a>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto col-lg-8 col-12 justify-content-center">
+              <li class="nav-item px-2">
+                <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
               </li>
-              <li title="前端設計">
-                <a href="fed.html" data-aos="fade-down" data-aos-delay="100">
-                  <img src="images/fd_icon.png" alt="FrontEnd Development" />
-                  <div class="w_list">
-                    <h4>FrontEnd Development</h4>
-                    <h3>前端設計</h3>
-                    <span>Html、css(scss)、jquery、Bottstrap、RWD、SVG</span>
-                    <div class="circle red"></div>
-                  </div>
-                </a>
+              <li class="nav-item px-2">
+                <a class="nav-link" href="about.html" title="About">About</a>
               </li>
-              <li title="視覺設計">
-                <a href="vid.html" data-aos="fade-down" data-aos-delay="100">
-                  <img src="images/vis_icon.png" alt="Visual Design" />
-                  <div class="w_list">
-                    <h4>Visual Design</h4>
-                    <h3>視覺設計</h3>
-                    <span>靜態視覺、banner設計(靜態或動態製作)</span>
-                    <div class="circle blue2"></div>
-                  </div>
-                </a>
+
+              <li class="nav-item px-2">
+                <a class="nav-link" href="#portfolio" title="Portfolio">Portfolio</a>
               </li>
-              <li title="UI / UX 設計" data-aos="fade-down" data-aos-delay="100">
-                <a href="uid.html">
-                  <img src="images/ui_icon.png" alt="UI Design" />
-                  <div class="w_list">
-                    <h4>UI Design</h4>
-                    <h3>UI / UX 設計</h3>
-                    <span>mobile、pad 使用者設計與規劃</span>
-                    <div class="circle blue"></div>
-                  </div>
-                </a>
+              <li class="nav-item px-2">
+                <a class="nav-link" href="#contact" title="聯絡資訊">Contact</a>
               </li>
-              <a href="https://q375ml.wordpress.com/" target="_blank" class="more" title="看更多 / More"
-                >看更多 / More
+            </ul>
+            <div class="col-lg-4 col-12 px-1 py-lg-0 py-3">
+              <a
+                href="https://www.linkedin.com/in/peggy-chiang-80749a15a/"
+                target="_blank"
+                title="linked"
+                class="circel mr-2"
+              >
                 <svg
+                  id="linked"
                   xmlns="http://www.w3.org/2000/svg"
-                  xmlns:xlink="http://www.w3.org/1999/xlink"
-                  width="34px"
-                  height="24px"
-                  class="arrow"
+                  width="16.664"
+                  height="16.391"
+                  viewBox="0 0 16.664 16.391"
+                  class="icon"
                 >
                   <path
-                    fill-rule="evenodd"
-                    class="arrow"
-                    fill="rgb(255, 120, 126)"
-                    d="M22.887,0.360 C22.424,-0.121 21.653,-0.121 21.174,0.360 C20.711,0.825 20.711,1.598 21.174,2.063 L29.859,10.781 L1.199,10.781 C0.531,10.781 -0.000,11.314 -0.000,11.985 C-0.000,12.656 0.531,13.206 1.199,13.206 L29.859,13.206 L21.174,21.908 C20.711,22.389 20.711,23.163 21.174,23.627 C21.653,24.108 22.425,24.108 22.887,23.627 L33.628,12.845 C34.107,12.381 34.107,11.607 33.628,11.143 L22.887,0.360 Z"
+                    id="Path_3"
+                    data-name="Path 3"
+                    d="M2.238,4.2h0a2.228,2.228,0,0,0-1.578.65A2.2,2.2,0,0,0,0,6.417a2.221,2.221,0,0,0,.671,1.6,2.176,2.176,0,0,0,1.547.628h.049A2.224,2.224,0,0,0,2.238,4.2Z"
+                    transform="translate(0 -4.195)"
+                  />
+                  <path
+                    id="Path_4"
+                    data-name="Path 4"
+                    d="M11.591,157.941H9.346a.824.824,0,0,0-.81.835v9.719a.843.843,0,0,0,.833.831h2.222a.835.835,0,0,0,.833-.814v-9.737A.844.844,0,0,0,11.591,157.941Z"
+                    transform="translate(-8.258 -152.937)"
+                  />
+                  <path
+                    id="Path_5"
+                    data-name="Path 5"
+                    d="M177.925,149.408h-.585a3.745,3.745,0,0,0-2.784,1.218v-.385a.6.6,0,0,0-.555-.555h-2.777a.569.569,0,0,0-.555.521V160.57a.546.546,0,0,0,.555.5h3.055a.546.546,0,0,0,.555-.5v-5.987a1.562,1.562,0,0,1,2.677-1.158,1.528,1.528,0,0,1,.378,1.135v5.957a.6.6,0,0,0,.555.555h2.777a.6.6,0,0,0,.555-.555v-7.168A3.856,3.856,0,0,0,177.925,149.408Z"
+                    transform="translate(-165.113 -144.682)"
                   />
                 </svg>
               </a>
-              <div class="swing-4 w_bg2"></div>
+              <a href="https://q375ml.wordpress.com/" target="_blank" title="wordpress" class="circel mr-2">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="15.272" viewBox="0 0 18 15.272">
+                  <path
+                    id="wordpress"
+                    d="M17.735,37.184q-.042-.124-.092-.244a2.071,2.071,0,0,0-.65-.9c-1.385-1.018-3.847-.182-3.847,1.671a3.609,3.609,0,0,0,.628,1.7c.125.221.254.45.366.683l.123.252a3.565,3.565,0,0,1,.487,1.854,4.976,4.976,0,0,1-.213,1.27l-.01.025-1.068,3.174-2.768-7.8c.08-.012.16-.021.24-.034a.962.962,0,0,0-.029-1.923.364.364,0,0,0-.053,0,11.365,11.365,0,0,1-3.742,0,.358.358,0,0,0-.053,0,.962.962,0,0,0-.029,1.923c.111.018.222.033.333.048l1.279,3.325L7.045,46.925,4.157,38.844l.046-.008a.962.962,0,0,0-.035-1.923.32.32,0,0,0-.063.006,7.819,7.819,0,0,1-3.08,0,.321.321,0,0,0-.063-.006.961.961,0,0,0-.049,1.921L4.836,49.6a1.92,1.92,0,0,0,3.629-.037l1.806-5.417,1.938,5.436a1.52,1.52,0,0,0,.843.882,1.215,1.215,0,0,0,.981-.064,1.515,1.515,0,0,0,.876-.928l2.383-7.108A7.977,7.977,0,0,0,17.735,37.184Z"
+                    transform="translate(0 -35.604)"
+                    class="icon"
+                  />
+                </svg>
+              </a>
+              <a href="mailto:q375ml@gmail.com" target="_blank" title="email" class="circel mr-2">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="19.995"
+                  height="15.23"
+                  viewBox="0 0 19.995 15.23"
+                  class="icon"
+                >
+                  <path
+                    id="email"
+                    d="M18.237,61H1.757A1.76,1.76,0,0,0,0,62.757V74.473A1.76,1.76,0,0,0,1.757,76.23h16.48a1.76,1.76,0,0,0,1.757-1.757V62.757A1.76,1.76,0,0,0,18.237,61Zm-.243,1.172-7.96,7.96-8.029-7.96ZM1.172,74.23V62.994l5.642,5.594ZM2,75.059l5.646-5.646,1.978,1.961a.586.586,0,0,0,.827,0l1.929-1.929,5.615,5.615Zm16.823-.828-5.615-5.615L18.823,63Z"
+                    transform="translate(0 -61)"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <div class="kv" id="home">
+        <section>
+          <div class="main">
+            <h1>Good UX Is Good Business</h1>
+            <h3>
+              Hi,I’m Peggy Chiang,產品設計師，自2008年以來，我參與了許多有關 Web /視覺設計/UI
+              介面設計多個項目，近2年專注在 UI/UX
+              設計邏輯，資料應用，發掘問題本質，協作解決問題，探索精簡設計和有意義的用戶體驗。<br /><br />
+              跨領域，保持好奇心，觀察，探索與冒險持續我的設計熱情
+            </h3>
+            <div class="row justify-content-md-start justify-content-between">
+              <a
+                href="https://www.cakeresume.com/messages/q375ml"
+                target="_blank"
+                class="bt_blue col-lg-4 col-md-3 col-5 mr-md-4 mr-0"
+                title="HIRE ME"
+                >HIRE ME</a
+              >
+              <a
+                href="https://www.cakeresume.com/q375ml"
+                target="_blank"
+                class="bt_blue col-lg-4 col-md-3 col-5"
+                title="RESUME"
+                >RESUME</a
+              >
+            </div>
+          </div>
+          <div class="pro" data-aos="fade-down-left" data-aos-offset="500" data-aos-duration="1000">
+            <img src="images/project.png" alt="portfolio" class="pic_pro" />
+          </div>
+        </section>
+      </div>
+      <!--work-->
+      <article class="work">
+        <section class="pink2">
+          <div class="wrapper">
+            <h2 class="tit">
+              My Design Process
+              <span class="line"></span>
+            </h2>
+            <div data-bottom-top="margin-top:200px;" data-center="margin-top:50px">
+              <img src="images/process.svg" alt="My Design Process" class="process" />
+            </div>
+          </div>
+        </section>
+      </article>
 
-              <div
-                class="w_bg1"
-                data-0="background-position:right -300px;"
-                data-end="background-position:right 300px;"
-              ></div>
+      <article class="work" id="portfolio">
+        <section class="con">
+          <div class="wrapper">
+            <h2 class="pt-100 tit">
+              My Portfolio
+              <span class="line"></span>
+            </h2>
+            <ul class="portfolio">
+              <li title="通訊系統" data-aos="fade-down" data-aos-delay="100">
+                <a href="backend.html">
+                  <img src="images/Srarise.png" alt="通訊系統" />
+                  <div class="w_list">
+                    <h4>通訊系統</h4>
+                    <h3>Backend Website (RWD)</h3>
+                    <div>
+                      <span>UX Research</span>
+                      <span>UI</span>
+                      <span>Prototype</span>
+                      <span>Coding</span>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li title="2020資料創新應用競賽" class="p-0 pink">
+                <a href="food.html" data-aos="fade-down" data-aos-delay="100">
+                  <div class="food">
+                    <img src="images/food.gif" alt="食在好安心" width="90%" />
+                  </div>
 
-              <div class="swing-1 w_bg3"></div>
+                  <div class="w_list">
+                    <h4>2020資料創新應用競賽-食在好安心</h4>
+                    <h3>APP IOS・Android</h3>
+                    <div>
+                      <span>UX Research</span>
+                      <span>UI</span>
+                      <span>Prototype</span>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li title="永豐金證券">
+                <a href="uid.html" data-aos="fade-down" data-aos-delay="100">
+                  <img src="images/app.png" alt="集保行動平台" />
+                  <div class="w_list">
+                    <h4>永豐金證券-集保行動平台</h4>
+                    <h3>APP IOS・Android</h3>
+                    <div>
+                      <span>UI</span>
+                      <span>Prototype</span>
+                      <span>iPad</span>
+                      <span>Mobile</span>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li title="觀光發展協會" data-aos="fade-down" data-aos-delay="100" style="background: #bff0fb;">
+                <a href="video.html">
+                  <img src="images/online.png" alt="線上教學" />
+                  <div class="w_list">
+                    <h4>觀光發展協會-線上教學</h4>
+                    <h3>IOS・Backend Website</h3>
+                    <div>
+                      <span>UX Research</span>
+                      <span>UI</span>
+                      <span>Prototype</span>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li title="Website Design" class="p-0">
+                <a href="web.html" data-aos="fade-down" data-aos-delay="100">
+                  <img src="images/web_design.png" alt="Website Design" class="wed" />
+                  <div class="w_list">
+                    <h4>Website Design</h4>
+                    <h3>Event Website・Official Website</h3>
+                    <div>
+                      <span>Layout design</span>
+                      <span>RWD</span>
+                      <span>Coding</span>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li
+                title="Visual Design"
+                data-aos="fade-down"
+                data-aos-delay="100"
+                class="p-0"
+                style="background: #f8f8f8;"
+              >
+                <a href="vid.html">
+                  <img src="images/Visual.png" alt="Visual Design" class="vid" />
+                  <div class="w_list">
+                    <h4>Visual Design</h4>
+                    <h3>EDM・Banner</h3>
+                    <div>
+                      <span>Graphic Design</span>
+                    </div>
+                  </div>
+                </a>
+              </li>
             </ul>
           </div>
         </section>
       </article>
-      <!--about-->
+      <!--contact-->
       <article
-        class="about"
-        id="about"
+        class="contact"
+        id="contact"
         data-0="background-position:right -500px;"
         data-end="background-position:right 500px;"
       >
         <section class="con">
           <div class="wrapper">
             <h2 class="tit">
-              <img src="images/tit3.svg" />
-              <span></span>
-            </h2>
-            <ul class="ab_txt">
-              <li>該如何溝通?</li>
-              <li>如何站在使用者的角度想?</li>
-              <li>作品如何滿足客戶的需求?</li>
-              <li>如何在有限的時間內做到最好?達到你我共同的目標。</li>
-              <li>如何達到視覺性的品牌行銷?</li>
-              <li>如何在團隊合作中達到良好的效率?</li>
-              <li>如何後追蹤網頁製作後的成效?</li>
-              <li>如何做個解決問題的設計?</li>
-              <div class="m_t35">
-                網路現在已是不可或缺的管道，再加上自己對網路的喜愛，未來想嘗試更多不一樣的可能，能做出新奇網頁視覺以及新技術，將會讓我保持這份熱忱！！<br />
-                ⎡嘗試一切的可能！⎦
-              </div>
-            </ul>
-            <ul class="rum_list">
-              <div class="t24_font">工作經歷</div>
-              <li data-aos="fade-down">
-                <p>
-                  網頁設計師／前端設計
-                  <span class="t18 t_gray">
-                    芯禾數位行銷 | 2015.5-2018.5<br />
-                    活動網站 / 企業網站設計 / banner 視覺設計<br />
-                    HTML_RWD / 網頁SEO (結構化資料設定) 以及追蹤<br />
-                    手機、平板ui/ux設計<br />
-                  </span>
-                </p>
-              </li>
-              <li data-aos="fade-down" data-aos-delay="300">
-                <p>
-                  UI+UX / 網頁視覺設計師
-                  <span class="t18 t_gray">
-                    易繁科技 | 2013.11-2015.3<br />企業網站設計<br />
-                    手機、平板ui / ux設計<br />
-                    HTML_RWD + CSS<br />
-                  </span>
-                </p>
-              </li>
-              <li data-aos="fade-down" data-aos-delay="300">
-                <p>
-                  網頁設計師
-                  <span class="t18 t_gray">
-                    乙曼資訊 | 2011.11-2013.10<br />
-                    3D MAX材質貼圖、更新影片轉檔輸出<br />公司形象視覺、內部企業網站<br />
-                    購物網站 / 手機版UI網頁製作<br />
-                  </span>
-                </p>
-              </li>
-              <li data-aos="fade-down" data-aos-delay="300">
-                <p>
-                  網頁設計師
-                  <span class="t18 t_gray">
-                    愛評網_紅谷資訊 | 2010.9-2011.9<br />
-                    站內站外專案活動網站<br />
-                    站內的頻道的UI設計，購物版面設計<br />
-                  </span>
-                </p>
-              </li>
-            </ul>
-
-            <div class="ab_bg2 swing-4"></div>
-            <div class="ab_bg3" data-0="background-position:0px 0px;" data-end="background-position:100px 200px;"></div>
-            <div class="ab_bg4 swing-1 depth-100"></div>
-            <div
-              class="ab_bg5"
-              data-bottom-top="transform: translateY(0px)"
-              data-center="transform: translateY(-100px);"
-            ></div>
-            <div
-              class="ab_bg6"
-              data-bottom-top="transform: translateY(0px)"
-              data-center="transform: translateY(-100px);"
-            ></div>
-          </div>
-        </section>
-      </article>
-
-      <!--contact-->
-      <article class="contact" id="contact">
-        <section class="con">
-          <div class="wrapper">
-            <h2 class="tit">
-              <img src="images/tit4.svg" />
-              <span></span>
+              Contact
+              <span class="line"></span>
             </h2>
             <div class="pic"><img src="images/pic.png" alt="" /></div>
             <div class="email">
-              <a href="mailto:q375ml@gmail.com" class="email"
-                ><i class="fa fa-envelope" aria-hidden="true"></i> q375ml@gmail.com
-              </a>
-              <a href="https://www.linkedin.com/in/peggy-chiang-80749a15a/" target="_blank" class="linked">
-                <i class="fab fa-linkedin-in"></i>
-              </a>
+              <a
+                href="https://www.cakeresume.com/messages/q375ml"
+                target="_blank"
+                class="bt_blue mx-auto"
+                title="HIRE ME"
+                >HIRE ME</a
+              >
             </div>
           </div>
+          <a href="#" class="back-top"><img src="images/top.svg" /></a>
         </section>
       </article>
       <footer>
-        Copyright © Peggy All rights reserved.
+        © Peggy Chiang 2020.Design
       </footer>
     </div>
 
@@ -421,5 +382,12 @@
       AOS.init();
     </script>
     <script type="text/javascript" src="js/index.js"></script>
+    <!--  then Popper.js, then Bootstrap JS -->
+
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+      integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
