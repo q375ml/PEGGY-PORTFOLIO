@@ -1341,7 +1341,7 @@ a.back-top:focus {
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 640px) {
   .work ul.portfolio {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -1350,7 +1350,7 @@ a.back-top:focus {
   .work ul.portfolio li {
     margin-bottom: 60px;
     width: 100%;
-    height: 450px;
+    height: 550px;
   }
   .work ul.portfolio li:nth-child(1) {
     margin-right: 0px;
@@ -1377,11 +1377,24 @@ a.back-top:focus {
   }
 }
 
+@media (max-width: 480px) {
+  .work ul.portfolio {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .work ul.portfolio li {
+    margin-bottom: 60px;
+    width: 100%;
+    height: 450px;
+  }
+}
+
 @media (max-width: 360px) {
   .work ul.portfolio li {
     margin-bottom: 60px;
     width: 100%;
-    height: 430px;
+    height: 450px;
   }
 }
 
