@@ -1325,11 +1325,15 @@ a.back-top:focus {
     width: 90%;
   }
   .work ul.portfolio li {
-    width: 100%;
+    width: 48%;
     height: 450px;
   }
   .work ul.portfolio li img {
     width: 90%;
+  }
+  .work ul.portfolio li img.wed {
+    width: 110%;
+    margin: 0;
   }
   .work ul.portfolio li img.vid {
     width: 100%;
