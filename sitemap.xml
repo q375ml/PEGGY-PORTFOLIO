@@ -9,27 +9,42 @@
 
 <url>
   <loc>https://q375ml.github.io/PEGGY-PORTFOLIO/index.html</loc>
-  <lastmod>2018-06-23T15:23:35+00:00</lastmod>
+  <lastmod>2020-08-07T14:51:21+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>https://q375ml.github.io/PEGGY-PORTFOLIO/web.html</loc>
-  <lastmod>2018-06-23T15:23:35+00:00</lastmod>
+  <loc>https://q375ml.github.io/PEGGY-PORTFOLIO/about.html</loc>
+  <lastmod>2020-08-07T14:51:21+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://q375ml.github.io/PEGGY-PORTFOLIO/fed.html</loc>
-  <lastmod>2018-06-23T15:23:34+00:00</lastmod>
+  <loc>https://q375ml.github.io/PEGGY-PORTFOLIO/backend.html</loc>
+  <lastmod>2020-08-07T14:51:21+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://q375ml.github.io/PEGGY-PORTFOLIO/vid.html</loc>
-  <lastmod>2018-06-23T15:23:35+00:00</lastmod>
+  <loc>https://q375ml.github.io/PEGGY-PORTFOLIO/food.html</loc>
+  <lastmod>2020-08-07T14:51:21+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://q375ml.github.io/PEGGY-PORTFOLIO/uid.html</loc>
-  <lastmod>2018-06-23T15:23:35+00:00</lastmod>
+  <lastmod>2020-08-07T14:51:21+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://q375ml.github.io/PEGGY-PORTFOLIO/video.html</loc>
+  <lastmod>2020-08-07T14:51:21+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://q375ml.github.io/PEGGY-PORTFOLIO/web.html</loc>
+  <lastmod>2020-08-07T14:51:21+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://q375ml.github.io/PEGGY-PORTFOLIO/vid.html</loc>
+  <lastmod>2020-08-07T14:51:21+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 
