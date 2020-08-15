@@ -32,7 +32,7 @@
     <link rel="shortcut icon" href="logo.ico" title="logo" />
     <script>
       document.documentElement.className = 'js';
-      var supportsCssVars = function() {
+      var supportsCssVars = function () {
         var e,
           t = document.createElement('style');
         return (
@@ -104,10 +104,11 @@
             </h2>
             <h3 class="pb-20 f20">UX Research・UI・Prototype</h3>
             <div class="food_pic"></div>
-            <h5>集保行動平台 UI 設計</h5>
+            <h5>產品服務構想書 Project Details</h5>
             <h4>描述 Description－</h4>
             <p class="pt-2">
-              永豐金證券為忙碌的投資人特別規劃，以下是做三個不同平台 UI，分別 web、ipad、mobile 。
+              為促使民眾運用資料(開放資料Open Data、企業資料、巨量資料Big
+              Data、其他資料)，透過挖掘、重組、混搭等方式，發展具創意與實用價值之產品或服務，2020資料創新應用競賽特別邀請各政府單位設立組別，以提供施政與營運建議，進而提升服務品質，鼓勵創意與創業發展。
             </p>
             <h4>參賽編號 Entry number－</h4>
             <p class="pt-2">
@@ -199,7 +200,7 @@
               <img src="images/food-result.jpg" alt="比賽結果" class="pic" />
             </div>
           </div>
-          <a href="" class="back-top"><img src="images/top.svg"/></a>
+          <a href="" class="back-top"><img src="images/top.svg" /></a>
         </section>
       </article>
     </div>
@@ -207,12 +208,12 @@
     <!-- jQuery -->
     <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
     <script>
-      $('.back-top').on('click', function(event) {
+      $('.back-top').on('click', function (event) {
         event.preventDefault();
         $('html, body').animate({ scrollTop: 0 }, 1200);
       });
       $(window)
-        .on('scroll', function() {
+        .on('scroll', function () {
           if ($(this).scrollTop() >= 150) $('.back-top').fadeIn();
           else $('.back-top').fadeOut();
         })
