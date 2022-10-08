@@ -878,6 +878,44 @@ ul.web_list li a:hover div {
   background-position: bottom center;
 }
 
+/*---4G-officeweb---*/
+.insight_box {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 1rem 0 2rem 0;
+}
+
+.insight_box li {
+  width: 480px;
+}
+
+.insight_box li .org {
+  color: #fb6a43;
+}
+
+.gray_bg {
+  background: #f5f6fa;
+}
+
+.org_bg {
+  background: #fff1ee;
+}
+
+.p_20 {
+  padding: 0 20px;
+}
+
 @media (max-width: 1280px) {
   .food_pic {
     width: 100%;
@@ -888,6 +926,15 @@ ul.web_list li a:hover div {
     background-size: 32%, 100%;
   }
   img.pic {
+    width: 100%;
+  }
+  .insight_box {
+    max-width: 95%;
+  }
+  .insight_box li {
+    width: 48%;
+  }
+  .insight_box li .ab_txt li {
     width: 100%;
   }
 }
@@ -909,6 +956,12 @@ ul.web_list li a:hover div {
     background-repeat: no-repeat, no-repeat;
     background-position: bottom 0px right -30px, top left;
     background-size: 50%, 100%;
+  }
+  ol.insight_box {
+    max-width: 90%;
+  }
+  ol.insight_box li {
+    width: 100%;
   }
 }
 
@@ -1082,7 +1135,11 @@ ul.web_list li a:hover div {
   background: #fff;
   border: 1px solid #c9c9c9;
   border-radius: 20px;
-  padding: 0 20px;
+  padding: 0 15px;
+}
+
+.work ul.portfolio li .w_list .white {
+  color: #fff;
 }
 
 .work ul.portfolio li:hover img {
@@ -1121,6 +1178,11 @@ ul.web_list li a:hover div {
 
 .t_gray {
   color: #666;
+}
+
+.fourg_bg {
+  background-image: url("../images/4gamers/4gamers-bg.jpg") !important;
+  background-size: 100%, auto, cover !important;
 }
 
 .wrapper {
@@ -1247,6 +1309,9 @@ a.back-top:focus {
     width: 100%;
     margin: 0;
   }
+  .fourg_bg {
+    background-size: 6px, auto, contain !important;
+  }
 }
 
 @media (max-width: 1024px) {
@@ -1271,6 +1336,9 @@ a.back-top:focus {
   }
   .work ul.portfolio li .w_list span {
     line-height: 24px;
+  }
+  .fourg_bg {
+    background-size: 6px, auto, contain !important;
   }
 }
 
@@ -1310,6 +1378,9 @@ a.back-top:focus {
   .work ul.portfolio li img.vid {
     width: 100%;
     margin: 0;
+  }
+  .fourg_bg {
+    background-size: 6px, auto, contain !important;
   }
 }
 
