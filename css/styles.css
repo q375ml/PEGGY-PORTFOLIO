@@ -1310,7 +1310,9 @@ a.back-top:focus {
     margin: 0;
   }
   .fourg_bg {
-    background-size: 6px, auto, contain !important;
+    background-image: none !important;
+    background-size: auto, auto, contain !important;
+    background-color: #0A4365 !important;
   }
 }
 
@@ -1338,7 +1340,9 @@ a.back-top:focus {
     line-height: 24px;
   }
   .fourg_bg {
-    background-size: 6px, auto, contain !important;
+    background-image: none !important;
+    background-size: auto, auto, contain !important;
+    background-color: #0A4365 !important;
   }
 }
 
@@ -1380,7 +1384,9 @@ a.back-top:focus {
     margin: 0;
   }
   .fourg_bg {
-    background-size: 6px, auto, contain !important;
+    background-image: none !important;
+    background-size: auto, auto, contain !important;
+    background-color: #0A4365 !important;
   }
 }
 
