@@ -41,52 +41,11 @@
     supportsCssVars() || alert('Please view this demo in a modern browser that supports CSS Variables.');
   </script>
 
-  <style type="text/css">
-    html,
-    body {
-      margin: 0;
-      padding: 0;
-    }
-
-    * {
-      box-sizing: border-box;
-    }
-
-    .slider {
-      width: 50%;
-      margin: 100px auto;
-    }
-
-    .slick-slide {
-      margin: 0px 20px;
-    }
-
-    .slick-slide img {
-      width: 100%;
-    }
-
-    .slick-prev:before,
-    .slick-next:before {
-      color: black;
-    }
-
-
-    .slick-slide {
-      transition: all ease-in-out .3s;
-      opacity: .2;
-    }
-
-    .slick-active {
-      opacity: .5;
-    }
-
-    .slick-current {
-      opacity: 1;
-    }
-  </style>
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
     integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+ 
   <!-- css -->
   <link rel="stylesheet" href="css/styles.css" />
   <link rel="stylesheet" href="css/frame.css" />
@@ -130,41 +89,71 @@
     <div id="btn-close-modal" class="close-modal-03">
       <a href="index.html#portfolio"> <i class="far fa-times-circle"></i></a>
     </div>
-
     <article class="about">
       <section>
         <div class="content">
           <h2>
-            4Gamers - Official Website Revision
+            Official Website Revision
           </h2>
           <h3 class="pb-20 f20">UX Research・UI System Building・Prototype</h3>
-          <p class=""><img src="images/4gamers/Starting-the-design.jpg" alt="Starting-the-design" width="100%" class="" />
-          </p>
+        </div>
+        </section>
+    </article>
+    <p><img src="images/4gamers/Starting-the-design.jpg" alt="Starting-the-design" width="100%" class="" />
+    </p>
+    <article class="about">
+      <section>
+        <div class="content">
           <h5>Project Details</h5>
-          <h4>Goal －</h4>
+          <h4>What I did －</h4>
           <p class="pt-2">
-            Create a community with gamified experience and content interactivity, increasing the number of user members
-            on the official website. Personalize the service settings, increase member participation through
-            interactivity and rewards, and make the whole website more active to form an ecosystem.
+            <ul class="ab_txt">
+              <li><b>Created end-to-end UX/UI design process from ideating a vision and goal to creating solutions and implementation.</b></li>
+              <li><b>Collaborate with different stakeholders, product manger, engineer to identify problems and provide solutions.</b></li>
+              <li><b>Delivered use cases, wireframes, high-fidelity interactive prototypes, specs, and annotations for onsite and remote dev teams.</b></li>
+              <li><b>The data collected internally and externally is used in the design, and usability testing and iteration are carried out after the launch.</b></li>
+            </ul>
+          </p>
+          <h4>Outcome －</h4>
+          <ul class="outcome mt-20">
+            <li class="col-lg-4 col-sm-12 mb-4"><p>20% up</p>
+              Total website traffic
+            </li>
+            <li class="col-lg-4 col-sm-12 mx-xl-4 mb-4"><p>70% up</p>
+              New users
+            </li>
+            <li class="col-lg-4 col-sm-12 mb-4"><p>50% up</p>
+              Website interactivity
+            </li>
+          </ul>
+          <h4 class="p-0">Goal －</h4>
+          <p class="pt-2">
+            <ul class="ab_txt">
+              <li>Create community mechanism gamification experience and content interactivity.</li>
+              <li>Increase the number of user members on the official website.</li>
+              <li>Personalized service settings.</li>
+              <li>Improve interactive features and rewards to increase member engagement.</li>
+              <li>The website is more active to form an ecological circle.</li>
+            </ul>
           </p>
           <h4>Challenge －</h4>
           <p class="pt-2">
-            Build team trust, create consistency on the interface according to the experience of different devices, read
-            the
-            interface more intuitively, design usability and enhance the commercial value of each page. Understand the
-            needs and goals of each stakeholder, collect and sort according to user pain points, apply the data
-            collected internally and externally to the design of this revision, and conduct external testing and
-            iteration after going online.
+            <ul class="ab_txt">
+              <li>Build team trust in the product.</li>
+              <li>Consistency of experience across devices.</li>
+              <li>The more intuitive reading interface.</li>
+              <li>Enhance the commercial value of each page.</li>
+            </ul>
           </p>
           <h4>The Problem －</h4>
           <p class="pt-2">
             Build trust by conducting interviews with stakeholders to understand the goals of internal users.
           </p>
           <ul class="ab_txt">
-            <li>Single delivery of information, lack of interaction with members.</li>
+            <li><b class="t_blue">Single delivery of information, lack of interaction with members.</b></li>
             <li>Enhance the business value of the layout.</li>
             <li>A more comfortable and intuitive way to read, the current website lacks focus.</li>
-            <li>The outline of members is blurred, and the number of members cannot be increased.</li>
+            <li><b class="t_blue">The outline of members is blurred, and the number of members cannot be increased.</b></li>
             <li>Ads interfere with reading, and users do not know that membership has other purposes.</li>
             <img src="images/4gamers/Convergence-Solutions-English.jpg" alt="Convergence-Solutions" width="100%" class="" />
           </ul>
@@ -185,25 +174,69 @@
           <div>
             <img src="images/4gamers/User-Research-Program.jpg" alt="User-Research-Program" width="100%" class="" />
           </div>
-          <h4 class="pt-0">User Persona －</h4>
+          <h4 class="pt-0 mb-4">User Persona －</h4>
           <!-- 輪播-->
-          <section class="single-item">
-            <div>
-              <img src="images/4gamers/Wu Xin also.jpg" >
+          <div class="container" style="width:100%;">
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+              <!-- Indicators -->
+              <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+              </ol>
+          
+              <!-- Wrapper for slides -->
+              <div class="carousel-inner">
+                <div class="item active">
+                  <img src="images/4gamers/person1&2.png" alt="person1&2" style="width:100%;">
+                </div>
+          
+                <div class="item">
+                  <img src="images/4gamers/person3&4.png" alt="person3&4" style="width:100%;">
+                </div>
+          
+                <div class="item">
+                  <img src="images/4gamers/person5.png" alt="person5" style="width:100%;">
+                </div>
+             
+              </div>
+          
+              <!-- Left and right controls -->
+              <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+                <span class="sr-only">Next</span>
+              </a>
             </div>
-            <div>
-              <img src="images/4gamers/Luo Junyu.jpg" >
-            </div>
-            <div>
-              <img src="images/4gamers/Zheng Jinhao.jpg" >
-            </div>
-            <div>
-              <img src="images/4gamers/Chen Yujun.jpg" >
-            </div>
-            <div>
-              <img src="images/4gamers/Gao-Kuihong.jpg" >
-            </div>
-          </section>
+          </div>
+
+          <!-- end-->
+          <h4>Key Finding －</h4>
+          <ul class="key_list">
+            <li class="mr-3 mb-4">
+              <p>01</p>
+              Hardware and game information
+            </li>
+            <li class="mr-3 mb-4">
+              <p>02</p>
+              Gaming Experience
+            </li>
+            <li class="mr-3 mb-4">
+              <p>03</p>
+              Gameplay Social Circle
+            </li>
+            <li class="mr-3 mb-4">
+              <p>04</p>
+              Pursuing game goals
+            </li>
+            <li class="mb-4">
+              <p>05</p>
+              Like learning
+            </li>
+          </ul>
           <div>
             <img src="images/4gamers/KEY-FINDING.jpg" alt="KEY-FINDING" width="100%" class="" />
           </div>
@@ -232,18 +265,6 @@
               </li>
             </ol>
           </div>
-
-          <hr />
-          <h5>Design Goal － Combining the above and converging results</h5>
-          <ul class="ab_txt pt-2 pb-3">
-            <li>The main goal - increase the number of users on the official website.</li>
-            <li>Visual interface - simple, easier to read interface, advertising space optimization to enhance the value
-              of advertising.</li>
-            <li>Interactive conversion - limited time anonymous chat, voting, message and member interactive content to
-              increase interest.</li>
-            <li>Personalized service setting - member system, member profile data.</li>
-            <li>Gamification mechanism - reward mechanism to increase user stickiness.</li>
-          </ul>
           <hr />
           <h5>Starting the design</h5>
           <ul class="ab_txt">
@@ -260,53 +281,77 @@
               </div>
             </li>
             <li>
-              <h4>Refining the design</h4>
-              <p class="pt-3"><img src="images/4gamers/Refining-the-design.jpg" alt="Refining-the-design" width="100%" />
-              </p>
-              <ol class="number pt-2">
-                <li><b>Card type layout:</b><br> Within a limited range, people can easily read and understand the information content, pictures, main titles, description text, buttons, etc., the arrangement and structure levels should be clear and flexible in application and layout.
+              <h4>Design focus</h4>
+              <p class="pt-3"><img src="images/4gamers/Design focus.png" alt="Design focus" width="100%" /></p>
+              <ol>
+                <li>
+                  <h4 class="t_blue">01 Card type layout:</h4>
+                  <b>Information, picture, main title, description text and buttons.</b><br>
+                  Users can easily read and understand, the arrangement and structure level should be clear, and the application and layout should be flexible.
                 </li>
-                <li><b>Mobile: </b><br>The menu is like an APP application, and the TobBar function key was added at the bottom of the original webpage to use the webpage like an application painless conversion.
+                <li>
+                  <h4 class="t_blue">02 Mobile:</h4>
+                  The menu is like an APP application, and the TobBar function key was added at the bottom of the original webpage to use the webpage like an application painless conversion.            
                 </li>
               </ol>
+            
               <img src="images/4gamers/Responsive-Design.jpg" alt="Responsive-Design" width="" class=" pic" />
               <div class="center">
                 <h4 class="pb-3">Mockups - Responsive design for different device</h4>
               </div>
             </li>
           </ul>
-          <hr />
-          <h5>Design solution - Before & After</h5>
-          <h4>INDEX</h4>
-          <ul class="ab_txt pt-2">
-            <li>
-              <h4>Front-page: </h4>
-              <br />planning important services and optimizing existing projects, giving users more clues to choose from,increasing stay and conversion.
-              <img src="images/4gamers/before&after-frontpage.jpg" alt="before&after-frontpage" width="" class="pt-3 pic" />
+          
+          <ol class="insight_box align-items-xl-center align-items-md-center mt-20">
+            <li class="col-xl-5 col-md-5 col-sm-12 order-xl-0 order-0">
+              <img src="images/4gamers/4gdesign-01.gif" alt="" width="100%" class="" />
             </li>
-            <li>
-              <h4>Function: </h4>
-              <br />Voting, topics, and e-commerce interactivity are increased, and the social interaction between functions and visuals is more emotional, increasing user stickiness.
-              <img src="images/4gamers/before&after-function.jpg" alt="before&after-function" width="" class="pt-3 pic" />
+            <li class="col-xl-7 col-md-7 col-sm-12 order-xl-1 order-1 mb-4">
+              <h5 class="org">The key design</h5>
+              <p class="ab_txt pt-2">
+                Increase the number of users on the official website.<br>
+                planning important services and optimizing existing projects, giving users more clues to choose from, increasing stay and conversion.
+              </p>
             </li>
-            <li>
-              <h4>Special topics: </h4>
-              <br />Technology hardware, special areas, the original vision is difficult to show consistency.
-              <img src="images/4gamers/before&after-special-topics.jpg" alt="before&after-special-topics" width="" class="pt-3 pic" />
+            <li class="col-xl-7 col-md-7 col-sm-12 order-xl-2 order-md-2 order-3 mb-4">
+              <h5 class="org">Visual interface</h5>
+              <p class="ab_txt pt-2">
+                Simple, easier to read interface, advertising space optimization to enhance the value of advertising.<br>
+                The original vision is difficult to show consistency.
+              </p>
             </li>
-            <li>
-              <h4>Member </h4>
-              <br />Personalized settings, high integrity of user data, better understanding of user profiles.
-              <img src="images/4gamers/before&after-member.jpg" alt="before&after-member" width="" class="pt-3 pic" />
+            <li class="col-xl-5 col-md-5 col-sm-12 order-xl-3 order-md-3 order-2">
+              <img src="images/4gamers/4gdesign-02.gif" alt="" width="100%" class="" />
             </li>
-            <li>
-              <h4>Gamification mechanism: </h4>
-              <br />production, use, consumption, interactive membership mechanism, to create an economic system within the site.
-              <video width="100%" controls autoplay loop controls muted class="pt-5">
-                <source src="images/video/4g.mp4" type="video/mp4" />
-              </video>
+            <li class="col-xl-5 col-md-5 col-sm-12 order-xl-4 order-md-4 order-4">
+              <img src="images/4gamers/4gdesign-03.gif" alt="" width="100%" class="" />
             </li>
-          </ul>
+            <li class="col-xl-7 col-md-7 col-sm-12 order-xl-5 order-md-5 order-5 mb-4">
+              <h5 class="org">Interactive conversion</h5>
+              <p class="ab_txt pt-2">
+                Voting, topics, and e-commerce interactivity are increased, and the social interaction between functions and visuals is more emotional, increasing user stickiness.
+              </p>
+            </li>
+            <li class="col-xl-7 col-md-7 col-sm-12 order-xl-6 order-md-6 order-7 mb-4">
+              <h5 class="org">Personalized service setting</h5>
+              <p class="ab_txt pt-2">
+                Personalized settings, high integrity of user data, better understanding of user profiles.
+              </p>
+            </li>
+            <li class="col-xl-5 col-md-5 col-sm-12 order-xl-7 order-md-7 order-6">
+              <img src="images/4gamers/4gdesign-04.gif" alt="" width="100%" class="" />
+            </li>
+            <li class="col-xl-5 col-md-5 col-sm-12 order-xl-8 order-md-8 order-8">
+              <img src="images/4gamers/4gdesign-05.gif" alt="" width="100%" class="" />
+            </li>
+            <li class="col-xl-7 col-md-7 col-sm-12 order-xl-9 order-md-9 order-9">
+              <h5 class="org">Gamification mechanism</h5>
+              <p class="ab_txt pt-2">
+                Production, use, consumption, interactive membership mechanism, to create an economic system within the site.
+              </p>
+            </li>
+          </ol>
+    
           <hr />
           <h5>UI guideline</h5>
           <h4 class="pb_3">Define fonts, colours, and components in assets.</h4>
@@ -314,8 +359,8 @@
           <p><img src="images/4gamers/UI guideline2.png" alt="UI guideline" width="100%" class="pt-3" /></p>
           <h5 class="pb-3">Prototype</h5>
           <div>
-            <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="100%" height="450"
-              src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FXC3Exl9b09Vr6JHyfPP7YO%2F4Gamers-Web-5.0%3Fpage-id%3D209%253A18%26node-id%3D8693%253A138795%26viewport%3D704%252C-2014%252C0.5%26scaling%3Dscale-down%26starting-point-node-id%3D8693%253A138795"
+            <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="100%" height="500"
+              src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FTJQlc1PHhE2eEomeIuShBg%2F4Gamers-Web-5.0-English%3Fpage-id%3D209%253A18%26node-id%3D619%253A1425%26viewport%3D554%252C764%252C0.13%26scaling%3Dscale-down%26starting-point-node-id%3D619%253A1425"
               allowfullscreen></iframe>
           </div>
           <hr />
@@ -325,17 +370,16 @@
           <p><img src="images/4gamers/event.jpg" alt="event" width="100%" class="pt-3" /></p>
           <hr />
           <h5 class="pt-0">Results</h5>
-          <h4>Continuously loading content, the overall traffic increased by more than 20%, helping editors solve
+          <h4>Continuously loading content, the overall traffic increased by more than <b class="t_blue">20%</b>, helping editors solve
             long-term
             difficulties.</h4>
-          <h4>Gamification mechanism: Combined with tasks, the number of members has increased from 10,000 to more than
-            70,000 at present, and continues to increase.</h4>
-          <div class="center mt-3">
+          <h4 class="mb-40">Gamification mechanism: Combined with tasks, the number of members has increased from 10,000 to more than <b class="t_blue">70,000</b> at present, and continues to increase.</h4>
+          <div class="center">
             <a
                 href="https://www.4gamers.com.tw/"
                 target="_blank"
                 class="bt_blue m-auto block mb-40 px-2"
-                title="RESUME"
+                title="Visit The Site"
                 target="_blank"
                 style="width: 200px"
                 >Visit The Site</a>
@@ -354,7 +398,9 @@
 
   <!-- jQuery -->
   <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
-  <script type="text/javascript" src="js/slick.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
   <script>
     $('.back-top').on('click', function (event) {
       event.preventDefault();
@@ -366,12 +412,10 @@
         else $('.back-top').fadeOut();
       })
       .scroll();
-
   </script>
   <script type="text/javascript">
     $(document).on('ready', function () {
       $('.single-item').slick();
-
 
       $(".lazy").slick({
         lazyLoad: 'ondemand', // ondemand progressive anticipated
