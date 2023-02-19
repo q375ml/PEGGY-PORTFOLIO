@@ -603,6 +603,9 @@ button:focus {
     width: 90%;
     margin: 7rem 1rem 0 1rem;
   }
+  .main h1 {
+    font-size: 2rem;
+  }
   .pro {
     width: 100%;
     margin-top: 3rem;
