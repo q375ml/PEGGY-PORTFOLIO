@@ -1,7 +1,6 @@
-# Good UX Is Good Business
+# Hi, I'm Peggy Chiang, a product designer.
 PEGGY-PORTFOLIO 個人作品集／個人網站
 
-Hi, I’m Peggy Chiang, a Product Designer. I have been on many projects related to Web / UI interface design.
-For the past 5 years, I have focused on UI / UX design logic, data application, and exploring streamlined design and meaningful user experience.
+I have been involved in many projects related to web/UI interface design. In the past 5 years, I have focused on UI/UX design logic, data application, exploring streamlined design and meaningful user experience.
 
-I like teamwork, can help the team solve problems and together the complete goal is to keep my passion.
+I love teamwork and helping teams solve problems and accomplish goals together keeps my passion alive.
