@@ -118,7 +118,6 @@ body {
 
 body {
   font-size: 18px;
-  background: #ffe6e8 !important;
   overflow: hidden;
 }
 
@@ -586,11 +585,11 @@ button:focus {
   color: #666;
 }
 .about p {
-  font-size: 1.125rem;
-  line-height: 2rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
 }
 .about h4 {
-  font-size: 1.25rem;
+  font-size: 1.375rem;
   font-weight: bold;
   padding-top: 2rem;
   line-height: 2rem;
@@ -603,8 +602,8 @@ button:focus {
 }
 .about ul.ab_txt {
   list-style: disc;
-  font-size: 1.125rem;
-  line-height: 2rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
   margin-left: 20px;
 }
 .about ul.rum_list {
@@ -648,7 +647,8 @@ button:focus {
 .about ol.number {
   list-style: decimal !important;
   margin-left: 24px;
-  line-height: 2rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
 }
 .about ol.number li {
   margin: 0;
@@ -699,6 +699,16 @@ img.pic {
 
 .container {
   padding: 0px;
+}
+
+.carousel-control-prev {
+  left: -5%;
+  top: 40%;
+}
+
+.carousel-control-next {
+  right: -5%;
+  top: 40%;
 }
 
 #btn-close-modal {
@@ -866,7 +876,6 @@ ul.key_list li {
   width: 20%;
   color: #4f71cc;
   font-size: 1.125rem;
-  font-weight: 500;
 }
 ul.key_list li p {
   font-size: 1.75rem;
@@ -913,9 +922,6 @@ ul.key_list li p {
     background-repeat: no-repeat, no-repeat;
     background-position: bottom 0px right -30px, top left;
     background-size: 50%, 100%;
-  }
-  ol.insight_box {
-    max-width: 90%;
   }
   ol.insight_box li {
     width: 100%;
@@ -1023,7 +1029,6 @@ ul.key_list li p {
 }
 .work ul.portfolio li img {
   width: 100%;
-  height: 350px;
   object-fit: cover;
 }
 .work ul.portfolio li a {
@@ -1040,6 +1045,7 @@ ul.key_list li p {
   font-family: "sans-serif" !important;
   color: #555;
   font-size: 1rem;
+  line-height: 1.5rem;
 }
 .work ul.portfolio li .tag {
   font-family: "sans-serif" !important;
