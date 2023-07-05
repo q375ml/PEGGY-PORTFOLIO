@@ -46,15 +46,15 @@
     </script>
     <!-- Bootstrap CSS -->
     <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
-      integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
-      crossorigin="anonymous"
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+    integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+    crossorigin="anonymous"
     />
-    <!-- css -->
+    
+
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="css/frame.css" />
-    <link rel="stylesheet" type="text/css" href="css/base.css" />
     <!-- fontawesome -->
     <link
       rel="stylesheet"
@@ -91,11 +91,81 @@
   <body>
     <div id="modal-03" class="con">
       <!--"THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID-->
-      <div id="btn-close-modal" class="close-modal-03">
-        <a href="index.html#portfolio"> <i class="far fa-times-circle"></i></a>
-      </div>
+      <header class="fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-light mx-auto">
+          <a class="navbar-brand logo" href="index.html"><img src="images/logo.svg" alt="peggy" /></a>
+  
+          <div class="navbar-toggler icon-burger">
+            <!-- 選單開/關 -->
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto col-xl-10 col-md-11 col-12 justify-content-end">
+              <li class="nav-item px-2">
+                <a class="nav-link" href="index.html#portfolio" title="Portfolio">Portfolio</a>
+              </li>
+              <li class="nav-item px-2">
+                <a class="nav-link" href="about.html" title="About">About Me</a>
+              </li>
+            </ul>
+            <div class="d-flex col-xl-2 col-md-2 col-12 px-1 py-lg-0 py-3 justify-content-start">
+              <a
+                href="https://www.linkedin.com/in/peggy-chiang-80749a15a/"
+                target="_blank"
+                title="linked"
+                class="circel mr-2"
+              >
+                <svg
+                  id="linked"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16.664"
+                  height="16.391"
+                  viewBox="0 0 16.664 16.391"
+                  class="icon"
+                >
+                  <path
+                    id="Path_3"
+                    data-name="Path 3"
+                    d="M2.238,4.2h0a2.228,2.228,0,0,0-1.578.65A2.2,2.2,0,0,0,0,6.417a2.221,2.221,0,0,0,.671,1.6,2.176,2.176,0,0,0,1.547.628h.049A2.224,2.224,0,0,0,2.238,4.2Z"
+                    transform="translate(0 -4.195)"
+                  />
+                  <path
+                    id="Path_4"
+                    data-name="Path 4"
+                    d="M11.591,157.941H9.346a.824.824,0,0,0-.81.835v9.719a.843.843,0,0,0,.833.831h2.222a.835.835,0,0,0,.833-.814v-9.737A.844.844,0,0,0,11.591,157.941Z"
+                    transform="translate(-8.258 -152.937)"
+                  />
+                  <path
+                    id="Path_5"
+                    data-name="Path 5"
+                    d="M177.925,149.408h-.585a3.745,3.745,0,0,0-2.784,1.218v-.385a.6.6,0,0,0-.555-.555h-2.777a.569.569,0,0,0-.555.521V160.57a.546.546,0,0,0,.555.5h3.055a.546.546,0,0,0,.555-.5v-5.987a1.562,1.562,0,0,1,2.677-1.158,1.528,1.528,0,0,1,.378,1.135v5.957a.6.6,0,0,0,.555.555h2.777a.6.6,0,0,0,.555-.555v-7.168A3.856,3.856,0,0,0,177.925,149.408Z"
+                    transform="translate(-165.113 -144.682)"
+                  />
+                </svg>
+              </a>
+              <a href="mailto:q375ml@gmail.com" target="_blank" title="email" class="circel mr-2">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="19.995"
+                  height="15.23"
+                  viewBox="0 0 19.995 15.23"
+                  class="icon"
+                >
+                  <path
+                    id="email"
+                    d="M18.237,61H1.757A1.76,1.76,0,0,0,0,62.757V74.473A1.76,1.76,0,0,0,1.757,76.23h16.48a1.76,1.76,0,0,0,1.757-1.757V62.757A1.76,1.76,0,0,0,18.237,61Zm-.243,1.172-7.96,7.96-8.029-7.96ZM1.172,74.23V62.994l5.642,5.594ZM2,75.059l5.646-5.646,1.978,1.961a.586.586,0,0,0,.827,0l1.929-1.929,5.615,5.615Zm16.823-.828-5.615-5.615L18.823,63Z"
+                    transform="translate(0 -61)"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </nav>
+      </header>
 
-      <article class="about">
+      <article class="about pt-100">
         <section>
           <div class="content">
             <h2>Online Teaching - IOS & Website</h2>
@@ -103,20 +173,19 @@
             <video width="100%" controls autoplay loop>
               <source src="images/video/teach.mp4" type="video/mp4" />
             </video>
-            <h5>Project Details</h5>
-            <h4>Description－</h4>
+            <h4>Description</h4>
             <p class="pt-2">
               The 2020 Digital Transformation Tourism Revitalization Training and Education Project cooperates with the government for digital transformation. The main trainers are employees of the travel industry, tourism hotel industry, hotel industry and tourism industry. Due to the epidemic situation, the original physical courses have been changed to online teaching courses. <br /><br />
               Therefore, the motivation to use it is to strengthen the training of relevant heavy industry personnel to complete the classroom projects and hours, not only to improve skills and obtain relevant licenses, but also to catch up with digital transformation and meet market needs. The application level of the original communication system is further expanded to improve the overall operating experience.<br /><br />
               
-              <b>This project starts from the user's point of view, uses user research, and takes the situational needs as the first stage of planning.</b>
+              This project starts from the user's point of view, uses user research, and takes the situational needs as the first stage of planning.
             </p>
-            <h4>First stage target－</h4>
+            <h4>First stage target</h4>
             <p class="pt-2">
               Offer B2B
               Communication system application, using video online teaching platform, provided to tourism development association (manager), tour leader or tour guide license (teacher), hotel industry and tourism and entertainment industry professionals (students), front and back use, to meet classroom learning Department and self-learning situation.
             </p>
-            <h4>User story－</h4>
+            <h4>User story</h4>
             <ol class="number">
               <li>
                 As a student, I want to strengthen my education through the digital transformation of the epidemic, so I can improve my skills and get a license to meet the needs of the tourism market in the future.
@@ -124,21 +193,23 @@
               <li>As a teacher, I want to assist the Tourism Development Association to digitally transform the teaching content, so I can assist the heavy industry personnel to obtain relevant licenses.</li>
               <li>As an administrator, I want to manage the situation through the background, so I can master the class status of teachers and students, and course management.</li>
             </ol>
-            <h4>Relationship between elements －</h4>
+            <h4>Relationship between elements</h4>
             <div class="center">
               <img src="images/video-01.jpg" alt="" class="pt-3 pic" />
               <img src="images/video-02.jpg" alt="" class="pt-3 pic" />
               <img src="images/video-03.jpg" alt="Relationship between elements" class="pt-3 pic" />
-              <h4>Function and relationship diagram of white layout organization</h4>
+              <p>Function and relationship diagram of white layout organization</p>
             </div>
-            <h4 class="mb-3">Flow Chart</h4>
+            <h4 class="mb-2">Flow Chart</h4>
             <ul class="ab_txt">
               <li>
-                <b>The elements drawn by the service flow diagram are:</b> <br />
-                * Ｕser's goal<br />
-                * The key tasks that must be experienced in order to achieve the goal<br />
-                * How key tasks are accomplished in partnership with stakeholders<br />
-                <div class="center">
+                <b>The elements drawn by the service flow diagram are:</b>
+                <ol class="number">
+                  <li>Ｕser's goal</li>
+                  <li>The key tasks that must be experienced in order to achieve the goal</li>
+                  <li>How key tasks are accomplished in partnership with stakeholders</li>
+                </ol>
+                <div class="mb-2">
                   <img src="images/video-04.jpg" alt="Flow Chart" class="pt-3 pic" />
                   <h4>The picture above is using the situation as an example.</h4>
                   <span>Service flow diagrams show how users achieve goals and which roles are involved in tasks.</span>
@@ -181,10 +252,9 @@
               </li>
               <li class="mb-3">
                 <b>Use the three principles of availability to confirm requirements and reach consensus:</b>
-                <div class="center">
+                <div>
                   <img src="images/video-05.jpg" alt="可用性三原則" class="pt-3 pic" />
-                  <h4>Translate the results of user research and user task analysis into service flow diagrams</h4>
-                  <span>Simple functions and less development time are pushed to the front.</span>
+                  <p>Translate the results of user research and user task analysis into service flow diagrams,simple functions and less development time are pushed to the front.</p>
                 </div>
               </li>
             </ul>
@@ -196,7 +266,7 @@
                 I usually start the design process with sketches and quickly generate pictures. During this process, I can know what problems are, and discuss with the PM which writing functions should be added or deleted, which is an efficient way to discuss.<br />
                 <div class="center">
                   <img src="images/video-06.jpg" alt="前台－教學草圖" class="pt-3 pic" />
-                  <h4>Front desk - teaching sketches of teachers and students</h4>
+                  <p class="my-3">Front desk - teaching sketches of teachers and students</p>
                 </div>
               </li>
               <li class="mb-3">
@@ -204,16 +274,15 @@
                 ><br />Using low-fidelity interactive prototypes, look for 3 different role goals to test, test whether they meet the situation and solve needs, and test for usability.
                 <div class="center">
                   <img src="images/video-07.jpg" alt="前台－教學畫面" class="pt-3 pic" style="max-width: 100%" />
-                  <h4>Front desk - teaching screen of teachers and students</h4>
-                  <span>A file will be output, and the testee will directly click on the screen.</span>
+                  <p class="my-3">A file will be output, and the testee will directly click on the screen.</p class="my-3">
                   <img
                     src="images/video-08.jpg"
                     alt="後台－課程內容和學生資料"
                     class="pt-3 pic"
                     style="max-width: 100%"
                   />
-                  <h4>Background - Manager Manage the content of the course time and student information</h4>
-                  <span>Assist me in communicating with engineers and confirming the feasibility of functions and processes.</span>
+                  
+                  <p class="my-3">Assist me in communicating with engineers and confirming the feasibility of functions and processes.</p class="my-3">
                 </div>
               </li>
             </ul>
@@ -241,15 +310,12 @@
             <h5 class="pt-0">UI Flow</h5>
             <p class="pt-20">
               Front-end and Backend overflow, which lists each step, encountered situation, and operation process of the screen, which is convenient for engineers to understand, and also checks whether the user's operation is smooth, defines the interaction, and displays various status error messages.<br />
-              <a href="https://overflow.io/s/FRO0DQQW?node=5bf3c7f7" target="_blank"
-                >https://overflow.io/s/FRO0DQQW?node=5bf3c7f7</a
-              >
             </p>
             <div class="center">
               <img src="images/video-11.jpg" alt="前台 UI Flow" width="" class="pt-3 pic" />
-              <h4>Front-end － Teaching operation screen steps for teachers and students</h4>
+              <p class="my-3">Front-end － Teaching operation screen steps for teachers and students</p class="my-3">
               <img src="images/video-12.jpg" alt="後台 UI Flow" width="" class="pt-3 pic" />
-              <h4>Backend － Functions and explanations encountered in each operation screen step</h4>
+              <p class="my-3">Backend － Functions and explanations encountered in each operation screen step</p>
             </div>
             <hr />
             <h5 class="pt-0">UI System</h5>
@@ -274,14 +340,10 @@
             </div>
             <hr />
             <!-- More project-->
-            <div class="d-flex justify-content-between">
-              <h5>
-                <a href="backend.html" class="mb-40 px-2" title="Communication System"><i class="fas fa-chevron-left"></i> Communication System</a>
-              </h5>
-              <h5>
-                <a href="4G-officeweb.html" class="mb-40 px-2" title="Official website revision">Official website revision <i class="fas fa-chevron-right"></i></a>
-              </h5>
-            </div>
+            <ol class="insight_box align-items-xl-center align-items-md-center mt-20 mx-0">
+              <a href="backend.html" class="mb-40 px-2" title="Communication System"><i class="fas fa-chevron-left"></i> Communication System</a>
+              <a href="4G-officeweb.html" class="mb-40 px-2" title="Official website revision">Chat and News Feeds Platforms <i class="fas fa-chevron-right"></i></a>
+            </ol>
           </div>
           <a href="" class="back-top" title="back-top"><img src="images/top.svg" /></a>
         </section>
@@ -290,17 +352,6 @@
 
     <!-- jQuery -->
     <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
-    <script>
-      $('.back-top').on('click', function (event) {
-        event.preventDefault();
-        $('html, body').animate({ scrollTop: 0 }, 1200);
-      });
-      $(window)
-        .on('scroll', function () {
-          if ($(this).scrollTop() >= 150) $('.back-top').fadeIn();
-          else $('.back-top').fadeOut();
-        })
-        .scroll();
-    </script>
+    <script type="text/javascript" src="js/index.js"></script>
   </body>
 </html>

@@ -41,20 +41,20 @@
   </script>
 
   <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
-    integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous" />
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
- 
-  <!-- css -->
+  <!-- Carousel CSS -->
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
+  <link
+  rel="stylesheet"
+  href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+  integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+  crossorigin="anonymous"
+  />
   <link rel="stylesheet" href="css/styles.css" />
   <link rel="stylesheet" href="css/frame.css" />
-  <link rel="stylesheet" type="text/css" href="css/base.css" />
   <!-- fontawesome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
     integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous" />
 
-  <link rel="stylesheet" type="text/css" href="css/slick.css">
-  <link rel="stylesheet" type="text/css" href="css/slick-theme.css">
   <script type="application/ld+json">
       {
         "@context": "http://schema.org/",
@@ -79,140 +79,177 @@
         },
         "articleBody": "4Gamers is a website that combines gaming, technology, gaming and lifestyle information, introducing the things that gamers love from different perspectives."
       }
-    </script>
+  </script>
 </head>
 
 <body>
-  <div id="modal-03" class="con">
+  <div id="container" class="con">
     <!--"THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID-->
-    <div id="btn-close-modal" class="close-modal-03">
-      <a href="index.html#portfolio"> <i class="far fa-times-circle"></i></a>
-    </div>
-    <article class="about">
+    <header class="fixed-top">
+      <nav class="navbar navbar-expand-lg navbar-light mx-auto">
+        <a class="navbar-brand logo" href="index.html"><img src="images/logo.svg" alt="peggy" /></a>
+
+        <div class="navbar-toggler icon-burger">
+          <!-- 選單開/關 -->
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto col-xl-10 col-md-11 col-12 justify-content-end">
+            <li class="nav-item px-2">
+              <a class="nav-link" href="index.html#portfolio" title="Portfolio">Portfolio</a>
+            </li>
+            <li class="nav-item px-2">
+              <a class="nav-link" href="about.html" title="About">About Me</a>
+            </li>
+          </ul>
+          <div class="d-flex col-xl-2 col-md-2 col-12 px-1 py-lg-0 py-3 justify-content-start">
+            <a
+              href="https://www.linkedin.com/in/peggy-chiang-80749a15a/"
+              target="_blank"
+              title="linked"
+              class="circel mr-2"
+            >
+              <svg
+                id="linked"
+                xmlns="http://www.w3.org/2000/svg"
+                width="16.664"
+                height="16.391"
+                viewBox="0 0 16.664 16.391"
+                class="icon"
+              >
+                <path
+                  id="Path_3"
+                  data-name="Path 3"
+                  d="M2.238,4.2h0a2.228,2.228,0,0,0-1.578.65A2.2,2.2,0,0,0,0,6.417a2.221,2.221,0,0,0,.671,1.6,2.176,2.176,0,0,0,1.547.628h.049A2.224,2.224,0,0,0,2.238,4.2Z"
+                  transform="translate(0 -4.195)"
+                />
+                <path
+                  id="Path_4"
+                  data-name="Path 4"
+                  d="M11.591,157.941H9.346a.824.824,0,0,0-.81.835v9.719a.843.843,0,0,0,.833.831h2.222a.835.835,0,0,0,.833-.814v-9.737A.844.844,0,0,0,11.591,157.941Z"
+                  transform="translate(-8.258 -152.937)"
+                />
+                <path
+                  id="Path_5"
+                  data-name="Path 5"
+                  d="M177.925,149.408h-.585a3.745,3.745,0,0,0-2.784,1.218v-.385a.6.6,0,0,0-.555-.555h-2.777a.569.569,0,0,0-.555.521V160.57a.546.546,0,0,0,.555.5h3.055a.546.546,0,0,0,.555-.5v-5.987a1.562,1.562,0,0,1,2.677-1.158,1.528,1.528,0,0,1,.378,1.135v5.957a.6.6,0,0,0,.555.555h2.777a.6.6,0,0,0,.555-.555v-7.168A3.856,3.856,0,0,0,177.925,149.408Z"
+                  transform="translate(-165.113 -144.682)"
+                />
+              </svg>
+            </a>
+            <a href="mailto:q375ml@gmail.com" target="_blank" title="email" class="circel mr-2">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="19.995"
+                height="15.23"
+                viewBox="0 0 19.995 15.23"
+                class="icon"
+              >
+                <path
+                  id="email"
+                  d="M18.237,61H1.757A1.76,1.76,0,0,0,0,62.757V74.473A1.76,1.76,0,0,0,1.757,76.23h16.48a1.76,1.76,0,0,0,1.757-1.757V62.757A1.76,1.76,0,0,0,18.237,61Zm-.243,1.172-7.96,7.96-8.029-7.96ZM1.172,74.23V62.994l5.642,5.594ZM2,75.059l5.646-5.646,1.978,1.961a.586.586,0,0,0,.827,0l1.929-1.929,5.615,5.615Zm16.823-.828-5.615-5.615L18.823,63Z"
+                  transform="translate(0 -61)"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <article class="about pt-100">
       <section>
         <div class="content">
           <h2>
-            Official Website Revision
+            Chat and News Feeds Platforms
           </h2>
           <h3 class="pb-20 f20">UX Research・UI System Building・Prototype</h3>
         </div>
-        </section>
+      </section>
     </article>
     <p><img src="images/4gamers/Starting-the-design.jpg" alt="Starting-the-design" width="100%" class="" />
     </p>
     <article class="about">
       <section>
         <div class="content">
-          <h5>Project Details</h5>
-          <h4>What I did －</h4>
+          <h4>Description</h4>
           <p class="pt-2">
+            4Gamers is a website that combines gaming, technology, gaming and lifestyle information, 
+            introducing the things that gamers love from different perspectives.
+          </p>
+          <h4>Role</h4>
+          <p class="pt-2">
+            Senior UI/UX designer. <br>
             <ul class="ab_txt">
-              <li><b>Created end-to-end UX/UI design process from ideating a vision and goal to creating solutions and implementation.</b></li>
-              <li><b>Collaborate with different stakeholders, product manger, engineer to identify problems and provide solutions.</b></li>
-              <li><b>Delivered use cases, wireframes, high-fidelity interactive prototypes, specs, and annotations for onsite and remote dev teams.</b></li>
-              <li><b>The data collected internally and externally is used in the design, and usability testing and iteration are carried out after the launch.</b></li>
+              <li>Conducting interviews.</li>
+              <li>Finding user insight.</li>
+              <li>Paper and digital wire-framing.</li>
+              <li>Low and high-fidelity prototyping.</li>
+              <li>Conducting usability studies and accounting for accessibility, iterating on designs.</li>
+              <li>Determining information building, and responsive design.</li>
             </ul>
           </p>
-          <h4>Outcome －</h4>
-          <ul class="outcome mt-20">
-            <li class="col-lg-4 col-sm-12 mb-4"><p>20% up</p>
-              Total website traffic
-            </li>
-            <li class="col-lg-4 col-sm-12 mx-xl-4 mb-4"><p>70% up</p>
-              New users
-            </li>
-            <li class="col-lg-4 col-sm-12 mb-4"><p>50% up</p>
-              Website interactivity
-            </li>
-          </ul>
-          <h4 class="p-0">Goal －</h4>
+          <h4>Goal</h4>
           <p class="pt-2">
-            <ul class="ab_txt">
-              <li>Create community mechanism gamification experience and content interactivity.</li>
-              <li>Increase the number of user members on the official website.</li>
-              <li>Personalized service settings.</li>
-              <li>Improve interactive features and rewards to increase member engagement.</li>
-              <li>The website is more active to form an ecological circle.</li>
-            </ul>
+            Create a gamified experience and interactive content to build a community mechanism, aiming to increase the number of user members on the official website. Enable personalized service settings, enhance member engagement through interactivity and rewards, and foster an active ecosystem that brings vitality to the entire website.
           </p>
-          <h4>Challenge －</h4>
+          <h4>The Problem</h4>
           <p class="pt-2">
-            <ul class="ab_txt">
-              <li>Build team trust in the product.</li>
-              <li>Consistency of experience across devices.</li>
-              <li>The more intuitive reading interface.</li>
-              <li>Enhance the commercial value of each page.</li>
-            </ul>
+            4Gamers provides Gaming News for gamers. The original website's content delivery of information alone is no longer sufficient to meet the needs of users and align with business goals. There is a desire to enhance the reading experience and interactive features. Interviews with stakeholders have been conducted to understand the goals of internal users and to build trust within the team. However, the platform currently faces several challenges, including:
           </p>
-          <h4>The Problem －</h4>
-          <p class="pt-2">
-            Build trust by conducting interviews with stakeholders to understand the goals of internal users.
-          </p>
-          <ul class="ab_txt">
-            <li><b class="t_blue">Single delivery of information, lack of interaction with members.</b></li>
-            <li>Enhance the business value of the layout.</li>
-            <li>A more comfortable and intuitive way to read, the current website lacks focus.</li>
-            <li><b class="t_blue">The outline of members is blurred, and the number of members cannot be increased.</b></li>
-            <li>Ads interfere with reading, and users do not know that membership has other purposes.</li>
+          <ul class="pt-2 ab_txt">
+            <li>The sole delivery of information lacks interaction with members.</li>
+            <li>Enhance the commercial value of the layout.</li>
+            <li>A more comfortable and intuitive reading experience, as the current website lacks consistency.</li>
+            <li>Blurred member profiles, unable to increase the number of members.</li>
+            <li>Advertisements disrupt reading, and users are unaware of additional benefits of joining as members.</li>
             <img src="images/4gamers/Convergence-Solutions-English.jpg" alt="Convergence-Solutions" width="100%" class="" />
           </ul>
-
-          <h4 class="pt-0">Role －</h4>
+          <h4>Challenge</h4>
           <p class="pt-2">
-            Senior UI/UX designer.
-          <ul class="ab_txt">
-            <li>Conducting interviews.</li>
-            <li>Finding user insight.</li>
-            <li>Paper and digital wire-framing.</li>
-            <li>Low and high-fidelity prototyping.</li>
-            <li>Conducting usability studies and accounting for accessibility, iterating on designs.</li>
-            <li>Determining information building, and responsive design</li>
-          </ul>
+            Build team trust, ensure consistency in the user experience across different devices, create a more intuitive interface, enhance usability design, and increase the commercial value of each page. Understand the needs and goals of various stakeholders and prioritize them. Collect and prioritize user pain points, utilizing data collected both internally and externally for the redesign. Conduct external testing and iterate after the launch.
           </p>
-          <h4>User Research Program －</h4>
+
+          <h4>What I did</h4>
+          <p class="pt-2">
+            <ul class="ab_txt">
+              <li>Created end-to-end UX/UI design process from ideating a vision and goal to creating solutions and implementation.</li>
+              <li>Collaborate with different stakeholders, product manger, engineer to identify problems and provide solutions.</li>
+              <li>Delivered use cases, wireframes, high-fidelity interactive prototypes, specs, and annotations for onsite and remote dev teams.</li>
+              <li>The data collected internally and externally is used in the design, and usability testing and iteration are carried out after the launch.</li>
+            </ul>
+          </p>
+          <h4>User Research Description</h4>
           <div>
             <img src="images/4gamers/User-Research-Program.jpg" alt="User-Research-Program" width="100%" class="" />
           </div>
-          <h4 class="pt-0 mb-4">User Persona －</h4>
+          <h4 class="pt-0 mb-4">User Persona</h4>
           <!-- 輪播-->
-          <div class="container" style="width:100%;">
-            <div id="myCarousel" class="carousel slide" data-ride="carousel">
-              <!-- Indicators -->
-              <ol class="carousel-indicators">
-                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                <li data-target="#myCarousel" data-slide-to="1"></li>
-                <li data-target="#myCarousel" data-slide-to="2"></li>
-              </ol>
-          
-              <!-- Wrapper for slides -->
-              <div class="carousel-inner">
-                <div class="item active">
-                  <img src="images/4gamers/person1&2.png" alt="person1&2" style="width:100%;">
-                </div>
-          
-                <div class="item">
-                  <img src="images/4gamers/person3&4.png" alt="person3&4" style="width:100%;">
-                </div>
-          
-                <div class="item">
-                  <img src="images/4gamers/person5.png" alt="person5" style="width:100%;">
-                </div>
-             
+          <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="images/4gamers/person1&2.png" class="d-block w-100" alt="...">
               </div>
-          
-              <!-- Left and right controls -->
-              <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-                <span class="glyphicon glyphicon-chevron-left"></span>
-                <span class="sr-only">Previous</span>
-              </a>
-              <a class="right carousel-control" href="#myCarousel" data-slide="next">
-                <span class="glyphicon glyphicon-chevron-right"></span>
-                <span class="sr-only">Next</span>
-              </a>
+              <div class="carousel-item">
+                <img src="images/4gamers/person3&4.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="images/4gamers/person5.png" class="d-block w-100" alt="...">
+              </div>
             </div>
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
           </div>
           <!-- end-->
-          <h4>Key Finding －</h4>
+          <h4>Key Finding</h4>
           <ul class="key_list">
             <li class="mr-3 mb-4">
               <p>01</p>
@@ -241,24 +278,20 @@
           <div class="gray_bg">
             <ol class="insight_box">
               <li>
-                <h5 class="org">USER INSIGHTS</h5>
+                <h5>User Insights</h5>
                 <ul class="ab_txt pt-2">
-                  <li>Functionality - In addition to gaining progress in gameplay, you want to achieve progress in
-                    social interaction.</li>
-                  <li>Social side - the reader feels the resonance of the content and reaches a certain aspect of belief
-                    and central idea.</li>
-                  <li>Emotional side - the goal-oriented game experience is to meet social expectations.</li>
+                  <li>Functionally -in a game, the objective is not only to advance in gameplay but also to progress socially.</li>
+                  <li>Social aspect - Readers experience a sense of resonance with the content, aligning with certain beliefs and central ideas.</li>
+                  <li>Emotional aspect - Adopting a goal-oriented approach to gain a gaming experience is driven by a desire to meet societal expectations.</li>
                 </ul>
               </li>
               <li>
-                <h5 class="org">OPPORTUNITY</h5>
+                <h5>Opportunity</h5>
                 <ul class="ab_txt pt-2">
-                  <li>Community mechanism gamification of experience and promotion of good content and subgroups.
+                  <li>Create a gamified experience with community mechanisms that promote valuable content and segmentation.
                   </li>
-                  <li>Have resonant content to increase emotional expression, enhance interactivity and attract hidden
-                    users.</li>
-                  <li>Consistent user experience, in addition to the responsive design for different devices, increase
-                    the mobile app download and increase the path according to different user habits.</li>
+                  <li>Provide resonant content, enhance emotional expression, and foster interactivity to attract casual users.</li>
+                  <li>Ensure consistent user experience by incorporating responsive design for different devices, increasing mobile app downloads, and adapting paths based on user habits.</li>
                 </ul>
               </li>
             </ol>
@@ -273,28 +306,27 @@
             <li class="pt-3">
               <h4>Wireframe</h4>
               <p class="pt-3"><img src="images/4gamers/wireframe.jpg" alt="wireframe" width="100%" class="" /></p>
-              <div class="center pb-3">
-                <h4>Mobile and PC, check layout position the same experience and review design with stakeholders by the
-                  read and use. </h4>
+              <div class="pb-3">
+                Mobile and PC, check layout position the same experience and review design with stakeholders by the
+                  read and use. 
               </div>
             </li>
             <li>
-              <h4>Design focus</h4>
+              <h4>Solutions</h4>
               <p class="pt-3"><img src="images/4gamers/Design focus.png" alt="Design focus" width="100%" /></p>
               <ol>
                 <li>
-                  <h4 class="t_blue">01 Card type layout:</h4>
-                  <b>Information, picture, main title, description text and buttons.</b><br>
-                  Users can easily read and understand, the arrangement and structure level should be clear, and the application and layout should be flexible.
+                  <h4 class="t_blue">Card type layout:</h4>
+                  Information, pictures, main titles, description text, and buttons should be presented in a way that allows users to easily read and understand them. The arrangement and structure should be clear, and the application and layout should be flexible.
                 </li>
                 <li>
-                  <h4 class="t_blue">02 Mobile:</h4>
-                  The menu is like an APP application, and the TobBar function key was added at the bottom of the original webpage to use the webpage like an application painless conversion.            
+                  <h4 class="t_blue">Mobile:</h4>
+                  The menu functions like a mobile application, and the addition of a Toolbar function key at the bottom of the original webpage allows for seamless conversion of the webpage into an application-like experience.           
                 </li>
               </ol>
               <img src="images/4gamers/Responsive-Design.jpg" alt="Responsive-Design" width="" class=" pic" />
               <div class="center">
-                <h4 class="pb-3">Mockups - Responsive design for different device</h4>
+                <h4 class="pb-3">Responsive design for different device</h4>
               </div>
             </li>
           </ul>
@@ -304,17 +336,15 @@
               <img src="images/4gamers/4gdesign-01.gif" alt="" width="100%" class="" />
             </li>
             <li class="col-xl-7 col-md-7 col-sm-12 order-xl-1 order-1 mb-4">
-              <h5 class="org">The key design</h5>
+              <h5 class="t_blue">The key design</h5>
               <p class="ab_txt pt-2">
-                Increase the number of users on the official website.<br>
-                planning important services and optimizing existing projects, giving users more clues to choose from, increasing stay and conversion.
+                In order to increase the number of users on the official website, we will focus on planning basic services and optimizing existing projects. By providing users with more CTA buttons, we aim to increase user engagement, increase the time they spend on the site and increase conversion rates.
               </p>
             </li>
             <li class="col-xl-7 col-md-7 col-sm-12 order-xl-2 order-md-2 order-3 mb-4">
-              <h5 class="org">Visual interface</h5>
+              <h5 class="t_blue">Visual interface</h5>
               <p class="ab_txt pt-2">
-                Simple, easier to read interface, advertising space optimization to enhance the value of advertising.<br>
-                The original vision is difficult to show consistency.
+                We aim to achieve a simple and easily readable interface while optimizing advertising space to enhance the value of advertisements. The original vision lacked consistency, which we aim to address in the redesign.
               </p>
             </li>
             <li class="col-xl-5 col-md-5 col-sm-12 order-xl-3 order-md-3 order-2">
@@ -324,15 +354,15 @@
               <img src="images/4gamers/4gdesign-03.gif" alt="" width="100%" class="" />
             </li>
             <li class="col-xl-7 col-md-7 col-sm-12 order-xl-5 order-md-5 order-5 mb-4">
-              <h5 class="org">Interactive conversion</h5>
+              <h5 class="t_blue">Interactive conversion</h5>
               <p class="ab_txt pt-2">
-                Voting, topics, and e-commerce interactivity are increased, and the social interaction between functions and visuals is more emotional, increasing user stickiness.
+                We have enhanced the interactivity of voting, topics, and e-commerce, enabling more social interaction between functions and visuals. This emotional connection increases user engagement and retention.
               </p>
             </li>
             <li class="col-xl-7 col-md-7 col-sm-12 order-xl-6 order-md-6 order-7 mb-4">
-              <h5 class="org">Personalized service setting</h5>
+              <h5 class="t_blue">Personalized service setting</h5>
               <p class="ab_txt pt-2">
-                Personalized settings, high integrity of user data, better understanding of user profiles.
+                We prioritize personalized settings, ensuring the high integrity of user data, and gaining a better understanding of user profiles.
               </p>
             </li>
             <li class="col-xl-5 col-md-5 col-sm-12 order-xl-7 order-md-7 order-6">
@@ -342,15 +372,27 @@
               <img src="images/4gamers/4gdesign-05.gif" alt="" width="100%" class="" />
             </li>
             <li class="col-xl-7 col-md-7 col-sm-12 order-xl-9 order-md-9 order-9">
-              <h5 class="org">Gamification mechanism</h5>
+              <h5 class="t_blue">Gamification mechanism</h5>
               <p class="ab_txt pt-2">
-                Production, use, consumption, interactive membership mechanism, to create an economic system within the site.
+                We establish an interactive membership mechanism that encompasses production, use, and consumption, creating an economic system within the website.
               </p>
             </li>
           </ol>
+          <h4>Impacts</h4>
+          <ul class="outcome mt-20">
+            <li class="col-lg-4 col-sm-12 mb-4"><p>20% up</p>
+              Total website traffic
+            </li>
+            <li class="col-lg-4 col-sm-12 mx-xl-4 mb-4"><p>70% up</p>
+              New users
+            </li>
+            <li class="col-lg-4 col-sm-12 mb-4"><p>50% up</p>
+              Website interactivity
+            </li>
+          </ul>
           <hr />
           <h5>UI guideline</h5>
-          <h4 class="pb_3">Define fonts, colours, and components in assets.</h4>
+          <p class="mt-20">Define fonts, colours, and components in assets.</p>
           <p class="pt-3"><img src="images/4gamers/UI guideline.png" alt="UI guideline" width="100%" class="pt-3" /></p>
           <p><img src="images/4gamers/UI guideline2.png" alt="UI guideline" width="100%" class="pt-3" /></p>
           <h5 class="pb-3">Prototype</h5>
@@ -370,16 +412,14 @@
           </div>
           <hr />
           <h5>Questionnaire survey after product launch</h5>
-          <h4 class="pb_3">Collect qualitative and quantitative data and user feedback for the next revision.</h4>
+          <p class="pt-2">Collect qualitative and quantitative data and user feedback for the next revision.</p>
           <p><img src="images/4gamers/Survey.jpg" alt="Survey" width="100%" class="pt-3" /></p>
           <p><img src="images/4gamers/event.jpg" alt="event" width="100%" class="pt-3" /></p>
           <hr />
           <h5 class="pt-0">Results</h5>
-          <h4>Continuously loading content, the overall traffic increased by more than <b class="t_blue">20%</b>, helping editors solve
-            long-term
-            difficulties.</h4>
-          <h4 class="mb-40">Gamification mechanism: Combined with tasks, the number of members has increased from 10,000 to more than <b class="t_blue">70,000</b> at present, and continues to increase.</h4>
-          <div class="center">
+          <p class="pt-2">The implementation of continuously loading content has resulted in an overall traffic increase of more than 20%, effectively helping editors overcome long-standing difficulties.
+            Furthermore, the incorporation of a gamification mechanism, combined with tasks, has led to a significant growth in membership. The number of members has risen from 10,000 to over 70,000, and this number continues to grow.</p>
+          <div class="center mt-5">
             <a
                 href="https://www.4gamers.com.tw/"
                 class="bt_blue m-auto block mb-40 px-2"
@@ -389,54 +429,29 @@
                 >Visit The Site</a>
           </div>
           <p class="pb-3">
-            I am grateful that I had this great opportunity to implement my design in this project, I learned a lot,
-            especially applying what I learned to real-world applications on projects and showing people, prototyping
-            for users and ourselves The solution to this problem is transparency, collaboration, and efficiency across
-            teams.
+            I am grateful for the opportunity to implement my design in this project, as it has been a valuable learning experience. Applying what I have learned to real-world projects and showcasing the prototypes to users and team members has been instrumental in addressing challenges and achieving transparency, collaboration, and efficiency across teams.
           </p>
           <hr />
           <!-- More project-->
-          <div class="d-flex justify-content-between">
-            <h5>
-              <a href="backend.html" class="mb-40 px-2" title="Communication System"><i class="fas fa-chevron-left"></i> Communication System</a>
-            </h5>
-            <h5><a href="video.html" class="mb-40 px-2" title="Online Teaching">Online Teaching <i class="fas fa-chevron-right"></i></a></h5>
-          </div>
+          <ol class="insight_box align-items-xl-center align-items-md-center mt-20 mx-0">
+            <a href="backend.html" class="mb-40 px-2" title="Communication System"><i class="fas fa-chevron-left"></i> Communication System</a>
+            <a href="video.html" class="mb-40 px-2" title="Online Teaching">Online Teaching <i class="fas fa-chevron-right"></i></a>
+          </ol>
         </div>
         <a href="" class="back-top" title="back-top"><img src="images/top.svg" /></a>
       </section>
     </article>
   </div>
-
   <!-- jQuery -->
   <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/index.js"></script>
 
-  <script>
-    $('.back-top').on('click', function (event) {
-      event.preventDefault();
-      $('html, body').animate({ scrollTop: 0 }, 1200);
-    });
-    $(window)
-      .on('scroll', function () {
-        if ($(this).scrollTop() >= 150) $('.back-top').fadeIn();
-        else $('.back-top').fadeOut();
-      })
-      .scroll();
-  </script>
-  <script type="text/javascript">
-    $(document).on('ready', function () {
-      $('.single-item').slick();
-
-      $(".lazy").slick({
-        lazyLoad: 'ondemand', // ondemand progressive anticipated
-        infinite: true
-      });
-    });
-  </script>
-
-
+  <script
+  src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+  integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+  crossorigin="anonymous"
+></script>
+  
 </body>
 
 </html>

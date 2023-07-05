@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="zh-Hant-TW" class="no-js">
+<!--[if lt IE 9]> <html class="ie9"> <![endif]-->
+<!--[if IE 9]> <html class="ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--><html lang="zh-Hant-TW"><!--<![endif]-->
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta charset="utf-8" />
     <meta
       name="viewport"
@@ -11,34 +11,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
     <meta name="author" content="" />
-    <meta name="description" content="Hi, I’m Peggy Chiang, a Product Designer. I have been on many projects related to Web / UI interface design.For the past 5 years, I have focused on UI / UX design logic, data application, and exploring streamlined design and meaningful user experience.Currently living in Canada, I can inspire different cultural thinking experiences in the culture shock of North America,cross fields, exploration and adventure continue my passion for design." />
-    <meta name="keywords" content="focused on UI / UX design logic, data application, and exploring streamlined design and meaningful user experience." />
+    <meta
+      name="description"
+      content="Hi, I’m Peggy Chiang, a Product Designer. I have been on many projects related to Web/UI interface design. For the past 5 years, I have focused on UI/UX design logic, data application, and exploring streamlined design and meaningful user experience."
+    />
+    <meta name="keywords" content="Web&UI Designer,Visual Design,FrontEnd Development" />
     <meta http-equiv="content-language" content="zh-Hant-TW" />
 
     <meta property="og:type" content="article" />
     <meta property="og:site_name" content="PEGGY PORTFOLIO" />
-    <meta property="og:title" content="About Me | Peggy Designer" />
-    <meta property="og:description" content="Hi, I’m Peggy Chiang, a Product Designer. I have been on many projects related to Web / UI interface design.For the past 5 years, I have focused on UI / UX design logic, data application, and exploring streamlined design and meaningful user experience.Currently living in Canada, I can inspire different cultural thinking experiences in the culture shock of North America,cross fields, exploration and adventure continue my passion for design." />
+    <meta property="og:title" content="Good UX Is Good Business | Peggy Portfolio" />
+    <meta
+      property="og:description" content="Hi, I’m Peggy Chiang, a Product Designer. I have been on many projects related to Web/UI interface design. For the past 5 years, I have focused on UI/UX design logic, data application, and exploring streamlined design and meaningful user experience."
+    />
     <meta property="og:image" content="https://q375ml.github.io/PEGGY-PORTFOLIO/images/peggy.jpg" />
-    <meta property="og:url" content="https://q375ml.github.io/PEGGY-PORTFOLIO/uid.html" />
+    <meta property="og:url" content="https://q375ml.github.io/PEGGY-PORTFOLIO/index.html" />
 
-    <title>About Me | Peggy Designer</title>
+    <title>Good UX Is Good Business | Peggy Designer</title>
     <link rel="shortcut icon" href="logo.ico" title="logo" />
-    <script>
-      document.documentElement.className = 'js';
-      var supportsCssVars = function () {
-        var e,
-          t = document.createElement('style');
-        return (
-          (t.innerHTML = 'root: { --tmp-var: bold; }'),
-          document.head.appendChild(t),
-          (e = !!(window.CSS && window.CSS.supports && window.CSS.supports('font-weight', 'var(--tmp-var)'))),
-          t.parentNode.removeChild(t),
-          e
-        );
-      };
-      supportsCssVars() || alert('Please view this demo in a modern browser that supports CSS Variables.');
-    </script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet" />
     <!-- Bootstrap CSS -->
     <link
       rel="stylesheet"
@@ -46,11 +37,14 @@
       integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <!-- css -->
+    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet" />
+
+
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="css/frame.css" />
-    <link rel="stylesheet" type="text/css" href="css/base.css" />
+
+    <link rel="stylesheet" href="css/animate.css" />
+
     <!-- fontawesome -->
     <link
       rel="stylesheet"
@@ -58,18 +52,22 @@
       integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
       crossorigin="anonymous"
     />
+
+    <!--[if lt IE 9]>
+      <script type="text/javascript" src="js/html5shiv.js"></script>
+    <![endif]-->
     <script type="application/ld+json">
       {
         "@context": "http://schema.org/",
         "@type": "NewsArticle",
-        "headline": "Article headline",
-        "datePublished": "2020-08-03",
-        "description": "Hi, I’m Peggy Chiang, a Product Designer. I have been on many projects related to Web / UI interface design.For the past 5 years, I have focused on UI / UX design logic, data application, and exploring streamlined design and meaningful user experience.Currently living in Canada, I can inspire different cultural thinking experiences in the culture shock of North America,cross fields, exploration and adventure continue my passion for design.",
+        "headline": "Good UX Is Good Business",
+        "datePublished": "2022-10-04",
+        "description": "Hi, I’m Peggy Chiang, a Product Designer. I have been on many projects related to Web/UI interface design. For the past 5 years, I have focused on UI/UX design logic, data application, and exploring streamlined design and meaningful user experience.",
         "image": {
           "@type": "ImageObject",
           "height": "",
           "width": "",
-          "url": "https://q375ml.github.io/PEGGY-PORTFOLIO/about.html"
+          "url": "https://q375ml.github.io/PEGGY-PORTFOLIO/index.html"
         },
         "author": "Peggy Chiang",
         "publisher": {
@@ -80,18 +78,85 @@
           },
           "name": "Peggy Chiang"
         },
-        "articleBody": "Hi, I’m Peggy Chiang, a Product Designer. I have been on many projects related to Web / UI interface design.For the past 5 years, I have focused on UI / UX design logic, data application, and exploring streamlined design and meaningful user experience.Currently living in Canada, I can inspire different cultural thinking experiences in the culture shock of North America,cross fields, exploration and adventure continue my passion for design."
+        "articleBody": "Hi, I’m Peggy Chiang, a Product Designer. I have been on many projects related to Web/UI interface design. For the past 5 years, I have focused on UI/UX design logic, data application, and exploring streamlined design and meaningful user experience."
       }
     </script>
   </head>
   <body>
-    <div id="modal-03" class="con">
-      <!--"THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID-->
-      <div id="btn-close-modal" class="close-modal-03">
-        <a href="index.html"> <i class="far fa-times-circle"></i></a>
-      </div>
-
-      <article class="about">
+    <div id="container" class="con">
+      <header class="fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-light mx-auto">
+          <a class="navbar-brand logo" href="index.html"><img src="images/logo.svg" alt="peggy" /></a>
+          <div class="navbar-toggler icon-burger">
+            <!-- 選單開/關 -->
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto col-xl-10 col-md-11 col-12 justify-content-end">
+              <li class="nav-item px-2">
+                <a class="nav-link" href="index.html#portfolio" title="Portfolio">Portfolio</a>
+              </li>
+              <li class="nav-item px-2">
+                <a class="nav-link" href="about.html" title="About">About Me</a>
+              </li>
+            </ul>
+            <div class="d-flex col-xl-2 col-md-2 col-12 px-1 py-lg-0 py-3 justify-content-start">
+              <a
+                href="https://www.linkedin.com/in/peggy-chiang-80749a15a/"
+                target="_blank"
+                title="linked"
+                class="circel mr-2"
+              >
+                <svg
+                  id="linked"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16.664"
+                  height="16.391"
+                  viewBox="0 0 16.664 16.391"
+                  class="icon"
+                >
+                  <path
+                    id="Path_3"
+                    data-name="Path 3"
+                    d="M2.238,4.2h0a2.228,2.228,0,0,0-1.578.65A2.2,2.2,0,0,0,0,6.417a2.221,2.221,0,0,0,.671,1.6,2.176,2.176,0,0,0,1.547.628h.049A2.224,2.224,0,0,0,2.238,4.2Z"
+                    transform="translate(0 -4.195)"
+                  />
+                  <path
+                    id="Path_4"
+                    data-name="Path 4"
+                    d="M11.591,157.941H9.346a.824.824,0,0,0-.81.835v9.719a.843.843,0,0,0,.833.831h2.222a.835.835,0,0,0,.833-.814v-9.737A.844.844,0,0,0,11.591,157.941Z"
+                    transform="translate(-8.258 -152.937)"
+                  />
+                  <path
+                    id="Path_5"
+                    data-name="Path 5"
+                    d="M177.925,149.408h-.585a3.745,3.745,0,0,0-2.784,1.218v-.385a.6.6,0,0,0-.555-.555h-2.777a.569.569,0,0,0-.555.521V160.57a.546.546,0,0,0,.555.5h3.055a.546.546,0,0,0,.555-.5v-5.987a1.562,1.562,0,0,1,2.677-1.158,1.528,1.528,0,0,1,.378,1.135v5.957a.6.6,0,0,0,.555.555h2.777a.6.6,0,0,0,.555-.555v-7.168A3.856,3.856,0,0,0,177.925,149.408Z"
+                    transform="translate(-165.113 -144.682)"
+                  />
+                </svg>
+              </a>
+              <a href="mailto:q375ml@gmail.com" target="_blank" title="email" class="circel mr-2">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="19.995"
+                  height="15.23"
+                  viewBox="0 0 19.995 15.23"
+                  class="icon"
+                >
+                  <path
+                    id="email"
+                    d="M18.237,61H1.757A1.76,1.76,0,0,0,0,62.757V74.473A1.76,1.76,0,0,0,1.757,76.23h16.48a1.76,1.76,0,0,0,1.757-1.757V62.757A1.76,1.76,0,0,0,18.237,61Zm-.243,1.172-7.96,7.96-8.029-7.96ZM1.172,74.23V62.994l5.642,5.594ZM2,75.059l5.646-5.646,1.978,1.961a.586.586,0,0,0,.827,0l1.929-1.929,5.615,5.615Zm16.823-.828-5.615-5.615L18.823,63Z"
+                    transform="translate(0 -61)"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <article class="about pt-100">
         <section>
           <div class="content">
             <h2>
@@ -100,165 +165,71 @@
             <h3 class="pb-20 f20">#Team Player · #Meaningful · #Thought Provoking</h3>
             <ol class="insight_box mx-0">
               <li class="col-lg-7 col-12 pl-0 order-xl-0 order-lg-0 order-1">
-                <p>
+                <p style="font-size: 1.125rem; line-height: 2rem;">
                 I'm Peggy Chiang, a <b style="color:#333;">product designer</b> passionate about <b  style="color:#333;">creating meaningful digital</b> experiences that connect people and businesses. With 5+ years of experience in UI/UX design, <b  style="color:#333;">data application</b>, and streamlined design, I focus on <b  style="color:#333;">solving clients' problems</b>. I'm skilled in user research and value effective communication and problem-solving as a team player. <br><br>Outside of work, I'm committed to continuous learning and growth through UX book clubs, design-related sharing sessions,and online courses.  <br><br>As I explore Canada, I look forward to integrating North American culture with user experience to <b style="color:#333;">create innovative digital experiences</b>.
                 </p>
-                <a href="Peggy-Resume.pdf" target="_blank" class="bt_blue block mb-40 mt-3" title="RESUME">RESUME</a>
+                <a href="Peggy-Resume.pdf" target="_blank" class="bt_blue block mb-40 mt-3" title="Download CV">Download CV</a>
               </li>
               <li class="col-lg-5 col-12 px-0 order-xl-1 order-lg-1 order-0 mb-4"><img src="images/myself.png" alt="" class="col-12 px-0"/></li>
             </ol>
-        
-            <h5 class="pb-4">Participate UX Meetup</h5>
-            <!-- 輪播-->
-            <div class="container" style="width:100%;">
-              <div id="myCarousel" class="carousel slide" data-ride="carousel">
-                <!-- Indicators -->
-                <ol class="carousel-indicators">
-                  <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                  <li data-target="#myCarousel" data-slide-to="1"></li>
-                </ol>
-            
-                <!-- Wrapper for slides -->
-                <div class="carousel-inner">
-                  <div class="item active">
-                    <img src="images/p-01.png" alt="Meetup" style="width:100%;">
+            <ol class="insight_box mx-0">
+              <li class="col-lg-6 col-12 pl-0 order-xl-0 order-lg-0 order-1">
+                <!-- 輪播-->
+                <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="images/C_01.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="images/C_02.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="images/C_03.jpg" class="d-block w-100" alt="...">
+                    </div>
                   </div>
-            
-                  <div class="item">
-                    <img src="images/p-02.png" alt="Meetup" style="width:100%;">
-                  </div>
-
+                  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                  </a>
                 </div>
-            
-                <!-- Left and right controls -->
-                <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-                  <span class="glyphicon glyphicon-chevron-left"></span>
-                  <span class="sr-only">Previous</span>
-                </a>
-                <a class="right carousel-control" href="#myCarousel" data-slide="next">
-                  <span class="glyphicon glyphicon-chevron-right"></span>
-                  <span class="sr-only">Next</span>
-                </a>
-              </div>
-            </div>
-            <!-- end-->
-            <ul class="rum_list mb-40">
-              <div class="t24_font">Work Experience</div>
-              <li data-aos="fade-down">
-                <div class="work t_gray">
-                  <b>Sr. UX/UI Designer</b><br />
-                  4Gamers | 2020.9-2022.3<br />
-                  <ol class="number">
-                    <li>Conducted stakeholder interviews, improving website revisions and gaining valuable industry insights.</li>
-                    <li>Loading feature, <b>propelling a 20% boost</b> in website page viewsh</li>
-                    <li>
-                      Teamed up to design gamification mechanics, growing membership from <b>10,000 to 70,000+</b>.
-                    </li>
-                  </ol>
-                </div>
+                <!-- end-->
               </li>
-              <li data-aos="fade-down">
-                <div class="work t_gray">
-                  <b>Sr. UX/UI Designer</b><br />
-                  Octen | 2019.5-2020.6<br />
-                  <ol class="number">
-                    <li>Consulted with stakeholders and departments on usability, assisting PM with feature wireframes and confirmation.</li>
-                    <li>Improve internal user experience through front-end and back-end UI/UX development of the company's B2B products.</li>
-                    <li>
-                      Help engineers with HTML_RWD and CSS/SCSS/jQuery/Suite applications.
-                    </li>
-                  </ol>
-                </div>
+              <li class="col-lg-6 col-12 px-0 order-xl-1 order-lg-1 order-0 mb-4"> 
+                <h5 class="pb-4">UX meetup at Canada</h5>
+                <p>I have always been curious about UX events abroad, so I have taken the opportunity to participate in local courses and meetups to gain insights into the industry operations and cultural exchange in different countries. Not only does this experience enhance my English skills, but it also leads to new discoveries with every interaction.</p>
               </li>
-              <li data-aos="fade-down">
-                <div class="work t_gray">
-                  <b>UI/UX Designer</b><br />
-                  SOFTALL | 2018.7-2018.12<br />
-                  <ol class="number">
-                    <li>Created visual communication for the company's image and internal corporate website.</li>
-                    <li>Designed frontend and backend UI/UX for company product development and related UI guidelines.</li>
-                    <li>Established UX function wireframes and developed wireframe designs.</li>
-                  </ol>
-                </div>
-              </li>
-              <li data-aos="fade-down">
-                <div class="work t_gray">
-                  <b>Web Designer</b><br />
-                  Singho | 2015.5-2018.5<br />
-                  <ol class="number">
-                    <li>Event Website / Corporate Website Design / Banner Visual Design.</li>
-                    <li>HTML_RWD / Web SEO (Structured data settings) and tracking.</li>
-                    <li>Mobile, tablet ui/ux design.</li>
-                    <li>HTML/CSS/SCSS/JQuery</li>
-                  </ol>
-                </div>
-              </li>
-              <li data-aos="fade-down" data-aos-delay="300">
-                <div class="work t_gray">
-                  <b>Web Designer</b><br />
-                  MOVE IN POCKET | 2013.11-2015.3
-                  <ol class="number">
-                    <li>Corporate website design</li>
-                    <li>Design different visual styles</li>
-                    <li>HTML/CSS/SCSS/JQuery</li>
-                  </ol>
-                </div>
-              </li>
-              <li data-aos="fade-down" data-aos-delay="300">
-                <div class="work t_gray">
-                  <b>Web Designer</b><br />
-                  Yiman Infotek | 2011.11-2013.10
-                  <ol class="number">
-										<li>Company image vision, internal corporate website</li>
-                    <li>Shopping website / mobile version UI page production</li>
-                    <li>HTML/CSS/JQuery</li>
-                  </ol>
-                </div>
-              </li>
-              <li data-aos="fade-down" data-aos-delay="300">
-								<div class="work t_gray">
-									<b>Web Designer</b><br />
-                  iPeen | 2010.9-2011.9
-									<ol class="number">
-                    <li>Different types of event websites</li>
-										<li>Office website and UI design, shopping layout design</li>
-                    <li>HTML/CSS/JQuery</li>
-                  </ol>
-                </p>
-              </li>
-						</ul>
+            </ol>
           </div>
           <a href="" class="back-top"><img src="images/top.svg" /></a>
         </section>
-       
       </article>
+      <footer>
+        © Peggy Chiang 2019-2023 All Rights Reserved
+      </footer>
     </div>
     <!-- jQuery -->
-    <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <script>
-     $('.back-top').on('click', function (event) {
-        event.preventDefault();
-        $('html, body').animate({ scrollTop: 0 }, 1200);
-      });
-      $(window).on('scroll', function () {
-        if ($(this).scrollTop() >= 150)
-          $('.back-top').fadeIn();
-        else
-          $('.back-top').fadeOut();
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 
-      }).scroll();
-    </script>
+    <!--[if lt IE 9]>
+      <script type="text/javascript" src="js/skrollr.ie.min.js"></script>
+    <![endif]-->
     <script type="text/javascript">
-      $(document).on('ready', function () {
-        $('.single-item').slick();
-  
-        $(".lazy").slick({
-          lazyLoad: 'ondemand', // ondemand progressive anticipated
-          infinite: true
-        });
+      var s = skrollr.init({
+        mobileCheck: function () {
+          return false;
+        },
       });
     </script>
-   
+    <script type="text/javascript" src="js/index.js"></script>
+    <!--  then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+      integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
