@@ -575,8 +575,8 @@ button:focus {
   color: #666;
 }
 .about h2 {
-  font-size: 2rem;
-  font-weight: bold;
+  font-size: 2.5rem;
+  font-weight: 500;
   padding: 1rem 0;
   color: #000;
 }
@@ -590,12 +590,12 @@ button:focus {
 }
 .about h4 {
   font-size: 1.375rem;
-  font-weight: bold;
+  font-weight: 500;
   padding-top: 2rem;
   line-height: 2rem;
 }
 .about h5 {
-  font-size: 1.5rem;
+  font-size: 1.875rem;
   font-weight: bold;
   padding-top: 2rem;
   color: #000;
@@ -874,13 +874,12 @@ ul.key_list {
 }
 ul.key_list li {
   width: 20%;
-  color: #4f71cc;
   font-size: 1.125rem;
 }
 ul.key_list li p {
-  font-size: 1.75rem;
+  font-size: 1.5rem;
   margin-bottom: 5px;
-  font-weight: bolder;
+  font-weight: 500;
 }
 
 @media (max-width: 1280px) {
