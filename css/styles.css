@@ -956,7 +956,6 @@ ul.key_list li p {
     padding: 20px;
   }
   .about h2 {
-    width: 90%;
     font-size: 1.75rem;
     padding: 0 0 2rem 0;
     font-weight: bold;
@@ -1226,6 +1225,7 @@ a.back-top:focus {
   }
   .work ul.portfolio li h4 {
     font-size: 1.75rem;
+    color: #333;
   }
   .work ul.portfolio li p {
     font-size: 1.125rem;
