@@ -478,7 +478,7 @@ button:focus {
 }
 .main h3 {
   font-size: 1.125rem;
-  color: #666;
+  color: #7e7e7e;
   font-weight: normal;
   margin: 40px 0;
   line-height: 2rem;
@@ -572,33 +572,34 @@ button:focus {
   font-family: "Helvetica Neue", "微軟正黑體";
   font-size: 1.25rem;
   line-height: 24px;
-  color: #666;
+  color: #7e7e7e;
 }
 .about h2 {
   font-size: 2.5rem;
   font-weight: 500;
   padding: 1rem 0;
-  color: #000;
+  color: #333;
 }
 .about h3 {
   font-size: 1.125rem;
-  color: #666;
+  color: #7e7e7e;
 }
 .about p {
   font-size: 1rem;
   line-height: 1.5rem;
 }
 .about h4 {
-  font-size: 1.375rem;
+  font-size: 1.75rem;
   font-weight: 500;
   padding-top: 2rem;
   line-height: 2rem;
+  color: #333;
 }
 .about h5 {
   font-size: 1.875rem;
   font-weight: bold;
   padding-top: 2rem;
-  color: #000;
+  color: #333;
 }
 .about ul.ab_txt {
   list-style: disc;
@@ -956,6 +957,15 @@ ul.key_list li p {
   }
   .about h2 {
     width: 90%;
+    font-size: 1.75rem;
+    padding: 0 0 2rem 0;
+    font-weight: bold;
+  }
+  .about h5 {
+    font-size: 1.875rem;
+  }
+  .about h4 {
+    font-size: 1.5rem;
   }
   .about ul.rum_list {
     padding: 20px;
