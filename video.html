@@ -68,7 +68,7 @@
         "@type": "Article headline",
         "headline": "Article headline",
         "datePublished": "2020-08-03",
-        "description": "通訊系統-Backend Website,UX Research,UI,Prototype,Coding",
+        "description": "Online Teaching - IOS & Website,UX Research・UI・Prototype・Coding",
         "image": {
           "@type": "ImageObject",
           "height": "",
@@ -94,7 +94,6 @@
       <header class="fixed-top">
         <nav class="navbar navbar-expand-lg navbar-light mx-auto">
           <a class="navbar-brand logo" href="index.html"><img src="images/logo.svg" alt="peggy" /></a>
-  
           <div class="navbar-toggler icon-burger">
             <!-- 選單開/關 -->
             <span></span>
@@ -169,23 +168,20 @@
         <section>
           <div class="content">
             <h2>Online Teaching - IOS & Website</h2>
-            <h3 class="pb-20 f20">UX Research・UI・Prototype・Coding</h3>
+            <p class="pb-20 f20">The 2020 Digital Transformation Tourism Revitalization Training and Education Project collaborates with the government to drive digital transformation. The program focuses on training employees in the travel, tourism, and hotel industries.</p>
             <video width="100%" controls autoplay loop>
               <source src="images/video/teach.mp4" type="video/mp4" />
             </video>
-            <h4>Description</h4>
+            <h5>The Problem</h5>
             <p class="pt-2">
-              The 2020 Digital Transformation Tourism Revitalization Training and Education Project cooperates with the government for digital transformation. The main trainers are employees of the travel industry, tourism hotel industry, hotel industry and tourism industry. Due to the epidemic situation, the original physical courses have been changed to online teaching courses. <br /><br />
-              Therefore, the motivation to use it is to strengthen the training of relevant heavy industry personnel to complete the classroom projects and hours, not only to improve skills and obtain relevant licenses, but also to catch up with digital transformation and meet market needs. The application level of the original communication system is further expanded to improve the overall operating experience.<br /><br />
-              
-              This project starts from the user's point of view, uses user research, and takes the situational needs as the first stage of planning.
+              As a result of the pandemic, the courses have transitioned from in-person to online format.
+              Therefore, the motivation to use it is to strengthen the training of relevant heavy industry personnel to complete the classroom projects and hours, not only to improve skills and obtain relevant licenses, but also to catch up with digital transformation and meet market needs.
             </p>
-            <h4>First stage target</h4>
+            <h5>The First Phase Objective</h5>
             <p class="pt-2">
-              Offer B2B
-              Communication system application, using video online teaching platform, provided to tourism development association (manager), tour leader or tour guide license (teacher), hotel industry and tourism and entertainment industry professionals (students), front and back use, to meet classroom learning Department and self-learning situation.
+              Offer a B2B communication system application with a video-based online teaching platform. Targeted users include tourism development associations, licensed tour leaders/guides, and professionals in the hotel, tourism, and entertainment industries. It accommodates classroom learning and self-study situations.
             </p>
-            <h4>User story</h4>
+            <h5>User Story</h5>
             <ol class="number">
               <li>
                 As a student, I want to strengthen my education through the digital transformation of the epidemic, so I can improve my skills and get a license to meet the needs of the tourism market in the future.
@@ -193,121 +189,83 @@
               <li>As a teacher, I want to assist the Tourism Development Association to digitally transform the teaching content, so I can assist the heavy industry personnel to obtain relevant licenses.</li>
               <li>As an administrator, I want to manage the situation through the background, so I can master the class status of teachers and students, and course management.</li>
             </ol>
-            <h4>Relationship between elements</h4>
+            <h5>Entity Relationship Diagram</h5>
             <div class="center">
               <img src="images/video-01.jpg" alt="" class="pt-3 pic" />
               <img src="images/video-02.jpg" alt="" class="pt-3 pic" />
               <img src="images/video-03.jpg" alt="Relationship between elements" class="pt-3 pic" />
               <p>Function and relationship diagram of white layout organization</p>
             </div>
-            <h4 class="mb-2">Flow Chart</h4>
-            <ul class="ab_txt">
+            <h5>Process</h5>
+            <h4 class="mb-2">Service Flow Chart</h4>
+            <p>Service flow diagrams demonstrate stakeholder collaboration and task accomplishment, showing user goals and involved roles.</p>
+            <img src="images/video-04.jpg" alt="Flow Chart" class="pt-3 pic" />
+            <h4 class="mb-2">Role</h4>
+            <ol class="number">
               <li>
-                <b>The elements drawn by the service flow diagram are:</b>
-                <ol class="number">
-                  <li>Ｕser's goal</li>
-                  <li>The key tasks that must be experienced in order to achieve the goal</li>
-                  <li>How key tasks are accomplished in partnership with stakeholders</li>
-                </ol>
-                <div class="mb-2">
-                  <img src="images/video-04.jpg" alt="Flow Chart" class="pt-3 pic" />
-                  <h4>The picture above is using the situation as an example.</h4>
-                  <span>Service flow diagrams show how users achieve goals and which roles are involved in tasks.</span>
-                </div>
+                Students (Tourism and heavy industry personnel)<br />
+                Students receive course notifications from administrators<br />Students receive teacher teaching content and new knowledge<br />Students use the online teaching system to take classes<br />Student completed projects and hours<br />The student successfully obtained the certificate<br /><br />
               </li>
-              <li class="mb-3">
-                <b>Role：</b><br />
-                <ol class="number">
-                  <li>
-                    Students (Tourism and heavy industry personnel)<br />
-                    Students receive course notifications from administrators<br />Students receive teacher teaching content and new knowledge<br />Students use the online teaching system to take classes<br />Student completed projects and hours<br />The student successfully obtained the certificate<br /><br />
-                  </li>
-                  <li>
-                    Teacher (Leader or Tour Guide License)<br />
-                    The teacher receives the class notification from the manager (class host)<br />
-                    Teacher Preparation Course Briefing Teaching<br />Teachers can view students' study hours and classroom status<br /><br />
-                  </li>
-                  <li>
-                    Manager (Tourism Development Association)<br />Responsible for providing teacher and student account passwords<br />Provide course information<br />
-                    Create course information for students to register, add and edit<br />
-                    Arrange for teachers to attend classes<br />Liaison with students and teachers<br />Manage course content and student lists<br />Assist student account batches to pass the review
-                  </li>
-                </ol>
-              </li>
-              <li class="mb-3">
-                <b>Define the task:</b><br />
-                <ol class="number">
-                  <li>
-                    Students (related to tourism and heavy industry personnel)<br />
-                    Register for a course → examination passed → Email notification → Attend class → Completion of course projects and hours → Get relevant certificates<br /><br />
-                  </li>
-                  <li>
-                    Teacher (Leader or Tour Guide License)<br />Class host → Email notification → On class → Check student progress → Assist students in obtaining their licenses<br /><br />
-                  </li>
-                  <li>
-                    Manager (Tourism Development Association)<br />Arrange teachers and contact students → Create account secret (teacher/student) → Provide course information →
-                    Manage courses, student profiles → Assist teachers and students in class
-                  </li>
-                </ol>
-              </li>
-              <li class="mb-3">
-                <b>Use the three principles of availability to confirm requirements and reach consensus:</b>
-                <div>
-                  <img src="images/video-05.jpg" alt="可用性三原則" class="pt-3 pic" />
-                  <p>Translate the results of user research and user task analysis into service flow diagrams,simple functions and less development time are pushed to the front.</p>
-                </div>
-              </li>
-            </ul>
-            <hr />
-            <h5 class="pt-0">Design Flow</h5>
-            <ul class="ab_txt mt-3">
               <li>
-                <b>Sketch：</b> <br />
-                I usually start the design process with sketches and quickly generate pictures. During this process, I can know what problems are, and discuss with the PM which writing functions should be added or deleted, which is an efficient way to discuss.<br />
-                <div class="center">
-                  <img src="images/video-06.jpg" alt="前台－教學草圖" class="pt-3 pic" />
-                  <p class="my-3">Front desk - teaching sketches of teachers and students</p>
-                </div>
+                Teacher (Leader or Tour Guide License)<br />
+                The teacher receives the class notification from the manager (class host)<br />
+                Teacher Preparation Course Briefing Teaching<br />Teachers can view students' study hours and classroom status<br /><br />
               </li>
-              <li class="mb-3">
-                <b>Wireframes：</b
-                ><br />Using low-fidelity interactive prototypes, look for 3 different role goals to test, test whether they meet the situation and solve needs, and test for usability.
-                <div class="center">
-                  <img src="images/video-07.jpg" alt="前台－教學畫面" class="pt-3 pic" style="max-width: 100%" />
-                  <p class="my-3">A file will be output, and the testee will directly click on the screen.</p class="my-3">
-                  <img
-                    src="images/video-08.jpg"
-                    alt="後台－課程內容和學生資料"
-                    class="pt-3 pic"
-                    style="max-width: 100%"
-                  />
-                  
-                  <p class="my-3">Assist me in communicating with engineers and confirming the feasibility of functions and processes.</p class="my-3">
-                </div>
+              <li>
+                Manager (Tourism Development Association)<br />Responsible for providing teacher and student account passwords<br />Provide course information<br />
+                Create course information for students to register, add and edit<br />
+                Arrange for teachers to attend classes<br />Liaison with students and teachers<br />Manage course content and student lists<br />Assist student account batches to pass the review
               </li>
-            </ul>
-            <hr />
-            <h5 class="pt-0">UI Design</h5>
+            </ol>
+            <h4 class="mb-2">Define the task</h4>
+            <ol class="number">
+              <li>
+                Students (related to tourism and heavy industry personnel)<br />
+                Register for a course → examination passed → Email notification → Attend class → Completion of course projects and hours → Get relevant certificates<br /><br />
+              </li>
+              <li>
+                Teacher (Leader or Tour Guide License)<br />Class host → Email notification → On class → Check student progress → Assist students in obtaining their licenses<br /><br />
+              </li>
+              <li>
+                Manager (Tourism Development Association)<br />Arrange teachers and contact students → Create account secret (teacher/student) → Provide course information →
+                Manage courses, student profiles → Assist teachers and students in class
+              </li>
+            </ol>
+            <img src="images/video-05.jpg" alt="可用性三原則" class="pt-3 pic" />
+            <p>Translate the results of user research and user task analysis into service flow diagrams,simple functions and less development time are pushed to the front.</p>
+            <h4 class="pb-2">Sketch</h4>
+            <p>I usually start the design process with sketches and quickly generate pictures. During this process, I can know what problems are, and discuss with the PM which writing functions should be added or deleted, which is an efficient way to discuss.</p>
+            <div class="center">
+              <img src="images/video-06.jpg" alt="前台－教學草圖" class="pt-3 pic" />
+              <p class="my-3">Front desk - teaching sketches of teachers and students</p>
+            </div>
+            <h4 class="pb-2">Wireframes</h4>
+            <p>Using low-fidelity interactive prototypes, look for 3 different role goals to test, test whether they meet the situation and solve needs, and test for usability.</p>
+            <div class="center">
+              <img src="images/video-07.jpg" alt="前台－教學畫面" class="pt-3 pic" style="max-width: 100%" />
+              <p class="my-3">A file will be output, and the testee will directly click on the screen.</p class="my-3">
+              <img
+                src="images/video-08.jpg"
+                alt="後台－課程內容和學生資料"
+                class="pt-3 pic"
+                style="max-width: 100%"
+              />
+              <p class="my-3">Assist me in communicating with engineers and confirming the feasibility of functions and processes.</p class="my-3">
+            </div>
+            <h4 class="pb-2">Front-end</h4>
+            <p>After finalizing the Wireframes, the visual design process begins. The desired style is fresh, clean, concise, comfortable, stable, and technological, with defined elements and colors. Adobe XD is used for intuitive UI design, facilitating user goal achievement. Additionally, a UI component library is organized for future use by engineers.
+            </p>
+            <img src="images/video-09.jpg" alt="前台 UI Design" width="" class="pt-3 pic" />
+            <h4 class="pb-2">Backend</h4>
+            <p>
+              Reference element UI
+              <a href="https://element.eleme.io/#/zh-CN" target="_blank">https://element.eleme.io/#/zh-CN</a>
+              , in the case of insufficient development time, the open source UI component library will be used to develop front-end screen directly in VScode.<br><br>
+              After the flowchart is drawn, the confirmation function is no problem. Enter VScode and use HTML, SCSS, and simple JS to make dynamic and assist engineers in subsequent production.
+              <img src="images/video-10.jpg" alt="後台介面" width="" class="pt-3 pic" />
+            </p>
 
-            <ul class="ab_txt pt-2">
-              <li>
-                <b>Front-end：</b><br />
-                After confirming that there is no problem with the above Wireframes, I began to think about the visual, the main style is fresh, clean, concise, comfortable, stable, and technological, and the design style, elements and colors are defined in the process.<br /> Use Adobe XD to design UI appearance to help users achieve their goals intuitively on the operation interface. <br />
-                
-                Considering that engineers need a UI component library afterwards, the UI system is also sorted out. <br />
-                <img src="images/video-09.jpg" alt="前台 UI Design" width="" class="pt-3 pic" />
-              </li>
-              <li>
-                <b>Backend：</b><br />
-                Reference element UI
-                <a href="https://element.eleme.io/#/zh-CN" target="_blank">https://element.eleme.io/#/zh-CN</a>
-                , in the case of insufficient development time, the open source UI component library will be used to develop front-end screen directly in VScode.<br>
-                After the flowchart is drawn, the confirmation function is no problem. Enter VScode and use HTML, SCSS, and simple JS to make dynamic and assist engineers in subsequent production.
-                <img src="images/video-10.jpg" alt="後台介面" width="" class="pt-3 pic" />
-              </li>
-            </ul>
-            <hr />
-            <h5 class="pt-0">UI Flow</h5>
+            <h5 class="pt-2">UI Flow</h5>
             <p class="pt-20">
               Front-end and Backend overflow, which lists each step, encountered situation, and operation process of the screen, which is convenient for engineers to understand, and also checks whether the user's operation is smooth, defines the interaction, and displays various status error messages.<br />
             </p>
@@ -342,7 +300,7 @@
             <!-- More project-->
             <ol class="insight_box align-items-xl-center align-items-md-center mt-20 mx-0">
               <a href="backend.html" class="mb-40 px-2" title="Communication System"><i class="fas fa-chevron-left"></i> Communication System</a>
-              <a href="4G-officeweb.html" class="mb-40 px-2" title="Official website revision">Chat and News Feeds Platforms <i class="fas fa-chevron-right"></i></a>
+              <a href="4G-officeweb.html" class="mb-40 px-2" title="Official website revision">4Gamers gaming and lifestyle platforms <i class="fas fa-chevron-right"></i></a>
             </ol>
           </div>
           <a href="" class="back-top" title="back-top"><img src="images/top.svg" /></a>
