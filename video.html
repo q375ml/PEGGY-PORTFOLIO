@@ -182,31 +182,29 @@
             </ul>
             <h5>The Problem</h5>
             <p class="pt-2">
-              Due to the pandemic, the courses have shifted from in-person format to online format. As a result, the motivation behind using it is to enhance training for relevant heavy industry personnel to complete coursework and required hours. This is not only to improve skills and obtain relevant certifications, but also to catch up with digital transformation and meet market demands.
+              During the pandemic, professionals who were originally required to attend in-person classes had to switch to online courses to complete their course projects and training.<br><br>
+
+              At that time, the platform did not offer the necessary features. Therefore, the goal of this project was to construct an online teaching platform. It aimed to provide specific online course functionalities tailored to different users, including teachers, students, and administrators, enabling them to smoothly conduct online courses.
             </p>
-            <ul class="pt-2 ab_txt">
-              <li>
-                Provide teachers, students, and administrators with corresponding frontend and backend functionalities based on different roles' needs.
-              </li>
-            </ul>
+            
             <h5 class="pb-2">The Key Design</h5>
             <p>The frontend primarily consists of the interface for teachers and students.</p>
             <ul class="">
               <h4>Teacher view</h4>
               <p class="pt-2 pb-2">
-                The ability to select joining students and sharing presentation features.
+                Teachers can choose to add students and share presentations during the teaching process.
               </p>
               <li class="pt-2 pb-2"><img src="images/video-teacher.svg" alt="" width="100%" class="" /></li>
               
               <h4>Student view</h4>
               <p class="pt-2 pb-2">
-                The option to raise hand and ask questions.
+                Students can raise their hands and ask questions during classes.
               </p>
               <li class="pt-2 pb-2"> <img src="images/video-student.svg" alt="" width="100%" class="" /></li>
              
               <h4>Multi person view</h4>
               <p class="pt-2 pb-2">
-                The capability to switch between different display modes.
+                Both teachers and students can switch between different views for convenient observation.
               </p>
               <li class="pt-2 pb-2"><img src="images/video-Multi-person view.svg" alt="" width="100%" class="" /></li>
              
@@ -218,7 +216,7 @@
             </ul>
         
             <h5>Process</h5>
-            <h4>The First Phase Objective</h4>
+            <h4>The product objective</h4>
             <p class="py-2">
               Offering a B2B communication system application through a video-based online teaching platform, designed for use by various stakeholders: 
             </p>
@@ -229,20 +227,20 @@
               <li>As a teacher, I want to assist the Tourism Development Association to digitally transform the teaching content, so I can assist the heavy industry personnel to obtain relevant licenses.</li>
               <li>As an administrator, I want to manage the situation through the background, so I can master the class status of teachers and students, and course management.</li>
             </ol>
-            <h4>Entity Relationship Diagram</h4>
+            <h4>Defining user tasks </h4>
             <p class="pt-2">The main functions and their corresponding features were discussed and implemented in collaboration with the project manager.</p>
             <div class="center">
               <img src="images/video-01.jpg" alt="" class="pt-3 pic" />
-              <p class="my-3">Foreground related content and functions.</p>
+              <p class="my-3">Teacher and student related content and functions.</p>
               <img src="images/video-02.jpg" alt="" class="pt-3 pic" />
-              <p class="my-3">Background related functions and screens.</p>
+              <p class="my-3">Manager related functions and screens.</p>
               <img src="images/video-03.jpg" alt="Relationship between elements" class="pt-3 pic" />
               <p class="my-3">Relationship diagrams between system elements, functional use of direct and indirect relationships.</p>
             </div>
-            <h4 class="mb-2">Service Flow Chart</h4>
-            <p>Service flow diagrams demonstrate stakeholder collaboration and task accomplishment, showing user goals and involved roles.</p>
+            <h4 class="mb-2">Service flow chart</h4>
+            <p>Use service flowcharts to help stakeholders understand various user tasks and key feature requirements.</p>
             <img src="images/video-04.jpg" alt="Flow Chart" class="pt-3 pic" />
-            <h4 class="mb-2">Role Objectives</h4>
+            <h4 class="mb-2">Role objectives</h4>
             <p class="py-2">Role objectives correspond to the functionalities required by different users' needs.</p>
             <ol class="number">
               <li>
@@ -276,12 +274,12 @@
               </li>
             </ol>
             <img src="images/video-05.jpg" alt="可用性三原則" class="pt-3 pic" />
-            <p class="my-3">Translate the results of user research and user task analysis into service flow diagrams,simple functions and less development time are pushed to the front.</p>
+            <p class="my-3">Based on previous user research and task flows, I assisted the team in prioritizing what we should build first and influencing our first MVP launch.</p>
             <h4 class="pb-2">Sketch</h4>
             <p>I usually start the design process with sketches and generate layout. During this process, I can know what problems are, and discuss with the PM which writing functions should be added or deleted, which is an efficient way to discuss.</p>
             <div class="center">
               <img src="images/video-06.jpg" alt="前台－教學草圖" class="pt-3 pic" />
-              <p class="my-3">Front desk - teaching sketches of teachers and students</p>
+              <p class="my-3">Teaching sketches of teachers and students</p>
             </div>
             <h4 class="pb-2">Wireframes</h4>
             <p>Using low-fidelity interactive prototypes, look for 3 different role goals to test, test whether they meet the situation and solve needs, and test for usability.</p>
@@ -296,33 +294,31 @@
               />
               <p class="my-3">Assist me in communicating with engineers and confirming the feasibility of functions and processes.</p class="my-3">
             </div>
-            
-            <h4 class="pb-2">Backend</h4>
-            <p>
-              Reference element UI
-              <a href="https://element.eleme.io/#/zh-CN" target="_blank">https://element.eleme.io/#/zh-CN</a>
-              , in the case of insufficient development time, the open source UI component library will be used to develop front-end screen directly in VScode.<br><br>
-              After the flowchart is drawn, the confirmation function is no problem. Enter VScode and use HTML, SCSS, and simple JS to make dynamic and assist engineers in subsequent production.
-              <img src="images/video-10.jpg" alt="後台介面" width="" class="pt-3 pic" />
-            </p>
 
-            <h5 class="pt-2">UI Flow</h5>
+            <h5 class="pt-2">Final Flow</h5>
             <p class="pt-2">
-              Front-end and Backend overflow, which lists each step, encountered situation, and operation process of the screen, which is convenient for engineers to understand, and also checks whether the user's operation is smooth, defines the interaction, and displays various status error messages.<br />
+              UI workflows for teachers, students, and managers outline each step on the screen, scenarios encountered, and actions taken. This aids engineers in understanding the process, verifying the smoothness of user interactions, defining interactions, and displaying various error messages for different states.
             </p>
             <div class="center">
               <img src="images/video-11.jpg" alt="前台 UI Flow" width="" class="pt-3 pic" />
-              <p class="my-3">Front-end － Teaching operation screen steps for teachers and students</p class="my-3">
+              <p class="my-3">Student & Teacher UX design: Teaching operation screen steps for UI flow, both for teachers and students.
+              </p class="my-3">
               <img src="images/video-12.jpg" alt="後台 UI Flow" width="" class="pt-3 pic" />
-              <p class="my-3">Backend － Functions and explanations encountered in each operation screen step</p>
+              <p class="my-3">Manager UX design: Functions and explanations of the UI flow encountered at each step of the operation screen.</p>
             </div>
             <hr />
-            <h5 class="pt-0">UI Guideline</h5>
+            <h5 class="pt-0">UI Guideline & Component</h5>
             <div class="center">
               <img src="images/video-13.jpg" alt="UI Guideline" width="" class="pt-3 pic" />
             </div>
+            <h4 class="pb-2">Engineering UI support</h4>
+            <p>
+              I also contributed to the engineering work in this project, the key contribution I had blowe referencing and made the UI compent of the use css and html , referencing resources from <a href="https://element.eleme.io/#/en-US" target="_blank">https://element.eleme.io/#/en-US</a>.
+              This included suggesting UI components for the Internal facing portal, which helped reduce the development time for the engineering team.
+              <img src="images/video-10.jpg" alt="後台介面" width="" class="pt-3 pic" />
+            </p>
             <h5 class="pb-3">Prototype</h5>
-            <p class="pb-3">In the finishing stage of interaction design, realistic scenarios are simulated to assess the overall sense of smoothness and identify any potential gaps or disruptions.</p>
+            <p class="pb-3">In the final stage of interaction design, simulate real-life scenarios to assess whether the overall product meets its current goals.</p>
             <video width="100%" controls autoplay loop>
               <source src="images/video/teach.mp4" type="video/mp4" />
             </video>
@@ -340,7 +336,8 @@
             <hr />
             <h5 class="pt-2">Takeaways</h5>
             <p class="pt-20 pb-3">
-              Analyze the user's hypothetical user situation, use the service flow chart to help stakeholders in various departments reach a consensus at the current stage, clarify the direction of the problem, quickly confirm the and tests in the sketch, and finally design the screen and summarize the UI System to cooperate with engineers.
+              When designers face challenges in understanding and solving problems, they often encounter very ambiguous situations. I assist stakeholders from various departments in reaching consensus, clarifying the direction of the problem, and moving forward by analyzing user assumptions, usage scenarios, and using service flowcharts. <br/><br/>
+              Throughout the production process, I help the engineering team establish an effective backend user interface, a skill I have learned on my own, which allows me to efficiently complete projects. Effective teamwork is a highly satisfying achievement for me.
             </p>
             <hr />
             <!-- More project-->
