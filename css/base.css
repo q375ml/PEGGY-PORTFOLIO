@@ -405,7 +405,7 @@ main {
   /*filter: grayscale(1);
 	transition: filter 0.3s;*/
   pointer-events: none;
-  margin-top: 20px;
+  margin-top: 5rem;
   vertical-align: top;
 }
 
