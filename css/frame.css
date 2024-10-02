@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /*-------------------------
         R E S E T
 -------------------------*/
@@ -109,7 +108,7 @@ h1, h2, h3, h4, h5, h6 {
 html,
 body {
   color: #222;
-  font-family: "Open Sans", "sans-serif", "微軟正黑體", "Microsoft JhengHei";
+  font-family: "Satoshi", "sans-serif", "Inter Tight";
   font-size: 100%;
   line-height: 170%;
   overflow-x: hidden;

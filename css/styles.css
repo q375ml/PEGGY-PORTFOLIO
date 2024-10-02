@@ -109,7 +109,7 @@ h1, h2, h3, h4, h5, h6 {
 html,
 body {
   color: #222;
-  font-family: "Open Sans", "sans-serif", "微軟正黑體", "Microsoft JhengHei";
+  font-family: "Satoshi", "sans-serif", "Inter Tight";
   font-size: 100%;
   line-height: 170%;
   overflow-x: hidden;
@@ -309,7 +309,9 @@ header {
   position: relative;
   z-index: 999;
   background: #fff !important;
-} /*-------------------------
+}
+
+/*-------------------------
        L A Y O U T
 -------------------------*/
 #Document {
@@ -455,9 +457,10 @@ button:focus {
   min-height: 1100px;
   height: auto;
   position: relative;
-  font-family: "Helvetica Neue", "微軟正黑體";
-  background: url("../images/pink_bg.svg") right bottom no-repeat #fcfcfc;
+  font-family: "Satoshi", "sans-serif";
+  background: url("../images/KV_bg.png") right bottom no-repeat #fcfcfc;
   background-size: 100%;
+  letter-spacing: 1px;
 }
 .kv section {
   width: 90%;
@@ -472,9 +475,10 @@ button:focus {
   margin: 10rem 0 0 1rem;
 }
 .main h1 {
-  font-size: 2.5rem;
+  font-size: 3rem;
   color: #333;
   font-weight: 500;
+  font-family: "Inter Tight", "sans-serif";
 }
 .main h3 {
   font-size: 1.125rem;
@@ -494,6 +498,7 @@ button:focus {
 }
 
 .bt_blue {
+  font-family: "Satoshi", "sans-serif";
   display: block;
   border-radius: 25px;
   width: 180px;
@@ -569,7 +574,7 @@ button:focus {
 -------------------------*/
 /*---about---*/
 .about {
-  font-family: "Helvetica Neue", "微軟正黑體";
+  font-family: "Satoshi", "sans-serif";
   font-size: 1.25rem;
   line-height: 24px;
   color: #7e7e7e;
@@ -579,27 +584,33 @@ button:focus {
   font-weight: 500;
   padding: 1rem 0;
   color: #333;
+  font-family: "Inter Tight", "sans-serif";
 }
 .about h3 {
   font-size: 1.125rem;
   color: #7e7e7e;
+  font-family: "Inter Tight", "sans-serif";
 }
 .about p {
   font-size: 1rem;
   line-height: 1.5rem;
+  font-family: "Satoshi", "sans-serif";
 }
 .about h4 {
   font-size: 1.5rem;
   font-weight: 500;
   padding-top: 2rem;
+  padding-bottom: 2rem;
   line-height: 2rem;
   color: #333;
+  font-family: "Inter Tight", "sans-serif";
 }
 .about h5 {
   font-size: 2rem;
   font-weight: bold;
   padding-top: 2rem;
   color: #333;
+  font-family: "Inter Tight", "sans-serif";
 }
 .about ul.ab_txt {
   list-style: disc;
@@ -1041,22 +1052,22 @@ ul.key_list li p {
 }
 .work ul.portfolio li a {
   display: block;
-  font-weight: bold;
+  font-weight: 400;
 }
 .work ul.portfolio li h4 {
-  font-family: "Arial" !important;
   color: #444;
   font-weight: bold;
   font-size: 1.5rem;
+  font-family: "Inter Tight", "sans-serif";
 }
 .work ul.portfolio li p {
-  font-family: "sans-serif" !important;
+  font-family: "Satoshi", "sans-serif";
   color: #555;
   font-size: 1rem;
   line-height: 1.5rem;
 }
 .work ul.portfolio li .tag {
-  font-family: "sans-serif" !important;
+  font-family: "Satoshi", "sans-serif";
   color: #929292;
   font-size: 0.875rem;
 }
@@ -1110,7 +1121,7 @@ ul.key_list li p {
 }
 
 .wrapper {
-  font-family: "Helvetica Neue", "微軟正黑體";
+  font-family: "Satoshi", "sans-serif";
 }
 .wrapper h2.tit {
   width: 100%;
@@ -1119,7 +1130,7 @@ ul.key_list li p {
   position: relative;
   color: #333;
   font-weight: 500;
-  font-size: 2rem;
+  font-size: 2.125rem;
 }
 .wrapper h2.tit .line {
   display: block;
