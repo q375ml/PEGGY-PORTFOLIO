@@ -374,6 +374,8 @@ nav a.circel {
   border-radius: 50%;
   line-height: 35px;
   text-align: center;
+  color: #707070;
+  text-decoration: none;
 }
 nav a.circel svg {
   fill: #666;
@@ -381,6 +383,7 @@ nav a.circel svg {
 nav a.circel:hover {
   background: #4f71cc;
   border: 1px solid #fff;
+  color: #fff;
 }
 nav a.circel:hover svg {
   fill: #fff;
@@ -763,10 +766,12 @@ ul.web_list li a {
 }
 ul.web_list li a img {
   width: 100%;
-  transition: all ease 0.5s;
 }
 ul.web_list li a img.h-100 {
   height: 100%;
+}
+ul.web_list li a img {
+  transition: all ease 0.5s;
 }
 ul.web_list li a div {
   display: flex;
@@ -1047,7 +1052,8 @@ ul.key_list li p {
 }
 .work ul.portfolio li img {
   width: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .work ul.portfolio li a {
   display: block;
@@ -1211,7 +1217,8 @@ a.back-top:focus {
   .work ul.portfolio li img {
     width: 100%;
     height: auto;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   .work ul.portfolio li img.wed {
     width: 110%;
@@ -1231,7 +1238,8 @@ a.back-top:focus {
   .work ul.portfolio li img {
     width: 100%;
     height: auto;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   .work ul.portfolio li h4 {
     font-size: 1.75rem;
@@ -1315,4 +1323,4 @@ footer {
   font-size: 1rem !important;
   padding: 25px 0 !important;
   background: #eef0f3 !important;
-}
+}/*# sourceMappingURL=styles.css.map */
