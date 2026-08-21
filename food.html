@@ -231,34 +231,83 @@
         .scroll();
     </script>
   
+
+
     <!-- CTA click tracking (GA4) -->
     <script>
-      document.addEventListener('click', function (e) {
-        var t = e.target;
-        if (!t || !t.closest || typeof gtag !== 'function') return;
-        var a = t.closest('a');
-        if (!a) return;
-        var href = a.getAttribute('href') || '';
-        var label = (a.textContent || '').trim().replace(/\s+/g, ' ').slice(0, 100);
-
-        if (href.indexOf('mailto:') === 0) {
-          gtag('event', 'contact_email_click', {
-            link_text: label,
-            link_url: href,
-            page_path: location.pathname
-          });
-          return;
+      (function () {
+        function ctaLabel(a) {
+          var t = (a.textContent || '').trim().replace(/\s+/g, ' ');
+          if (t) return t.slice(0, 100);
+          t = (a.getAttribute('aria-label') || a.getAttribute('title') || '').trim();
+          if (t) return t.slice(0, 100);
+          var img = a.querySelector('img');
+          if (img && img.getAttribute('alt')) return img.getAttribute('alt').trim().slice(0, 100);
+          var ic = a.querySelector('i, svg');
+          if (ic) {
+            var fa = (ic.getAttribute('class') || '').match(/fa-[a-z0-9-]+/);
+            return fa ? 'icon:' + fa[0] : 'icon';
+          }
+          return '(no text)';
         }
 
-        var cls = (typeof a.className === 'string') ? a.className : '';
-        if (cls.indexOf('bt_blue') !== -1 && href && !/\.pdf($|\?)/i.test(href)) {
+        function ctaLocation(el) {
+          var n = el, fallback = '';
+          while (n && n !== document.documentElement) {
+            var tag = (n.tagName || '').toLowerCase();
+            if (tag === 'header' || tag === 'footer' || tag === 'nav') return tag;
+            var cls = (typeof n.className === 'string') ? n.className.toLowerCase() : '';
+            if (/\bfooter\b/.test(cls)) return 'footer';
+            if (/\bheader\b|\bnavbar\b/.test(cls)) return 'header';
+            if (!fallback && n.id) fallback = '#' + n.id;
+            if (!fallback && tag === 'section') fallback = 'section';
+            n = n.parentElement;
+          }
+          return fallback || 'body';
+        }
+
+        document.addEventListener('click', function (e) {
+          var t = e.target;
+          if (!t || !t.closest || typeof gtag !== 'function') return;
+          var a = t.closest('a');
+          if (!a) return;
+          var href = a.getAttribute('href') || '';
+
+          if (href.indexOf('mailto:') === 0) {
+            gtag('event', 'contact_email_click', {
+              link_text: ctaLabel(a),
+              link_location: ctaLocation(a),
+              link_url: href,
+              page_path: location.pathname
+            });
+            return;
+          }
+
+          var cls = (typeof a.className === 'string') ? a.className : '';
+          if (cls.indexOf('bt_blue') === -1 || !href) return;
+
+          // 這兩類 GA4 加強型評估已自動追蹤，跳過以免重複計算
+          if (/\.pdf($|\?)/i.test(href)) return;            // file_download
+          if (/^https?:\/\//i.test(href)) return;            // outbound click
+
+          if (href.charAt(0) === '#') {                       // 站內錨點，非作品頁
+            gtag('event', 'cta_click', {
+              link_text: ctaLabel(a),
+              link_location: ctaLocation(a),
+              link_target: href,
+              page_path: location.pathname
+            });
+            return;
+          }
+
           gtag('event', 'view_project_click', {
-            link_text: label,
+            link_text: ctaLabel(a),
+            link_location: ctaLocation(a),
             project: href.split('/').pop().replace(/\.html$/i, ''),
             page_path: location.pathname
           });
-        }
-      }, true);
+        }, true);
+      })();
     </script>
 </body>
 </html>
