@@ -233,6 +233,7 @@
   
 
 
+
     <!-- CTA click tracking (GA4) -->
     <script>
       (function () {
@@ -272,40 +273,44 @@
           var a = t.closest('a');
           if (!a) return;
           var href = a.getAttribute('href') || '';
+          if (!href) return;
+          var base = { link_text: ctaLabel(a), link_location: ctaLocation(a), page_path: location.pathname };
 
+          // 1) 聯絡信箱
           if (href.indexOf('mailto:') === 0) {
-            gtag('event', 'contact_email_click', {
-              link_text: ctaLabel(a),
-              link_location: ctaLocation(a),
-              link_url: href,
-              page_path: location.pathname
-            });
+            base.link_url = href;
+            gtag('event', 'contact_email_click', base);
+            return;
+          }
+
+          // 2) 履歷下載（GA4 另有自動的 file_download，這是專屬名稱）
+          if (/\.pdf($|\?)/i.test(href)) {
+            base.file_name = href.split('/').pop().split('?')[0];
+            gtag('event', 'cv_download', base);
+            return;
+          }
+
+          // 3) Upwork 接案入口（GA4 另有自動的 outbound click）
+          if (/(^|\/\/)([a-z0-9-]+\.)*upwork\.com\//i.test(href)) {
+            base.link_url = href;
+            gtag('event', 'upwork_cta_click', base);
             return;
           }
 
           var cls = (typeof a.className === 'string') ? a.className : '';
-          if (cls.indexOf('bt_blue') === -1 || !href) return;
+          if (cls.indexOf('bt_blue') === -1) return;
+          if (/^https?:\/\//i.test(href)) return;   // 其他外連交給加強型評估
 
-          // 這兩類 GA4 加強型評估已自動追蹤，跳過以免重複計算
-          if (/\.pdf($|\?)/i.test(href)) return;            // file_download
-          if (/^https?:\/\//i.test(href)) return;            // outbound click
-
-          if (href.charAt(0) === '#') {                       // 站內錨點，非作品頁
-            gtag('event', 'cta_click', {
-              link_text: ctaLabel(a),
-              link_location: ctaLocation(a),
-              link_target: href,
-              page_path: location.pathname
-            });
+          // 4) 站內錨點 CTA
+          if (href.charAt(0) === '#') {
+            base.link_target = href;
+            gtag('event', 'cta_click', base);
             return;
           }
 
-          gtag('event', 'view_project_click', {
-            link_text: ctaLabel(a),
-            link_location: ctaLocation(a),
-            project: href.split('/').pop().replace(/\.html$/i, ''),
-            page_path: location.pathname
-          });
+          // 5) 作品頁
+          base.project = href.split('/').pop().replace(/\.html$/i, '');
+          gtag('event', 'view_project_click', base);
         }, true);
       })();
     </script>
