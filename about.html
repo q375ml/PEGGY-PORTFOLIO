@@ -3,7 +3,18 @@
 <!--[if IE 9]> <html class="ie9"> <![endif]-->
 <!--[if (gt IE 9)|!(IE)]><!--><html lang="zh-Hant-TW"><!--<![endif]-->
   <head>
+
     <meta charset="utf-8" />
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-EKWMSCFKML"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-EKWMSCFKML');
+    </script>
+
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=1, maximum-scale=2"
@@ -233,5 +244,35 @@
       integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
       crossorigin="anonymous"
     ></script>
-  </body>
+  
+    <!-- CTA click tracking (GA4) -->
+    <script>
+      document.addEventListener('click', function (e) {
+        var t = e.target;
+        if (!t || !t.closest || typeof gtag !== 'function') return;
+        var a = t.closest('a');
+        if (!a) return;
+        var href = a.getAttribute('href') || '';
+        var label = (a.textContent || '').trim().replace(/\s+/g, ' ').slice(0, 100);
+
+        if (href.indexOf('mailto:') === 0) {
+          gtag('event', 'contact_email_click', {
+            link_text: label,
+            link_url: href,
+            page_path: location.pathname
+          });
+          return;
+        }
+
+        var cls = (typeof a.className === 'string') ? a.className : '';
+        if (cls.indexOf('bt_blue') !== -1 && href && !/\.pdf($|\?)/i.test(href)) {
+          gtag('event', 'view_project_click', {
+            link_text: label,
+            project: href.split('/').pop().replace(/\.html$/i, ''),
+            page_path: location.pathname
+          });
+        }
+      }, true);
+    </script>
+</body>
 </html>

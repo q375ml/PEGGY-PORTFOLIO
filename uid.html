@@ -1,7 +1,18 @@
 <!DOCTYPE html>
 <html lang="zh-Hant-TW" class="no-js">
   <head>
+
     <meta charset="UTF-8" />
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-EKWMSCFKML"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-EKWMSCFKML');
+    </script>
+
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta charset="utf-8" />
     <meta
@@ -11,17 +22,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
     <meta name="author" content="" />
-    <meta name="description" content="永豐金證券-集保行動平台,UI,Prototype,Ipad,Mobile" />
+    <meta name="description" content="SinoPac Securities,UI,Prototype,Ipad,Mobile" />
     <meta name="keywords" content="UX Research,UI,Prototype,Coding" />
     <meta http-equiv="content-language" content="zh-Hant-TW" />
     <meta property="og:type" content="article" />
     <meta property="og:site_name" content="PEGGY PORTFOLIO" />
-    <meta property="og:title" content="永豐金證券-集保行動平台 | Peggy Designer" />
-    <meta property="og:description" content="永豐金證券-集保行動平台,UI,Prototype,Ipad,Mobile" />
+    <meta property="og:title" content="SinoPac Securities | Peggy Designer" />
+    <meta property="og:description" content="SinoPac Securities,UI,Prototype,Ipad,Mobile" />
     <meta property="og:image" content="https://q375ml.github.io/PEGGY-PORTFOLIO/images/peggy.jpg" />
     <meta property="og:url" content="https://q375ml.github.io/PEGGY-PORTFOLIO/uid.html" />
 
-    <title>永豐金證券-集保行動平台 | Peggy Designer</title>
+    <title>SinoPac Securities | Peggy Designer</title>
     <link rel="shortcut icon" href="logo.ico" title="logo" />
     <script>
       document.documentElement.className = 'js';
@@ -62,7 +73,7 @@
         "@type": "Article headline",
         "headline": "Article headline",
         "datePublished": "2020-08-03",
-        "description": "永豐金證券-集保行動平台,UI,Prototype,Ipad",
+        "description": "SinoPac Securities,UI,Prototype,Ipad",
         "image": {
           "@type": "ImageObject",
           "height": "",
@@ -91,26 +102,26 @@
         <section>
           <div class="content">
             <h2>
-              永豐金證券-集保行動平台
+              SinoPac Securities
             </h2>
             <h3 class="pb-20 f20">UI・Prototype・iPad・Mobile</h3>
           </div>
         </section>
       </article>
       <div class="center red_bg">
-        <img src="images/app-ui.png" alt="集保行動平台" class="pic" />
+        <img src="images/app-ui.png" alt="SinoPac Securities" class="pic" />
       </div>
       <article class="about" id="modal-03">
         <section>
           <div class="content">
-            <h5>集保行動平台 UI 設計</h5>
-            <h4>描述 Description－</h4>
+            <h5>SinoPac Securities UI design</h5>
+            <h4>Description－</h4>
             <p class="pt-2">
-              永豐金證券為忙碌的投資人特別規劃，以下是做三個不同平台 UI，分別 web、ipad、mobile。
+              SinoPac Securities has a special plan for busy investors. The following are three different platform UIs, namely web, ipad, and mobile.
             </p>
             <div class="center">
               <img src="images/photo/UI/ui-01.png" alt="" class="pic" />
-              <h4 class="pb-4">Ipad、Mobile 不同 UI 設計</h4>
+              <h4 class="pb-4">Ipad、Mobile different UI design</h4>
             </div>
             <hr />
             <h5>Mobile UI</h5>
@@ -152,5 +163,35 @@
         })
         .scroll();
     </script>
-  </body>
+  
+    <!-- CTA click tracking (GA4) -->
+    <script>
+      document.addEventListener('click', function (e) {
+        var t = e.target;
+        if (!t || !t.closest || typeof gtag !== 'function') return;
+        var a = t.closest('a');
+        if (!a) return;
+        var href = a.getAttribute('href') || '';
+        var label = (a.textContent || '').trim().replace(/\s+/g, ' ').slice(0, 100);
+
+        if (href.indexOf('mailto:') === 0) {
+          gtag('event', 'contact_email_click', {
+            link_text: label,
+            link_url: href,
+            page_path: location.pathname
+          });
+          return;
+        }
+
+        var cls = (typeof a.className === 'string') ? a.className : '';
+        if (cls.indexOf('bt_blue') !== -1 && href && !/\.pdf($|\?)/i.test(href)) {
+          gtag('event', 'view_project_click', {
+            link_text: label,
+            project: href.split('/').pop().replace(/\.html$/i, ''),
+            page_path: location.pathname
+          });
+        }
+      }, true);
+    </script>
+</body>
 </html>

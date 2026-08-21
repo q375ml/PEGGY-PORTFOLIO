@@ -1,7 +1,18 @@
 <!DOCTYPE html>
 <html lang="zh-Hant-TW" class="no-js">
   <head>
+
     <meta charset="UTF-8" />
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-EKWMSCFKML"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-EKWMSCFKML');
+    </script>
+
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta charset="utf-8" />
     <meta
@@ -219,5 +230,35 @@
         })
         .scroll();
     </script>
-  </body>
+  
+    <!-- CTA click tracking (GA4) -->
+    <script>
+      document.addEventListener('click', function (e) {
+        var t = e.target;
+        if (!t || !t.closest || typeof gtag !== 'function') return;
+        var a = t.closest('a');
+        if (!a) return;
+        var href = a.getAttribute('href') || '';
+        var label = (a.textContent || '').trim().replace(/\s+/g, ' ').slice(0, 100);
+
+        if (href.indexOf('mailto:') === 0) {
+          gtag('event', 'contact_email_click', {
+            link_text: label,
+            link_url: href,
+            page_path: location.pathname
+          });
+          return;
+        }
+
+        var cls = (typeof a.className === 'string') ? a.className : '';
+        if (cls.indexOf('bt_blue') !== -1 && href && !/\.pdf($|\?)/i.test(href)) {
+          gtag('event', 'view_project_click', {
+            link_text: label,
+            project: href.split('/').pop().replace(/\.html$/i, ''),
+            page_path: location.pathname
+          });
+        }
+      }, true);
+    </script>
+</body>
 </html>

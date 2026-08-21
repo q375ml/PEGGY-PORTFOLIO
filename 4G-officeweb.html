@@ -2,7 +2,18 @@
 <html lang="zh-Hant-TW" class="no-js">
 
 <head>
+
   <meta charset="UTF-8" />
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-EKWMSCFKML"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-EKWMSCFKML');
+    </script>
+
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta charset="utf-8" />
   <meta name="viewport"
@@ -413,7 +424,7 @@
           <p><img src="images/4gamers/Survey.jpg" alt="Survey" width="100%" class="pt-3" /></p>
           <p><img src="images/4gamers/event.jpg" alt="event" width="100%" class="pt-3" /></p>
           <hr />
-          <h5 class="pt-0">Results</h5>
+          <h5 class="pt-0">Takeaways</h5>
           <p class="pt-2">The implementation of continuously loading content has resulted in an overall traffic increase of more than 20%, effectively helping editors overcome long-standing difficulties.
             Furthermore, the incorporation of a gamification mechanism, combined with tasks, has led to a significant growth in membership. The number of members has risen from 10,000 to over 70,000, and this number continues to grow.</p>
           <div class="center mt-5">
@@ -432,7 +443,7 @@
           <!-- More project-->
           <ol class="insight_box align-items-xl-center align-items-md-center mt-20 mx-0">
             <a href="backend.html" class="mb-40 px-2" title="Communication system"><i class="fas fa-chevron-left"></i> B2B communication system</a>
-            <a href="video.html" class="mb-40 px-2" title="Online teaching platforms">Online teaching platforms <i class="fas fa-chevron-right"></i></a>
+            <a href="Burrard-laptop.html" class="mb-40 px-2" title="Building trust into a refurbished store">Building trust into a refurbished store <i class="fas fa-chevron-right"></i></a>
           </ol>
         </div>
         <a href="" class="back-top" title="back-top"><img src="images/top.svg" /></a>
@@ -455,6 +466,36 @@
   crossorigin="anonymous"
 ></script>
   
+
+    <!-- CTA click tracking (GA4) -->
+    <script>
+      document.addEventListener('click', function (e) {
+        var t = e.target;
+        if (!t || !t.closest || typeof gtag !== 'function') return;
+        var a = t.closest('a');
+        if (!a) return;
+        var href = a.getAttribute('href') || '';
+        var label = (a.textContent || '').trim().replace(/\s+/g, ' ').slice(0, 100);
+
+        if (href.indexOf('mailto:') === 0) {
+          gtag('event', 'contact_email_click', {
+            link_text: label,
+            link_url: href,
+            page_path: location.pathname
+          });
+          return;
+        }
+
+        var cls = (typeof a.className === 'string') ? a.className : '';
+        if (cls.indexOf('bt_blue') !== -1 && href && !/\.pdf($|\?)/i.test(href)) {
+          gtag('event', 'view_project_click', {
+            link_text: label,
+            project: href.split('/').pop().replace(/\.html$/i, ''),
+            page_path: location.pathname
+          });
+        }
+      }, true);
+    </script>
 </body>
 
 </html>
