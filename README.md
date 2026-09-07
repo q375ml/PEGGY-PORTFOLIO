@@ -1,6 +1,5 @@
 # Hi, I'm Peggy Chiang, a product designer.
 PEGGY-PORTFOLIO 個人作品集／個人網站
 
-I have been involved in many projects related to web/UI interface design. In the past 5 years, I have focused on UI/UX design logic, data application, exploring streamlined design and meaningful user experience.
+With 8 years in B2B and B2C product design, my recent focus has been on design systems, internal user research, and turning what users actually do into product decisions. I work best on teams where design is part of the decision, not the final step.
 
-I love teamwork and helping teams solve problems and accomplish goals together keeps my passion alive.
