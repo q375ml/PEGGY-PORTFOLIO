@@ -1,0 +1,38 @@
+.case-access {width:calc(100% - 32px);max-width:520px;margin:auto;padding:40px;border:0;border-radius:10px;background:#fff;color:#333;box-shadow:3px 3px 30px #2222;}
+.case-access::backdrop {background:rgba(34,34,34,.5);}
+.case-access h5 {padding:0 0px 5px 0;margin:0;line-height:1.2;text-align:center;}
+.case-access p {margin:0 0 24px;}
+.case-access .case-subtitle {text-align:center;font-size:18px;line-height:26px;color:#605e65;margin:0 0 26px;}
+.case-access form {max-width:400px;margin:0 auto;}
+.case-access .case-sr-only {position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0;}
+.case-access .case-password-row {display:flex;align-items:center;height:48px;box-sizing:border-box;border:1px solid #aaa;border-radius:8px;overflow:hidden;}
+.case-access input {min-width:0;flex:1;width:100%;height:46px;border:0;border-radius:0;background:transparent;padding:12px 14px;color:#333;font:1rem "Satoshi",sans-serif;}
+.case-access .case-show {display:flex;align-items:center;justify-content:center;flex:0 0 42px;width:42px;height:44px;margin:0;padding:0;border:0;border-radius:0;background:transparent;color:#605e65;cursor:pointer;}
+.case-access .case-show svg {width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.2;stroke-linecap:round;stroke-linejoin:round;}
+.case-access .case-eye,.case-access .case-show[aria-pressed="true"] .case-eye-off {display:none;}
+.case-access .case-show[aria-pressed="true"] .case-eye {display:block;}
+.case-access .case-close {position:absolute;right:16px;top:12px;border:0;background:transparent;font-size:28px;color:#555;width:40px;height:40px;cursor:pointer;}
+.case-access .case-feedback {min-height:20px;margin:15px 0;color:#605e65;font-size:14px;line-height:20px;text-align:left;}
+.case-access.case-error .case-feedback {color:#ff4b23;}
+.case-access.case-error .case-password-row {border-color:#ff4b23;}
+.case-access .bt_blue {border:0;padding:0;cursor:pointer;}
+.case-access .case-unlock {display:flex;align-items:center;justify-content:center;gap:8px;width:100%;height:46px;line-height:normal;border-radius:8px;background:#4f71cc;font-size:16px;}
+.case-access .case-unlock:hover {background:#77a9ff;}
+.case-access .case-unlock svg {width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;}
+.case-access :disabled {opacity:.6;cursor:wait;}
+.case-access :focus-visible,.case-locked-preview:focus-visible {outline:3px solid #4f71cc;outline-offset:3px;}
+.case-access input:focus-visible {outline:none;}
+.case-access .case-password-row:focus-within {border-color:#4f71cc;box-shadow:0 0 0 1px #4f71cc;}
+.case-access.case-error .case-password-row:focus-within {border-color:#ff4b23;box-shadow:none;}
+.case-lock {position:fixed;bottom:24px;right:24px;z-index:1000;box-shadow:0 2px 10px #2223;}
+.case-locked-preview {display:flex;min-height:340px;height:100%;align-items:center;justify-content:center;flex-direction:column;gap:24px;background:#e9edf8;color:#4f71cc!important;text-align:center;padding:32px;text-decoration:none!important;font:500 1.5rem "Inter Tight",sans-serif;}
+.case-locked-preview svg {width:64px;height:64px;stroke:currentColor;fill:none;stroke-width:1.5;}
+.case-gate {box-sizing:border-box;width:100%;min-height:100vh;min-height:100dvh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;margin:0;padding:24px;}
+.case-gate .logo img {width:120px;margin-bottom:40px;}
+.case-gate .bt_blue {margin:24px auto;}
+.case-gate .case-access-inline {width:100%;max-width:400px;margin:0;padding:0;border-radius:0;box-shadow:none;}
+.case-gate .case-access-inline .case-unlock {margin:0;}
+.case-access .case-return-home {display:flex;align-items:center;justify-content:center;gap:8px;width:fit-content;margin:44px auto 0;padding:4px 0;color:#333;font:14px/20px "Satoshi",sans-serif;text-decoration:none;}
+.case-access .case-return-home:hover {color:#4f71cc;text-decoration:none;}
+.case-access .case-return-home svg {width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:1.3;stroke-linecap:round;stroke-linejoin:round;}
+@media(max-width:767px){.case-access{padding:32px 24px;}.case-locked-preview{min-height:260px;}.case-lock{width:140px;bottom:16px;right:16px;}}

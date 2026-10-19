@@ -1,0 +1,60 @@
+/* Only case-specific diagrams and persona layout; typography and page shell
+   inherit css/styles.css and css/frame.css, as in 4G-officeweb.html. */
+.ds-case .ds-body > section { margin: 0 0 28px; scroll-margin-top: 100px; }
+.ds-case .ds-eyebrow, .ds-case .ds-caption { font-size: 12px; letter-spacing: 1px; display: block; margin-bottom: 12px; }
+.ds-case .ds-lead { padding-bottom: 20px; font-size: 20px; }
+.ds-tags, .ds-toc { display: flex; flex-wrap: wrap; gap: 18px; margin: 20px 0; font-size: 14px; }
+.ds-banner { background: #f8f8f8; display: flex; justify-content: center; align-items: center; gap: 36px; padding: 45px 25px; margin: 30px 0; }
+.ds-banner div { display: flex; flex-direction: column; gap: 12px; }
+.ds-banner strong { font-size: 24px; color: #333; }
+.ds-banner span, .ds-banner small { font-size: 14px; color: #7e7e7e; }
+.ds-grid { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 28px; margin: 20px 0; }
+.ds-card { padding: 0; }
+.ds-number { color: #5070cc; font-size: 30px; }
+.ds-feature { display: grid; grid-template-columns: 5fr 7fr; gap: 30px; align-items: center; margin: 30px 0 40px; }
+.ds-feature.ds-reverse { grid-template-columns: 7fr 5fr; }
+.ds-reverse > div:first-child { order: 2; }
+.ds-demo { background: #f8f8f8; padding: 28px; }
+.ds-case .ds-note { font-size: 14px; margin: 16px 0; color: #7e7e7e; }
+.ds-field { font-size: 14px; color: #333; margin-bottom: 8px; }
+.ds-input { padding: 12px; border: 1px solid #ccc; background: white; font-size: 14px; }
+.ds-gap { padding: 10px; margin: 10px 0; background: #edf0f8; color: #5070cc; text-align: center; font-size: 12px; border-left: 2px solid #5070cc; }
+.ds-gap-large { padding: 25px 10px; }
+.ds-button-row { display: flex; flex-wrap: wrap; gap: 12px; margin: 18px 0; }
+.ds-btn { font-size: 14px; padding: 10px 14px; background: #5070cc; color: white; border: 1px solid #5070cc; border-radius: 4px; }
+.ds-secondary { background: white; color: #5070cc; }
+.ds-danger { background: #aa3540; border-color: #aa3540; }
+.ds-btn:disabled { background: #ddd; color: #666; border-color: #ddd; }
+.ds-error { padding: 20px; border-left: 3px solid #aa3540; background: #fff2f2; font-size: 14px; }
+.ds-error strong { color: #aa3540; }
+.ds-error p { margin: 12px 0; }
+.ds-persona { background: #f8f8f8; padding: 35px; margin: 20px 0; }
+.ds-persona-heading { display: flex; gap: 24px; align-items: center; }
+.ds-avatar { flex-shrink: 0; padding: 20px; background: #edf0f8; color: #5070cc; font-size: 28px; }
+.ds-persona-heading h4 { padding-top: 0; }
+.ds-persona blockquote { margin: 28px 0; padding: 15px 20px; border-left: 3px solid #5070cc; font-size: 22px; line-height: 1.6; color: #333; }
+.ds-persona cite { display: block; font-size: 14px; font-style: normal; color: #7e7e7e; margin-top: 10px; }
+.ds-persona-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 35px; }
+.ds-persona-grid h4 { padding-top: 20px; margin-bottom: 15px; }
+.ds-persona-need { margin-top: 20px; padding: 0 20px 20px; background: white; }
+.ds-persona small { font-size: 13px; }
+.ds-insight { padding: 25px 30px; background: #f8f8f8; margin: 25px 0; }
+.ds-insight h4 { padding-top: 0; margin-bottom: 15px; }
+.ds-steps { list-style: decimal; margin-left: 24px; }
+.ds-table-wrap { overflow-x: auto; margin: 20px 0; }
+.ds-case table { width: 100%; min-width: 450px; font-size: 16px; }
+.ds-case th, .ds-case td { padding: 16px; border-bottom: 1px solid #ddd; text-align: left; }
+.ds-case th { background: #f8f8f8; color: #333; }
+.ds-case caption { caption-side: top; font-size: 14px; padding-bottom: 14px; }
+.ds-case .ds-project-nav { width: 100%; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 20px; padding: 30px 0; border-top: 1px solid #ddd; margin-top: 35px; font-size: 16px; }
+.ds-back { position: fixed; bottom: 24px; right: 24px; padding: 8px 15px; background: white; color: #5070cc; z-index: 5; border: 1px solid #ddd; }
+.ds-case a:focus-visible, .ds-case button:focus-visible, .ds-case [role="button"]:focus-visible { outline: 2px solid #5070cc; outline-offset: 4px; }
+@media(max-width:767px) {
+.ds-grid, .ds-feature, .ds-feature.ds-reverse, .ds-persona-grid { grid-template-columns: 1fr; }
+.ds-reverse > div:first-child { order: 0; }
+.ds-banner { flex-direction: column; align-items: flex-start; gap: 18px; }
+.ds-banner b { transform: rotate(90deg); }
+.ds-persona { padding: 22px; }
+.ds-persona-heading { gap: 14px; align-items: flex-start; }
+.ds-avatar { padding: 12px; font-size: 22px; }
+}
