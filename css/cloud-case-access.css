@@ -35,4 +35,12 @@
 .case-access .case-return-home {display:flex;align-items:center;justify-content:center;gap:8px;width:fit-content;margin:44px auto 0;padding:4px 0;color:#333;font:14px/20px "Satoshi",sans-serif;text-decoration:none;}
 .case-access .case-return-home:hover {color:#4f71cc;text-decoration:none;}
 .case-access .case-return-home svg {width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:1.3;stroke-linecap:round;stroke-linejoin:round;}
+.case-access .case-loading-view {display:none;}
+.case-access.case-loading {display:grid;place-items:center;box-sizing:border-box;}
+.case-access.case-loading > :not(.case-loading-view) {display:none!important;}
+.case-access.case-loading .case-loading-view {display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;color:#605e65;font:16px/24px "Satoshi",sans-serif;}
+.case-access .case-loading-view:focus {outline:none;}
+.case-access .case-spinner {display:block;width:44px;height:44px;box-sizing:border-box;border:3px solid #e9edf8;border-top-color:#4f71cc;border-radius:50%;animation:case-spin .8s linear infinite;}
+@keyframes case-spin {to {transform:rotate(360deg);}}
+@media(prefers-reduced-motion:reduce){.case-access .case-spinner{animation:none;}}
 @media(max-width:767px){.case-access{padding:32px 24px;}.case-locked-preview{min-height:260px;}.case-lock{width:140px;bottom:16px;right:16px;}}
