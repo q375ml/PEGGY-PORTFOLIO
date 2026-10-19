@@ -16,6 +16,27 @@
   home.innerHTML='<svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 4-5 5 5 5M4 9h10a6 6 0 0 1 0 12h-4"/></svg><span>Return to Home</span>';
   dialog.append(home);
  }
+ const loading=document.createElement('div');
+ loading.className='case-loading-view';
+ loading.setAttribute('role','status');
+ loading.setAttribute('aria-live','polite');
+ loading.tabIndex=-1;
+ loading.innerHTML='<span class="case-spinner" aria-hidden="true"></span><span>Loading project…</span>';
+ dialog.append(loading);
+ function setLoading(active){
+  if(active){
+   dialog.style.height=dialog.getBoundingClientRect().height+'px';
+   dialog.classList.add('case-loading');
+   dialog.removeAttribute('aria-labelledby');
+   dialog.setAttribute('aria-label','Loading project');
+   loading.focus();
+  }else{
+   dialog.classList.remove('case-loading');
+   dialog.style.height='';
+   dialog.removeAttribute('aria-label');
+   dialog.setAttribute('aria-labelledby','case-access-title');
+  }
+ }
  let busy=false,opener=null;
  function open(trigger){opener=trigger;input.value='';input.type='password';show.setAttribute('aria-label','Show passcode');show.setAttribute('aria-pressed','false');input.removeAttribute('aria-invalid');dialog.classList.remove('case-error');feedback.textContent='';dialog.showModal();input.focus();}
  function reset(){input.value='';if(opener)opener.focus();}
@@ -35,7 +56,7 @@
    input.focus();
    return;
   }
-  busy=true;submit.disabled=true;close.disabled=true;show.disabled=true;input.readOnly=true;input.removeAttribute('aria-invalid');dialog.classList.remove('case-error');feedback.textContent='Unlocking project…';
+  busy=true;submit.disabled=true;close.disabled=true;show.disabled=true;input.readOnly=true;input.removeAttribute('aria-invalid');dialog.classList.remove('case-error');feedback.textContent='';setLoading(true);
   const urls=[];let authenticated=false;
   try {
    if(!window.crypto?.subtle)throw Error('secure-context');
@@ -46,7 +67,6 @@
    const key=await crypto.subtle.deriveKey({name:'PBKDF2',hash:'SHA-256',iterations:config.iterations,salt},material,{name:'AES-GCM',length:256},false,['decrypt']);
    async function decrypt(file){const bytes=new Uint8Array(await fetchFile(new URL(file,base)));return crypto.subtle.decrypt({name:'AES-GCM',iv:bytes.slice(0,12)},key,bytes.slice(12));}
    const payload=JSON.parse(new TextDecoder().decode(await decrypt(config.manifest)));authenticated=true;
-   feedback.textContent='Loading project images…';
    const doc=new DOMParser().parseFromString(payload.html,'text/html');
    let next=0;
    await Promise.all(Array.from({length:3},async()=>{while(next<payload.assets.length){const asset=payload.assets[next++];const bytes=await decrypt(asset.file);const url=URL.createObjectURL(new Blob([bytes],{type:asset.type}));urls.push(url);doc.querySelectorAll(`[data-case-asset="${asset.id}"]`).forEach(img=>{img.src=url;img.removeAttribute('data-case-asset');});}}));
@@ -72,6 +92,7 @@
     if(!event.state?.cloudCaseUnlocked){clearUnlockedContent();location.reload();}
    });
   }catch(error){
+   setLoading(false);
    urls.forEach(url=>URL.revokeObjectURL(url));
    const badPassword=error.name==='OperationError'&&!authenticated;
    feedback.textContent=badPassword?'Incorrect passcode. Please try again.':error.message==='secure-context'?'Please open this website over HTTPS or localhost.':'Unable to load the project. Please check your connection and try again.';
